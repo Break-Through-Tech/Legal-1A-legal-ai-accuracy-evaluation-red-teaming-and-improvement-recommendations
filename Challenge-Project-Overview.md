@@ -53,56 +53,65 @@ ProseAI is a legal technology organization dedicated to increasing access to jus
 
 ## 🎯 The Challenge
 ### Project Summary
-In this project, you will use Alaska family-law court opinions, statutes, and a gold-standard set of query/answer pairs and information-retrieval evaluation, citation verification using string and semantic similarity, and systematic red-teaming to build a system that measures the retrieval and generation accuracy of a legal AI's output, discover the conditions under which it fails, and recommend how to improve it. This will help our company address the risk that AI-generated legal documents contain hallucinated or inaccurate citations, which can cause real harm to self-represented litigants in family court.
+In this project, you will use a frozen benchmark of AI-generated legal documents and a fixed corpus of Alaska family-law statutes, court rules, and case citations and natural language processing techniques — citation parsing, existence checking, and quote-fidelity comparison using string and semantic similarity — to build a system that detects hallucinated legal citations: references to laws or cases that do not exist, or that misquote the source. This will help our company address the risk that AI-generated legal documents contain hallucinated or inaccurate citations, which can cause real harm to self-represented litigants in family court.
 
 ### Success Criteria
 
 How Success Is Measured
 
-The guiding principle: this project succeeds by producing a rigorous, honest measurement of the system, not by the system achieving a good score. A strong evaluation that reveals serious weaknesses is a successful project, because surfacing the truth is precisely its purpose. The fellows are graded on the quality of their measurement and analysis, never on how well ProseAI's system happens to perform.
+The guiding principle: this project succeeds by producing a rigorous, honest measurement of the system, not by the system achieving a good score. A detector that reveals a high hallucination rate is a successful project, because surfacing the truth is precisely its purpose. The fellows are graded on the quality of their measurement and analysis, never on how well ProSe AI's generated documents happen to perform.
 
 Success is measured across three components and one overarching criterion.
 
-Part A — Accuracy Evaluation. Success is a working evaluation system that computes retrieval metrics (Hit@1, Hit@5, Hit@10, MRR, NDCG) across the full gold set, broken down by motion type and reported separately for statute/rule retrieval and case-law retrieval, alongside per-document generation-accuracy and hallucination-risk scores. The measure is correctness and reproducibility, not the metric values themselves: the harness should produce a complete, trustworthy accuracy report on demand, including for a system version it has not seen before.
+**Part A — Citation Extraction & Existence Checking.** Success is a working pipeline that reliably parses a document, extracts every statute and case citation, and correctly separates real citations from fabricated ones against the frozen answer key. The measure is correctness and reproducibility — high extraction recall (few citations missed) and accurate existence classification — not any particular number, but a trustworthy result the tool produces on demand, including on benchmark documents it processed for the first time.
 
-Part B — Red-Teaming. Success is measured by the breadth and quality of discovered failures: a set of distinct, reproducible failure cases spanning all four attack categories (edge cases, adversarial phrasing, jurisdiction traps, hallucination triggers), each categorized by type and severity, and assembled into a regression suite that runs reliably. A reasonable target is on the order of 40–50 reproducible cases with several rated critical. The deeper measure of quality is discovery; whether the red-team surfaces failure modes not already known to ProseAI, rather than rediscovering known issues.
+**Part B — Quote-Fidelity & Detection Metrics.** Success is measured by how well the full detector distinguishes clean documents from corrupted ones. The team computes precision, recall, and F1 on the planted errors across the frozen benchmark, prioritizing recall on fabricated citations, since a missed fabrication is the most consequential error. The quote-fidelity checker should correctly flag altered or misquoted legal text using string and semantic similarity. The deeper measure of quality is honest error analysis — a clear account of *which* kinds of hallucinations the detector catches and which it misses, assembled into a categorized failure taxonomy.
 
-Part C — Improvement Recommendations. Success is measured by actionability. Each recommendation should be specific, ranked by its severity to user outcomes, and tied directly to evidence from Parts A and B. The bar: a reader can tell from each recommendation exactly what to change and why it matters. "Increase retrieval depth for protective-order queries, where Hit@5 is 0.4 versus 0.8 elsewhere" passes; "improve retrieval quality" does not.
+**Part C — Improvement Recommendations.** Success is measured by actionability. Each recommendation should be specific, ranked by its severity to user outcomes, and tied directly to evidence from Parts A and B. The bar: a reader can tell from each recommendation exactly what to change and why it matters. "Fidelity checker misses paraphrased holdings — recall drops to 0.55 on altered quotes versus 0.9 on fabricated citations; add paraphrase-aware matching" passes; "improve the checker" does not.
 
-Overarching criterion: reusability. The ultimate measure of success is whether ProseAI can re-run the complete evaluation against an updated version of the system after the project ends and obtain a trustworthy before-and-after comparison without the fellows present. The strategic purpose of this project is a permanent quality gate and standing regression suite, not a one-time report. If that re-run is possible in January, the project has delivered its lasting value regardless of how any individual metric came out.
+**Overarching criterion: reusability.** The ultimate measure of success is whether ProSe AI can re-run the complete detector against an updated version of the document-generation system after the project ends and obtain a trustworthy before-and-after comparison without the fellows present. The strategic purpose of this project is a permanent quality gate and standing regression suite — not a one-time report. If that re-run is possible in January, the project has delivered its lasting value regardless of how any individual metric came out.
 
 ### Project Milestones
 Use these milestones to guide your work. Your team will create a GitHub Projects board to track tasks within each milestone.
 
 | Month | Milestone | Key Activities |
 |---|---|---|
-| September | Foundation & Retrieval Evaluation | • Explore the corpus and the gold set: motion-type distribution, citation patterns, document structure.<br>• Connect to the vector index and build the retrieval evaluation harness.<br>• Compute the baseline retrieval metrics (Hit@K, MRR, NDCG), broken down by motion type and by statute vs case law.<br>• Identify the weakest-retrieving query categories as early red-team targets.<br>• **Deliverable:** Retrieval evaluation harness + baseline retrieval metrics with breakdowns. |
-| October | Generation Accuracy & Citation Verification | • Generate sample documents with fictional names across the common motion types.<br>• Build the citation extractor and verifier.<br>• Produce per-document hallucination-risk scores and analyze where generation accuracy is weakest.<br>• Begin red-teaming the weak spots found in September.<br>• **Deliverable:** Citation verification module + generation-accuracy / hallucination-risk scoring + first batch of documented failures. |
-| November | Red-Teaming & Failure Analysis | • Run the full red-team campaign across edge cases, adversarial phrasing, jurisdiction traps, and hallucination triggers.<br>• Document each failure as a reproducible, categorized test case; assemble the regression suite.<br>• Analyze failure patterns: which conditions most reliably break the system and how badly.<br>• **Deliverable:** Failure-mode taxonomy + reproducible red-team regression suite categorized by severity. |
-| December | Recommendations, Final Report & Presentation | • Synthesize evaluation and red-team findings into prioritized improvement recommendations.<br>• Package the full evaluation system and regression suite for ProseAI to reuse on every future change.<br>• Present findings and recommendations to ProseAI stakeholders.<br>• **Deliverable:** Final report (PDF) + open-source evaluation & red-team library (GitHub) + prioritized recommendations + presentation slides. |
+| September | Foundation & Citation Extraction | • Explore the frozen benchmark and citation corpus: document structure, citation patterns, statute vs. case-law references.<br>• Build the citation extractor: parse a document and pull out every statute reference and case citation as structured data.<br>• Measure extraction recall against the answer key and analyze what gets missed.<br>• **Deliverable:** Citation extractor module + extraction-accuracy report against the answer key. |
+| October | Existence & Quote-Fidelity Verification | • Build the existence checker: verify whether each extracted citation actually appears in the corpus, flagging fabrications.<br>• Build the quote-fidelity checker: compare quoted holding/statute text to the true source using string and semantic similarity.<br>• Combine both into a per-document hallucination-risk score and tune the flagging thresholds.<br>• **Deliverable:** Existence + fidelity verification modules with tuned thresholds. |
+| November | End-to-End Detection & Failure Analysis | • Run the full detector across the frozen benchmark of clean and deliberately-corrupted documents.<br>• Compute detection metrics — precision, recall, F1 — against the planted errors, prioritizing recall on fabricated citations.<br>• Analyze failure cases (missed fabrications, false alarms) and categorize them into a failure taxonomy; assemble a regression set.<br>• **Deliverable:** End-to-end hallucination detector + evaluation notebook + categorized failure taxonomy. |
+| December | Packaging, Final Report & Presentation | • Synthesize results into prioritized findings and recommendations.<br>• Package the detector as a clean, documented Python module with a simple API and a reproducible evaluation notebook.<br>• Present findings and recommendations to ProSe AI stakeholders.<br>• **Deliverable:** Final report (PDF) + open-source detection library (GitHub) + prioritized recommendations + presentation slides. |
+
+> **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
 ---
 
 ## 📊 Dataset
+
 **Name and Source:** 
+The project uses a frozen, labeled benchmark assembled by ProSe AI from public Alaska family-law sources. It has three parts: (1) a **citation corpus** — the real text of Alaska statutes and rules of civil procedure covering domestic relations (custody, child support, protective orders), plus real Alaska family-law case citations drawn from CourtListener (the Free Law Project's public database); (2) a **labeled document benchmark** — roughly 200–400 AI-generated legal documents built with fictional party names, where half are clean and half contain deliberately planted errors (fabricated citations and altered quotes); and (3) an **answer key** marking every citation in every document as real or fabricated, and every quote as faithful or altered. The statutes, rules, and opinions are public record with no personally identifiable information, and all sample documents use fictional parties.
 
-Dataset description. The project uses a corpus of Alaska family-law legal sources: published court opinions from CourtListener (the Free Law Project's public database), Alaska statutes and procedural rules covering domestic relations (custody, child support, protective orders), and a ProseAI-created gold-standard set of roughly 100–150 query/answer pairs — each a realistic self-represented-litigant situation paired with the legal sources a well-researched answer would cite. The court opinions and statutes are public record and contain no personally identifiable information; all sample documents used in evaluation are generated with fictional party names.
-
-How it will be shared. ProseAI will provide the corpus pre-processed and pre-indexed in a vector database, so the team can evaluate the existing system from day one without re-embedding anything. The gold-standard pairs will be shared as a structured file (CSV/JSON). Access to the vector index and to the LLM and embedding services is provided through ProseAI-issued API keys (read access on the index), distributed to the team at the start of the project.
+**How it will be shared:**
+ProSe AI will deliver the benchmark pre-processed and frozen before the program begins, as structured files (CSV/JSON) plus a data dictionary defining every field, the label schema, how the corrupted documents were generated, and known limitations. Because the benchmark is fixed, the team works against a stable, reproducible target from day one — every evaluation run is deterministic. The pre-trained embedding and cross-encoder models the team uses are free and public on Hugging Face; no paid services or vector index are required. If the team chooses to regenerate sample documents (optional — the benchmark ships pre-generated), ProSe AI will provide the necessary API keys at no cost.
 
 ---
 
 ## 🛠️ Suggested Approach
 
-**ML Problem Type:** Natural Language Processing (NLP), Deep Learning / Neural Networks, Large Language Models (LLMs)/ Generative AI, Transfer Learning / Pre-trained Models
+**ML Problem Type:** * Natural Language Processing (NLP), Transfer Learning / Pre-trained Models (Deep Learning / Neural Networks if the re-ranker stretch goal is attempted)
+
 
 **Recommended Libraries:**
-- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
+- pandas — load and manipulate the benchmark documents and citation corpus
+- sentence-transformers — embed quoted passages and source text for semantic fidelity checks 
+- rapidfuzz — fast string comparison for citation existence lookups and quote matching
+- scikit-learn — precision/recall/F1 and threshold tuning against the answer key
 
 **Evaluation Metrics:**
-- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
+- Precision / Recall / F1 on hallucination detection against the answer key — recall on fabricated citations prioritized, since a missed fabrication is the most consequential error
+- Citation extraction recall — the share of true citations the parser pulls from each document
+- Quote-fidelity accuracy — how often the semantic similarity check correctly separates faithful quotes from altered ones
 
 ---
 
@@ -111,21 +120,22 @@ How it will be shared. ProseAI will provide the corpus pre-processed and pre-ind
 The following resources will help your team understand the problem space and potential technical approaches for this project:
 
 **Background Reading:**
-- [e.g., Link to an article or blog post about the problem domain]
-- [e.g., Link to an industry report or case study]
+- [Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (Stanford, Journal of Empirical Legal Studies, 2025)](https://dho.stanford.edu/wp-content/uploads/Legal_RAG_Hallucinations.pdf) — the foundational study measuring hallucination rates of 17–33% even in RAG-based legal AI tools; defines exactly the failure mode this project targets
+- [What the Science Says About Hallucinations in Legal Research (AI Law Librarians, 2026)](https://www.ailawlibrarians.com/2026/02/19/what-the-science-says-about-hallucinations-in-legal-research/) — accessible plain-language survey of the research, including why statute/rule interpretation is especially error-prone
+
 
 **Technical Tutorials:**
-- [e.g., Link to a free tutorial on the ML technique(s) involved]
-- [e.g., Link to documentation for a key library or tool]
+- [Sentence Transformers — Semantic Textual Similarity](https://sbert.net/docs/quickstart.html) — the core technique for the quote-fidelity check: scoring how closely a quoted passage matches its true source
+- [Sentence Transformers — Cross-Encoders (Rerankers)](https://sbert.net/examples/cross_encoder/applications/README.html) — documentation for the optional re-ranker stretch goal
+- [scikit-learn — Precision, Recall & F1 metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#precision-recall-f-measure-metrics) — computing the detection metrics against the answer key
+- [RapidFuzz documentation](https://rapidfuzz.github.io/RapidFuzz/) — fast string matching for citation existence and quote comparison
 
 **Code Examples:**
-- [e.g., Link to a relevant GitHub repo]
-- [e.g., Link to a sample implementation or starter code]
+- [Sentence Transformers computing similarity — quickstart code](https://sbert.net/docs/sentence_transformer/usage/usage.html) — minimal working examples of embedding text pairs and scoring similarity
 
 **Other:**
-- [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
-
-*Feel free to explore beyond these, and share anything interesting you find with me!*
+- [Mata v. Avianca — the case that started it](https://www.courtlistener.com/docket/63107798/mata-v-avianca-inc/) — the real 2023 sanction over ChatGPT-fabricated citations; useful motivating context for why this project matters
+- [Stanford HAI summary of the legal hallucination findings](https://hai.stanford.edu/news/ai-trial-legal-models-hallucinate-1-out-6-queries) — short, shareable overview for team members newer to the domain
 
 ---
 
@@ -134,16 +144,21 @@ The following resources will help your team understand the problem space and pot
 **Official check-ins:** During our biweekly 45-minute AI Studio Lab Section meeting block (2nd and 4th week of every month)
 
  **Other ways to reach out to me with questions:** 
-* [e.g., Your team's channel within Break Through Tech’s Discord space]
-* [e.g., Email; please copy your teammates and AI Studio Coach]
-* [e.g., Request a team check-in on Zoom]
-* [Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.]
+- Your team's channel within Break Through Tech's Discord space — best for quick, day-to-day questions
+- Email (please copy your teammates and your AI Studio Coach so everyone stays in the loop)
+- Request a team check-in on Zoom — best for anything that needs a live walkthrough or discussion
+- *Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent or time-sensitive questions.*
 
 > 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
 
 **Recommended free coding / collaboration tools**
-* […]
-* […]
+- Google Colab (free tier) — primary development environment; runs all the Python work including the optional re-ranker on a free T4 GPU, no local setup required
+- GitHub — version control and collaboration; where the team's code, notebooks, and final open-source library live
+- Hugging Face — free hosting for the pre-trained embedding/cross-encoder models the project uses (and optionally the frozen benchmark dataset)
+- Google Drive — shared storage for the benchmark files and corpus, mounts directly into Colab
+- Discord — day-to-day team communication (your Break Through Tech channel)
+
+That's the full working toolchain and every piece is genuinely free and Colab-compatible,
 
 ---
 
