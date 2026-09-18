@@ -42,8 +42,8 @@ pre-flight look at the citation-corpus shape before writing the extractor.
 > ⚠️ **The `exists` labels are NOT fully trustworthy.** 32 citations are marked
 > `exists: false` with **no `injected` marker**, and **21 of them sit in `clean`
 > documents** — which the dictionary says should contain no fabricated citations.
-> 19 of the 32 actually exist in the corpus (12 exact matches, 7 more after
-> stripping leading prose like "The " / "See " / "Petitioner. In "). See finding 2.
+> 31 of the 32 actually exist in the corpus (12 exact statute matches, 19 case
+> cites that resolve via reporter or after stripping leading prose). See finding 2.
 
 ## ⚠️ Findings that affect the extractor
 
@@ -57,28 +57,34 @@ pre-flight look at the citation-corpus shape before writing the extractor.
 1b. **4 real citations are NOT in the corpus (data-quality flag for the team).**
     `Civil Rule 16.2(e)`, `Civil Rule 3(h)`, `Civil Rule 86(l)`, `Civil Rule 99(a)`
     are marked `exists: true` in the answer key, but none of these rule numbers
-    appears in `rules.jsonl` (corpus contains civil rules 12, 26, 40, 41, 52, 53,
-    58, 59, 60, 65, 77, 78, 90, 100 only). A strict corpus lookup will therefore
-    **false-negative** these as fabricated. → Flag to ProSe AI; either the key or
-    the corpus needs a fix, or the detector should whitelist them.
+    appears in `rules.jsonl` (corpus civil rules: 12, 26.1, 40, 41, 52, 53, 58,
+    59, 60, 65, 65.1, 77, 78, 90, 90.1–90.8, 100). A strict corpus lookup will
+    therefore **false-negative** these as fabricated. → Flag to ProSe AI; either
+    the key or the corpus needs a fix, or the detector should whitelist them.
 
 2. **Answer-key `exists` labels have a systematic inconsistency (critical).**
     32 citations are marked `exists: false` with **no `injected` marker**, and
     **21 of them are in `clean` documents** — which the data dictionary defines
-    as containing no fabricated citations. Breaking down the 32:
-    - **12 are exact corpus matches** still labeled `exists: false`
-      (`AS 18.66.180`, `AS 18.66.990` — retrievable, active, binding; several
-      `* v. Bromley, 987 P.2d 183` where the doc omits the "State," party).
-    - **7 more match after stripping leading prose** in the cite string
-      (`The Nelson v. Nelson`, `See Ruppe v. Ruppe`,
+    as containing no fabricated citations. Cross-checking the 32 against the
+    corpus reveals **31 of them actually exist there**:
+    - **12 statute cites** that are exact corpus matches still labeled
+      `exists: false` (`AS 18.66.180` ×5, `AS 18.66.990` ×7 — both retrievable,
+      active, binding).
+    - **19 case cites** that resolve in `cases.jsonl`: 12 share the **exact
+      reporter** under a different party-name form (e.g. the 7 `* v. Bromley,
+      987 P.2d 183` cites — the corpus has `State, Child Support Enforcement
+      Division v. Bromley, 987 P.2d 183`, same page), and 7 match after
+      stripping leading prose (`The Nelson v. Nelson`, `See Ruppe v. Ruppe`,
       `Petitioner. In Stephan P. v. Cecilia A.`, etc.).
-    - **13 are genuinely absent** from the corpus — real fabrications that were
-      planted but never marked `injected` (e.g. `AS 11.56.807`, several
-      `Dawn Golden v. Timothy B. Golden, 563 P.3d 1131`).
-    → **Implication for scoring:** a correct existence checker will disagree with
-    the answer key on up to 19 of these (12 exact + 7 prose-stripped) and "miss"
-    13 unmarked fabrications. The team must decide how to score against this —
-    flag to ProSe AI before trusting `exists` as ground truth.
+    - **Only 1 is genuinely fabricated and unmarked:** `AS 11.56.807`
+      (no Title 11.56 section exists in the corpus at all).
+    → **Implication for scoring:** the answer key appears to have marked many
+    *real* citations as non-existent — likely a case-name / pinpoint
+    normalization quirk in the generator — so a correct existence checker will
+    disagree with the key on ~31 labels. **Do not treat `exists` as ground truth
+    until ProSe AI confirms the intended behavior**; log this as a known data
+    limitation and report both "score vs key" and "score vs our normalized
+    ground truth."
 
 3. **Manifest hash not reproducible from my extraction.** Recomputing SHA-256 (and
    MD5/SHA-1) over 11 candidate text forms — raw `.docx` bytes, `document.xml`,
@@ -88,11 +94,13 @@ pre-flight look at the citation-corpus shape before writing the extractor.
    the manifest hash as a version stamp, not a check we can currently re-verify;
    if we need integrity verification, agree on an exact text-extraction recipe.
 
-4. **Positive controls (no normalization needed for these).** All 1,394 real
-   statute cites match `statutes.jsonl` `citation` exactly (1,546 total − 152
-   fabricated), and all 52 real evidence-rule cites match the constructed
-   `Alaska R. Evid. {ruleNumber}` form. The normalization work is confined to
-   civil rules (finding 1) and case-name prose (finding 2).
+4. **Positive controls (with one caveat).** All 1,394 real statute cites resolve in
+   `statutes.jsonl` once sub-section pinpoints are stripped — only 413 match the
+   `citation` string verbatim; the other 981 carry a pinpoint (`AS 25.24.160(a)`).
+   All 52 real evidence-rule cites resolve to `rules-evidence.jsonl` `ruleNumber`
+   (verbatim for the base number). So the extraction layer needs to **strip
+   statute pinpoints** too, and treat civil-rule (finding 1), statute-pinpoint,
+   and case-name-prose (finding 2) normalization as one normalization stage.
 
 5. **Case citations are full reporter cites.** All 1,172 case cites carry a
    reporter (e.g. `Hayes v. Hayes, 922 P.2d 896 (Alaska 1996)`); `wrong_reporter`
