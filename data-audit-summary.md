@@ -131,6 +131,6 @@ task #2 ("commit a short data-audit summary to the repo").
 - [ ] Start the citation extractor (issue #3) — parse DOCX paragraphs, normalize
       civil-rule forms, verify against corpus (measure extraction recall against
       the answer key).
-- [ ] Confirm the hash-extraction recipe with the ProSe AI team (finding 2).
+- [ ] Confirm the hash-extraction recipe with the ProSe AI team (finding 3).
 - [ ] Ask ProSe AI about the 4 corpus-missing rules (Civil Rule 3, 16.2, 86, 99)
       marked real in the answer key (finding 1b).
