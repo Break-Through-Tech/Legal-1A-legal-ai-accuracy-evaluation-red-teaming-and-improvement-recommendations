@@ -45,10 +45,19 @@ pre-flight look at the citation-corpus shape before writing the extractor.
 ## ⚠️ Findings that affect the extractor
 
 1. **Rule-citation format mismatch (blocker for naive matching).** Documents cite
-   civil rules as **`Civil Rule 90.3`** / **`Rule 90.3`** (715 rule cites), but the
-   corpus stores them as **`Alaska R. Civ. P. 90.3`**. Evidence rules are already
-   `Alaska R. Evid. X` in both (48 cites). → Normalize civil-rule forms before
-   corpus lookup; a string-equality `exists` check will falsely fail 715 real cites.
+   civil rules as **`Civil Rule 90.3`** / **`Rule 90.3`** (715 total rule cites in
+   this form: 632 real + 83 fabricated), but the corpus stores them as
+   **`Alaska R. Civ. P. 90.3`**. Evidence rules are already `Alaska R. Evid. X`
+   in both (57 cites). → Normalize civil-rule forms before corpus lookup; a
+   string-equality `exists` check will falsely fail 632 real cites.
+
+1b. **4 real citations are NOT in the corpus (data-quality flag for the team).**
+    `Civil Rule 16.2(e)`, `Civil Rule 3(h)`, `Civil Rule 86(l)`, `Civil Rule 99(a)`
+    are marked `exists: true` in the answer key, but none of these rule numbers
+    appears in `rules.jsonl` (corpus contains civil rules 12, 26, 40, 41, 52, 53,
+    58, 59, 60, 65, 77, 78, 90, 100 only). A strict corpus lookup will therefore
+    **false-negative** these as fabricated. → Flag to ProSe AI; either the key or
+    the corpus needs a fix, or the detector should whitelist them.
 
 2. **Manifest hash not reproducible from my extraction.** Recomputing SHA-256 over
    raw `.docx` bytes (and over normalized paragraph text) did **not** match the
@@ -82,3 +91,5 @@ shared with **May Bui**. This summary is the audit deliverable for #2.
 - [ ] Start the citation extractor (issue #3) — parse DOCX paragraphs, normalize
       civil-rule forms, verify against corpus.
 - [ ] Confirm the hash-reproducibility question with the ProSe AI team.
+- [ ] Ask ProSe AI about the 4 corpus-missing rules (Civil Rule 3, 16.2, 86, 99)
+      marked real in the answer key.
