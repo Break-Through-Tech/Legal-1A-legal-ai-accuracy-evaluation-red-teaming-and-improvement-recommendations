@@ -133,14 +133,43 @@ document hash in `manifest.json` remains valid.**
    but that the original corpus slice omitted — 50 citations pointed at authorities the corpus
    could not confirm. Added from the same Alaska Court System source as the rest of the file.
 2. **31 citation labels corrected `exists: false` → `true`** in `answer-key.json`. These were
-   real authorities mislabeled as fabricated; see §8 for the cause.
+   real authorities present in the corpus but labeled as though fabricated; see §8 for the
+   cause. *(A 32nd, `AS 11.56.807`, is also real but is **outside** the corpus — it keeps
+   `exists: false` and is explained below.)*
 3. **This dictionary** gained §3.1, the correction note in §1, and the `raw_extracted` field
    in §4.2.
 
-**Known limitation, deliberately left in place:** one citation, `AS 11.56.807` in `doc-0136`,
-remains `exists: false` and is **unverified**. AS Title 11 (criminal law) is outside this
-corpus's scope entirely, so nothing in the delivered files can confirm or refute it. Treat that
-single citation as unlabeled rather than as ground truth.
+#### ⚠️ ONE CITATION IS REAL LAW BUT SITS OUTSIDE THE CORPUS — `AS 11.56.807`
+
+`doc-0136` (a **clean** document) cites **`AS 11.56.807` — "Terroristic threatening in the
+first degree", Alaska Statutes Title 11, Chapter 56.** Confirmed against authoritative sources
+(Alaska Statutes, akleg.gov, Justia) on 2026-09-21.
+
+> ⛔ **IT IS REAL LAW. IT IS NOT A FABRICATION, AND NOTHING IN THIS BENCHMARK SHOULD BE READ AS
+> CALLING IT ONE.** The drafting model cited a genuine Alaska criminal statute in a family-law
+> document — a reasonable thing to do when a protective-order matter touches threatening
+> conduct.
+
+**Its label is `exists: false`, and that is deliberate.** Throughout this benchmark `exists`
+means *"present in THIS corpus"* — and this corpus is scoped to Title 25 and Title 18 ch. 65–66
+(family law and domestic violence). Title 11 is not in it at all. Flipping the label to `true`
+would break that meaning and would make the answer key disagree with the corpus it is scored
+against.
+
+⚠️⚠️ **CONSEQUENCE FOR SCORING, AND IT IS THE ONE THING TO GET RIGHT.** §9 says a citation is a
+true positive for "hallucination" when its `exists` is `false`. Applied literally to this one
+citation, **a detector that correctly recognises `AS 11.56.807` as real Alaska law is scored as
+having MISSED a hallucination** — a false negative against the recall metric §9 asks you to
+emphasise.
+
+> **Recommended handling: EXCLUDE this single citation from Stage-2 scoring** rather than count
+> it either way. It is the only one of its kind in the benchmark — 1 of 3,212 citations — so
+> excluding it changes no reported figure materially, and counting it penalises exactly the
+> detectors that are working correctly.
+
+**There are now no unresolved citations in this benchmark.** Every citation is either confirmed
+present in the corpus, confirmed planted, or — in this single case — confirmed real law that the
+corpus deliberately does not cover.
 
 **Known corpus limitation:** the corpus does **not** include the Alaska Administrative Code
 (AAC) — e.g. the CSSD child-support regulations. Documents were generated to cite only
@@ -211,7 +240,7 @@ this corpus.
 |-------|------|---------|
 | `cite` | string | The citation as it appears in the document. *(For 7 entries this is the **cleaned** citation and `raw_extracted` holds the original — see below.)* |
 | `type` | `"statute"` \| `"rule"` \| `"case"` | Kind of authority. |
-| `exists` | boolean | **The Stage-2 label.** `true` = a real authority present in the corpus. `false` = fabricated. ⚠️ **One exception, documented in §3.2:** `AS 11.56.807` in `doc-0136` is `false` but **unverified** — it is outside the corpus's scope, not known to be fabricated. Every other `false` is a planted error and is ground truth by construction. |
+| `exists` | boolean | **The Stage-2 label.** `true` = a real authority present in the corpus. `false` = **not present in this corpus** — which for every entry except one means fabricated by construction. ⚠️ **The exception, documented in §3.2:** `AS 11.56.807` in `doc-0136` is `false` because Title 11 is outside the corpus's scope, **not because it is fabricated — it is confirmed real Alaska law.** It is the only such entry; consider excluding it from Stage-2 scoring. |
 | `quote_status` | `"na"` \| `"faithful"` \| `"altered"` | Fidelity status of a quote attached to this citation. `"na"` when the citation carries no quoted text. (Quote fidelity is primarily tracked in the `quotes` array; see §4.3.) |
 | `injected` | `false` \| string | `false` for a genuine (untouched) citation. Otherwise the **corruption type** that produced this citation (see §5). |
 | `replaced_real` | string | *(only on injected citations)* The real citation that was replaced by this fabricated one. Useful for analysis; not needed for scoring. |
