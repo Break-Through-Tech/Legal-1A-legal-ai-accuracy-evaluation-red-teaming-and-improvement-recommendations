@@ -163,7 +163,7 @@ having MISSED a hallucination** — a false negative against the recall metric �
 emphasise.
 
 > **Recommended handling: EXCLUDE this single citation from Stage-2 scoring** rather than count
-> it either way. It is the only one of its kind in the benchmark — 1 of 3,212 citations — so
+> it either way. It is the only one of its kind in the benchmark — 1 of 3,490 citations — so
 > excluding it changes no reported figure materially, and counting it penalises exactly the
 > detectors that are working correctly.
 
@@ -344,6 +344,11 @@ Documented honestly so the team can interpret detection metrics correctly:
 2. **Stage 2 — existence:** for each extracted citation, decide real vs. fabricated. Score
    against the `exists` field. A citation is a true positive for "hallucination" when the
    detector flags a citation whose answer-key `exists` is `false`.
+   - ⚠️ **One exception — exclude `AS 11.56.807` (in `doc-0136`) from Stage-2 scoring
+     entirely, neither a hit nor a miss.** It is confirmed real Alaska law that sits outside
+     this corpus's curated scope, so scoring it as a hallucination penalises detectors that
+     correctly recognise it as real. See §3.2 for the confirmation and the reasoning. **This
+     is the only citation excluded; the rule above applies unchanged to all other 3,489.**
 3. **Stage 3 — fidelity:** for each quoted passage, decide faithful vs. altered. Score against
    `quote_status`.
 4. Report precision, recall, and F1 — separately for existence and fidelity — with emphasis
