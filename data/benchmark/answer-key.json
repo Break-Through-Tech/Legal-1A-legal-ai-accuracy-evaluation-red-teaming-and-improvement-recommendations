@@ -1137,7 +1137,7 @@
       {
         "cite": "AS 18.66.180",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -1750,7 +1750,7 @@
       {
         "cite": "Child Support Enforcement Division v. Bromley, 987 P.2d 183 (Alaska 1999)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -2117,7 +2117,7 @@
       {
         "cite": "Child Support Enforcement Division v. Bromley, 987 P.2d 183 (Alaska 1999)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -2976,11 +2976,12 @@
         "injected": false
       },
       {
-        "cite": "Alaska Supreme Court. See Ruppe v. Ruppe, 358 P.3d 1284 (Alaska 2015)",
+        "cite": "Ruppe v. Ruppe, 358 P.3d 1284 (Alaska 2015)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
-        "injected": false
+        "injected": false,
+        "raw_extracted": "Alaska Supreme Court. See Ruppe v. Ruppe, 358 P.3d 1284 (Alaska 2015)"
       },
       {
         "cite": "Partridge v. Partridge, 239 P.3d 680 (Alaska 2010)",
@@ -6028,11 +6029,12 @@
         "injected": false
       },
       {
-        "cite": "The Gorton v. Mann, 281 P.3d 81 (Alaska 2012)",
+        "cite": "Gorton v. Mann, 281 P.3d 81 (Alaska 2012)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
-        "injected": false
+        "injected": false,
+        "raw_extracted": "The Gorton v. Mann, 281 P.3d 81 (Alaska 2012)"
       },
       {
         "cite": "Faulkner v. Goldfuss, 46 P.3d 993 (Alaska 2002)",
@@ -6301,7 +6303,7 @@
       {
         "cite": "Dawn Golden v. Timothy B. Golden, 563 P.3d 1131 (Alaska 2025)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -6487,7 +6489,7 @@
       {
         "cite": "Rosario v. Clare, 378 P.3d 380 (Alaska 2016)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -6809,7 +6811,7 @@
       {
         "cite": "Rosario v. Clare, 378 P.3d 380 (Alaska 2016)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -7956,7 +7958,7 @@
       {
         "cite": "Dawn Golden v. Timothy B. Golden, 563 P.3d 1131 (Alaska 2025)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -11440,7 +11442,7 @@
       {
         "cite": "Dawn Golden v. Timothy B. Golden, 563 P.3d 1131 (Alaska 2025)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -11966,11 +11968,12 @@
         "injected": false
       },
       {
-        "cite": "The Nelson v. Nelson, 263 P.3d 49 (Alaska 2011)",
+        "cite": "Nelson v. Nelson, 263 P.3d 49 (Alaska 2011)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
-        "injected": false
+        "injected": false,
+        "raw_extracted": "The Nelson v. Nelson, 263 P.3d 49 (Alaska 2011)"
       },
       {
         "cite": "Nelson v. Nelson, 263 P.3d 49 (Alaska 2011)",
@@ -11980,11 +11983,12 @@
         "injected": false
       },
       {
-        "cite": "The Sheffield v. Sheffield, 265 P.3d 332 (Alaska 2011)",
+        "cite": "Sheffield v. Sheffield, 265 P.3d 332 (Alaska 2011)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
-        "injected": false
+        "injected": false,
+        "raw_extracted": "The Sheffield v. Sheffield, 265 P.3d 332 (Alaska 2011)"
       },
       {
         "cite": "In Tompkins v. Tompkins, 961 P.2d 419 (Alaska 1998)",
@@ -16627,7 +16631,7 @@
       {
         "cite": "AS 18.66.990",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -16800,7 +16804,7 @@
       {
         "cite": "AS 18.66.990",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -16936,7 +16940,7 @@
       {
         "cite": "AS 18.66.180",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -18057,7 +18061,7 @@
       {
         "cite": "AS 18.66.990",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -19108,7 +19112,7 @@
       {
         "cite": "AS 18.66.180",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -19237,7 +19241,7 @@
       {
         "cite": "AS 18.66.990",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -20544,7 +20548,7 @@
       {
         "cite": "AS 18.66.990",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -20612,11 +20616,12 @@
         "injected": false
       },
       {
-        "cite": "Petitioner. In Stephan P. v. Cecilia A., 464 P.3d 266 (Alaska 2020)",
+        "cite": "Stephan P. v. Cecilia A., 464 P.3d 266 (Alaska 2020)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
-        "injected": false
+        "injected": false,
+        "raw_extracted": "Petitioner. In Stephan P. v. Cecilia A., 464 P.3d 266 (Alaska 2020)"
       },
       {
         "cite": "Whalen v. Whalen, 425 P.3d 150 (Alaska 2018)",
@@ -20823,7 +20828,7 @@
       {
         "cite": "AS 18.66.180",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -20919,11 +20924,12 @@
         "injected": false
       },
       {
-        "cite": "Ongoing Marriage. In Veronica Louise Hudson v. Daniel Lee Hudson, 532 P.3d 272 (Alaska 2023)",
+        "cite": "Veronica Louise Hudson v. Daniel Lee Hudson, 532 P.3d 272 (Alaska 2023)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
-        "injected": false
+        "injected": false,
+        "raw_extracted": "Ongoing Marriage. In Veronica Louise Hudson v. Daniel Lee Hudson, 532 P.3d 272 (Alaska 2023)"
       }
     ],
     "quotes": [],
@@ -21003,7 +21009,7 @@
       {
         "cite": "AS 18.66.990",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -21149,7 +21155,7 @@
       {
         "cite": "AS 18.66.180",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -22256,7 +22262,7 @@
       {
         "cite": "AS 18.66.990",
         "type": "statute",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -23990,7 +23996,7 @@
       {
         "cite": "Child Support Enforcement Division v. Bromley, 987 P.2d 183 (Alaska 1999)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -24272,7 +24278,7 @@
       {
         "cite": "Child Support Enforcement Division v. Bromley, 987 P.2d 183 (Alaska 1999)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -24284,11 +24290,12 @@
         "injected": false
       },
       {
-        "cite": "As Holmes v. Holmes, 414 P.3d 662 (Alaska 2018)",
+        "cite": "Holmes v. Holmes, 414 P.3d 662 (Alaska 2018)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
-        "injected": false
+        "injected": false,
+        "raw_extracted": "As Holmes v. Holmes, 414 P.3d 662 (Alaska 2018)"
       }
     ],
     "quotes": [],
@@ -25952,7 +25959,7 @@
       {
         "cite": "Child Support Enforcement Division v. Bromley, 987 P.2d 183 (Alaska 1999)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -26493,7 +26500,7 @@
       {
         "cite": "Child Support Enforcement Division v. Bromley, 987 P.2d 183 (Alaska 1999)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       },
@@ -26738,7 +26745,7 @@
       {
         "cite": "Child Support Enforcement Division v. Bromley, 987 P.2d 183 (Alaska 1999)",
         "type": "case",
-        "exists": false,
+        "exists": true,
         "quote_status": "na",
         "injected": false
       }

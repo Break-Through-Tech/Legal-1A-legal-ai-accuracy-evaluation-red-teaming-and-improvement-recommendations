@@ -9,9 +9,17 @@
 ## 1. What this benchmark is
 
 A fixed, labeled set of AI-generated Alaska family-law legal documents, built with fictional
-party names. Roughly half are **clean** (every citation real and every quote faithful) and
-roughly half are **corrupt** (containing deliberately planted errors — fabricated citations
-and altered quotes). Every document ships with an **answer key** marking each citation as
+party names. Roughly half are **clean** (no errors were planted: no injected citations and no
+altered quotes) and roughly half are **corrupt** (containing deliberately planted errors —
+fabricated citations and altered quotes).
+
+> ⚠️ **"Clean" means "nothing was planted", not "nothing can be flagged."** An earlier version
+> of this paragraph said clean documents have "every citation real and every quote faithful",
+> which contradicted §4.1 and was not quite true: the drafting model occasionally cited an
+> authority that was real but had not been retrieved for that document, and those citations
+> appear in clean documents. They are now labeled `exists: true` (see the corrections note in
+> §3.1), so a detector that flags nothing in a clean document is still correct — but the
+> guarantee is about **planting**, not about the model's citation behaviour. Every document ships with an **answer key** marking each citation as
 real or fabricated and each quote as faithful or altered.
 
 The benchmark exists to let a team build and measure a **hallucinated-citation detector**:
@@ -69,6 +77,70 @@ and `rules-evidence-report.json`. These are parser outputs, not corpus data, and
 **Source of the underlying law:** the Alaska Legislature's public statutes, the Alaska Court
 System's published rules, and public court-opinion metadata from CourtListener (Free Law
 Project). All public record; no PII.
+
+### 3.1 ⚠️ RULE CITATIONS: the documents and the corpus use DIFFERENT FORMS — you must normalize
+
+**This is the single most likely thing to break a detector, and it is not a defect in either
+artifact.** Real Alaska filings cite rules in shorthand; the corpus stores the formal citation.
+Both are correct. They do not match as strings.
+
+| where | form | example | count in the benchmark |
+|-------|------|---------|------------------------|
+| **documents** | `Civil Rule NN` | `Civil Rule 90.3(a)` | 632 |
+| **documents** | bare `Rule NN` | `Rule 90.3` | 83 |
+| **documents** | `Alaska R. Evid. NN` | `Alaska R. Evid. 505` | 57 |
+| **corpus** (`rules.jsonl`) | `Alaska R. Civ. P. NN` | `Alaska R. Civ. P. 90.3` | all 185 records |
+| **corpus** (`rules-evidence.jsonl`) | ⛔ **no `citation` field at all** | build from `ruleNumber` + `subrule` | all records |
+
+⛔ **A naive exact-match of the document's citation string against the corpus `citation` field
+matches 52 of 772 rule citations (6.7%) and would wrongly report 632 REAL rule citations as
+fabricated.**
+
+⚠️ **Normalizing only the `Civil Rule` prefix is not enough.** Two different quantities in this
+benchmark both happen to equal 632: the number of `Civil Rule` citations, and the number of
+real rule citations a naive match would miss. They are **not the same set** — fixing only the
+`Civil Rule` prefix still misses the 83 bare `Rule NN` citations, while the headline number
+appears to come out right.
+
+#### What to do instead
+
+> **Match rules on the normalized rule NUMBER, never on the citation string.**
+
+1. Extract the rule number from the document citation, accepting all of
+   `Alaska R. Civ. P.` · `Civil Rule` · `Alaska R. Evid.` · `Evidence Rule` · bare `Rule`.
+2. Extract the rule number from the corpus: from `citation` for `rules.jsonl`; from
+   `ruleNumber` for `rules-evidence.jsonl` (which has no `citation` field).
+3. Compare numbers, not strings. Strip any `(subrule)` suffix before comparing — the corpus
+   stores one record per subrule, all sharing the same rule-level `citation`, so one rule
+   number legitimately maps to **many** corpus records.
+4. Keep civil and evidence rules in separate namespaces: `Civil Rule 90.3` and
+   `Alaska R. Evid. 90.3` are different authorities that would collide on number alone.
+
+⚠️ Statutes and cases do **not** have this problem. Statute citations match `citation` in
+`statutes.jsonl` directly. Case citations should be matched on **reporter cite**
+(`"987 P.2d 183"`), not case name — see §8.
+
+---
+
+### 3.2 📌 Corrections applied 2026-09-21 (after a student audit)
+
+Three corrections were made to the delivered set. **No document was regenerated; every
+document hash in `manifest.json` remains valid.**
+
+1. **`rules.jsonl`: 155 → 185 records.** Alaska Civil Rules **3** (Commencement of Action and
+   Venue), **16.2** (Informal Trials in Domestic Relations Cases), **86** (Habeas Corpus) and
+   **99** (Telephonic Participation in Civil Cases) are real, active rules that documents cite
+   but that the original corpus slice omitted — 50 citations pointed at authorities the corpus
+   could not confirm. Added from the same Alaska Court System source as the rest of the file.
+2. **31 citation labels corrected `exists: false` → `true`** in `answer-key.json`. These were
+   real authorities mislabeled as fabricated; see §8 for the cause.
+3. **This dictionary** gained §3.1, the correction note in §1, and the `raw_extracted` field
+   in §4.2.
+
+**Known limitation, deliberately left in place:** one citation, `AS 11.56.807` in `doc-0136`,
+remains `exists: false` and is **unverified**. AS Title 11 (criminal law) is outside this
+corpus's scope entirely, so nothing in the delivered files can confirm or refute it. Treat that
+single citation as unlabeled rather than as ground truth.
 
 **Known corpus limitation:** the corpus does **not** include the Alaska Administrative Code
 (AAC) — e.g. the CSSD child-support regulations. Documents were generated to cite only
@@ -137,12 +209,13 @@ this corpus.
 
 | Field | Type | Meaning |
 |-------|------|---------|
-| `cite` | string | The citation string exactly as it appears in the document. |
+| `cite` | string | The citation as it appears in the document. *(For 7 entries this is the **cleaned** citation and `raw_extracted` holds the original — see below.)* |
 | `type` | `"statute"` \| `"rule"` \| `"case"` | Kind of authority. |
-| `exists` | boolean | **The Stage-2 label.** `true` = this citation is a real authority present in the corpus. `false` = fabricated / does not exist. |
+| `exists` | boolean | **The Stage-2 label.** `true` = a real authority present in the corpus. `false` = fabricated. ⚠️ **One exception, documented in §3.2:** `AS 11.56.807` in `doc-0136` is `false` but **unverified** — it is outside the corpus's scope, not known to be fabricated. Every other `false` is a planted error and is ground truth by construction. |
 | `quote_status` | `"na"` \| `"faithful"` \| `"altered"` | Fidelity status of a quote attached to this citation. `"na"` when the citation carries no quoted text. (Quote fidelity is primarily tracked in the `quotes` array; see §4.3.) |
 | `injected` | `false` \| string | `false` for a genuine (untouched) citation. Otherwise the **corruption type** that produced this citation (see §5). |
 | `replaced_real` | string | *(only on injected citations)* The real citation that was replaced by this fabricated one. Useful for analysis; not needed for scoring. |
+| `raw_extracted` | string | *(7 entries only)* The original extractor output, where it over-captured words preceding the case name — e.g. `"The Gorton v. Mann, 281 P.3d 81 (Alaska 2012)"` or `"Alaska Supreme Court. See Ruppe v. Ruppe, …"`. `cite` holds the cleaned citation; this field preserves the realistic hard case, because your extractor will face the same sentence. |
 
 ### 4.3 Quote-entry fields
 
