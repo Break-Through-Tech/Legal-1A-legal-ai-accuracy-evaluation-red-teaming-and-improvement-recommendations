@@ -1,0 +1,3328 @@
+[
+  {
+    "doc_id": "doc-0001",
+    "n_key_cites": 13,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "AS 25.24.946",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 907",
+      "Alaska R. Civ. P. 913"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0002",
+    "n_key_cites": 20,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "AS 25.24.230",
+      "AS 25.24.250",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0003",
+    "n_key_cites": 10,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0004",
+    "n_key_cites": 17,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "Alaska R. Civ. P. 86",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0005",
+    "n_key_cites": 11,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.20.936",
+      "AS 25.24.150",
+      "AS 25.24.980",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 975"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0006",
+    "n_key_cites": 10,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 706"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0007",
+    "n_key_cites": 9,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.130",
+      "AS 18.66.990",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0008",
+    "n_key_cites": 12,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.180",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Civ. P. 903",
+      "Alaska R. Civ. P. 945"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0009",
+    "n_key_cites": 5,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 977"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0010",
+    "n_key_cites": 5,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.24.170",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 901",
+      "Alaska R. Civ. P. 988"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0011",
+    "n_key_cites": 15,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 25.24.155",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "AS 25.24.310",
+      "AS 25.24.969",
+      "Alaska R. Civ. P. 90.1",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 994"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0012",
+    "n_key_cites": 11,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "AS 25.24.250",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0013",
+    "n_key_cites": 11,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.969",
+      "AS 25.24.150",
+      "AS 25.24.160",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 908"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0014",
+    "n_key_cites": 16,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.908",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 932",
+      "Alaska R. Civ. P. 935"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0015",
+    "n_key_cites": 16,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0016",
+    "n_key_cites": 13,
+    "n_key_unique": 8,
+    "n_extracted": 9,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "AS 25.24.905",
+      "AS 25.24.908",
+      "AS 25.24.986",
+      "Alaska R. Civ. P. 90.1",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0017",
+    "n_key_cites": 19,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "AS 25.24.230",
+      "AS 25.24.250",
+      "AS 25.24.905",
+      "AS 25.24.949",
+      "AS 25.24.987",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0018",
+    "n_key_cites": 6,
+    "n_key_unique": 2,
+    "n_extracted": 2,
+    "n_matched": 2,
+    "matched": [
+      "AS 25.24.160",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0019",
+    "n_key_cites": 14,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "AS 25.24.230",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0020",
+    "n_key_cites": 12,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "AS 25.24.230",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0021",
+    "n_key_cites": 13,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "AS 25.24.250",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0022",
+    "n_key_cites": 8,
+    "n_key_unique": 3,
+    "n_extracted": 3,
+    "n_matched": 3,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.160",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0023",
+    "n_key_cites": 7,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.919",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 925"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0024",
+    "n_key_cites": 14,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.24.152",
+      "AS 25.24.155",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.232",
+      "AS 25.24.922",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 934"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0025",
+    "n_key_cites": 14,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "AS 25.24.230",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0026",
+    "n_key_cites": 11,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0027",
+    "n_key_cites": 10,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.155",
+      "AS 25.24.160",
+      "Alaska R. Civ. P. 26.1",
+      "Alaska R. Civ. P. 90.1",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0028",
+    "n_key_cites": 15,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.24.155",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "AS 25.24.250",
+      "AS 25.24.905",
+      "AS 25.24.930",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0029",
+    "n_key_cites": 11,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0030",
+    "n_key_cites": 15,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 906",
+      "Alaska R. Civ. P. 994"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0031",
+    "n_key_cites": 16,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.24.150",
+      "AS 25.24.160",
+      "AS 25.24.310",
+      "AS 25.24.929",
+      "AS 25.24.953",
+      "AS 25.24.987",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0032",
+    "n_key_cites": 13,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "AS 25.24.230",
+      "AS 25.24.917",
+      "AS 25.24.931",
+      "Alaska R. Civ. P. 90.1",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 915"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0033",
+    "n_key_cites": 15,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.24.150",
+      "AS 25.24.160",
+      "AS 25.24.170",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0034",
+    "n_key_cites": 19,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.953",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 946",
+      "Alaska R. Civ. P. 961"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0035",
+    "n_key_cites": 19,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "Alaska R. Civ. P. 26.1",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0036",
+    "n_key_cites": 14,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "AS 25.24.230",
+      "AS 25.24.983",
+      "AS 25.24.985",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 920"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0037",
+    "n_key_cites": 11,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 947"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0038",
+    "n_key_cites": 8,
+    "n_key_unique": 3,
+    "n_extracted": 3,
+    "n_matched": 3,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.24.160",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0039",
+    "n_key_cites": 14,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.24.160",
+      "AS 25.24.200",
+      "AS 25.24.210",
+      "AS 25.24.220",
+      "Alaska R. Civ. P. 26.1",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0040",
+    "n_key_cites": 12,
+    "n_key_unique": 7,
+    "n_extracted": 8,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.24.200",
+      "AS 25.24.220",
+      "AS 25.24.250",
+      "AS 25.24.964",
+      "AS 25.24.983",
+      "AS 25.24.991",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0041",
+    "n_key_cites": 12,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 16.2",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0042",
+    "n_key_cites": 17,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "AS 25.30.310",
+      "AS 25.30.460",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7",
+      "Alaska R. Evid. 706"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0043",
+    "n_key_cites": 17,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.20.095",
+      "AS 25.20.130",
+      "AS 25.20.968",
+      "AS 25.24.150",
+      "AS 25.24.933",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0044",
+    "n_key_cites": 12,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 16.2",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0045",
+    "n_key_cites": 16,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.080",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7",
+      "Alaska R. Evid. 706"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0046",
+    "n_key_cites": 8,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.150",
+      "AS 25.24.994",
+      "AS 25.24.996",
+      "Alaska R. Civ. P. 16.2",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0047",
+    "n_key_cites": 9,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.931",
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "Alaska R. Civ. P. 86"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0048",
+    "n_key_cites": 9,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "AS 25.30.310",
+      "AS 25.30.460",
+      "Alaska R. Civ. P. 65"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0049",
+    "n_key_cites": 13,
+    "n_key_unique": 8,
+    "n_extracted": 9,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 104",
+      "Alaska R. Evid. 930",
+      "Alaska R. Evid. 938"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0050",
+    "n_key_cites": 14,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.30.300",
+      "AS 25.30.310",
+      "AS 25.30.340",
+      "Alaska R. Civ. P. 86",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 104",
+      "Alaska R. Evid. 501",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0051",
+    "n_key_cites": 12,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0052",
+    "n_key_cites": 10,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.24.150",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0053",
+    "n_key_cites": 17,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0054",
+    "n_key_cites": 22,
+    "n_key_unique": 10,
+    "n_extracted": 11,
+    "n_matched": 10,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.24.310",
+      "Alaska R. Civ. P. 16.2",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 942",
+      "Alaska R. Civ. P. 958",
+      "Alaska R. Evid. 706"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0055",
+    "n_key_cites": 9,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0056",
+    "n_key_cites": 12,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.20.130",
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "Alaska R. Civ. P. 16.2",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0057",
+    "n_key_cites": 11,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.947",
+      "AS 25.24.150",
+      "AS 25.24.909",
+      "AS 25.30.909",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0058",
+    "n_key_cites": 15,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.110",
+      "AS 25.20.933",
+      "AS 25.24.150",
+      "AS 25.24.909",
+      "AS 25.24.914",
+      "AS 25.30.300",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0059",
+    "n_key_cites": 14,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.936",
+      "AS 25.24.150",
+      "AS 25.24.900",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 964"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0060",
+    "n_key_cites": 14,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.20.957",
+      "AS 25.24.150",
+      "AS 25.24.940",
+      "AS 25.30.300",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 933"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0061",
+    "n_key_cites": 12,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.24.150",
+      "AS 25.24.916",
+      "AS 25.24.937",
+      "Alaska R. Civ. P. 86",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0062",
+    "n_key_cites": 17,
+    "n_key_unique": 11,
+    "n_extracted": 11,
+    "n_matched": 11,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.080",
+      "AS 25.20.940",
+      "AS 25.20.943",
+      "AS 25.24.150",
+      "AS 25.24.929",
+      "AS 25.30.460",
+      "AS 25.30.480",
+      "AS 25.30.909",
+      "Alaska R. Civ. P. 86",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0063",
+    "n_key_cites": 9,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.080",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.7",
+      "Alaska R. Evid. 706"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0064",
+    "n_key_cites": 9,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.923",
+      "AS 25.24.150",
+      "AS 25.24.992",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0065",
+    "n_key_cites": 12,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.24.150",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0066",
+    "n_key_cites": 12,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.090",
+      "AS 25.24.150",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 706"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0067",
+    "n_key_cites": 13,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 16.2",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 990"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0068",
+    "n_key_cites": 13,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.6",
+      "Alaska R. Civ. P. 90.7"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0069",
+    "n_key_cites": 11,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.24.150",
+      "AS 25.30.909",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0070",
+    "n_key_cites": 9,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.24.310",
+      "AS 25.24.905",
+      "Alaska R. Civ. P. 86",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7",
+      "Alaska R. Civ. P. 928"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0071",
+    "n_key_cites": 11,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.20.130",
+      "AS 25.24.150",
+      "AS 25.24.922",
+      "AS 25.24.936",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0072",
+    "n_key_cites": 13,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0073",
+    "n_key_cites": 15,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 86",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 919",
+      "Alaska R. Civ. P. 948",
+      "Alaska R. Civ. P. 959"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0074",
+    "n_key_cites": 12,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.070",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0075",
+    "n_key_cites": 11,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "AS 25.30.909",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0076",
+    "n_key_cites": 7,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.130",
+      "AS 25.20.908",
+      "AS 25.20.912",
+      "AS 25.24.150",
+      "AS 25.24.924"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0077",
+    "n_key_cites": 11,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 90.7"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0078",
+    "n_key_cites": 10,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0079",
+    "n_key_cites": 7,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.24.150",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0080",
+    "n_key_cites": 9,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.24.150",
+      "AS 25.30.300",
+      "AS 25.30.310",
+      "AS 25.30.909",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 86"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0081",
+    "n_key_cites": 6,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0082",
+    "n_key_cites": 8,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.30.310",
+      "AS 25.30.390",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 201"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0083",
+    "n_key_cites": 9,
+    "n_key_unique": 6,
+    "n_extracted": 7,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.20.962",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 921",
+      "Alaska R. Civ. P. 934"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0084",
+    "n_key_cites": 14,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.095",
+      "AS 25.20.110",
+      "AS 25.20.943",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 99"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0085",
+    "n_key_cites": 8,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0086",
+    "n_key_cites": 7,
+    "n_key_unique": 5,
+    "n_extracted": 7,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.915",
+      "AS 25.20.921",
+      "AS 25.20.931",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0087",
+    "n_key_cites": 5,
+    "n_key_unique": 4,
+    "n_extracted": 5,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.110",
+      "AS 25.24.972",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0088",
+    "n_key_cites": 13,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.110",
+      "AS 25.20.948",
+      "AS 25.24.150",
+      "AS 25.24.994",
+      "AS 25.30.310",
+      "AS 25.30.360",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 601"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0089",
+    "n_key_cites": 8,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0090",
+    "n_key_cites": 9,
+    "n_key_unique": 6,
+    "n_extracted": 7,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.933",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 959"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0091",
+    "n_key_cites": 13,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.20.902",
+      "AS 25.20.934",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0092",
+    "n_key_cites": 9,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.20.971",
+      "AS 25.24.150",
+      "AS 25.30.310"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0093",
+    "n_key_cites": 8,
+    "n_key_unique": 5,
+    "n_extracted": 6,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.959",
+      "AS 25.24.983",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0094",
+    "n_key_cites": 6,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0095",
+    "n_key_cites": 8,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0096",
+    "n_key_cites": 7,
+    "n_key_unique": 6,
+    "n_extracted": 7,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.972",
+      "AS 25.24.150",
+      "AS 25.30.390",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 958"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0097",
+    "n_key_cites": 13,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.30.320",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 201"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0098",
+    "n_key_cites": 12,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.30.320",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0099",
+    "n_key_cites": 15,
+    "n_key_unique": 8,
+    "n_extracted": 9,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.20.996",
+      "AS 25.24.150",
+      "AS 25.24.905",
+      "AS 25.24.941",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0100",
+    "n_key_cites": 10,
+    "n_key_unique": 6,
+    "n_extracted": 7,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.20.944",
+      "AS 25.20.990",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 938"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0101",
+    "n_key_cites": 13,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 706"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0102",
+    "n_key_cites": 10,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0103",
+    "n_key_cites": 3,
+    "n_key_unique": 3,
+    "n_extracted": 4,
+    "n_matched": 3,
+    "matched": [
+      "AS 25.20.948",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 201"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0104",
+    "n_key_cites": 12,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.060",
+      "AS 25.20.110",
+      "AS 25.20.913",
+      "AS 25.20.961",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0105",
+    "n_key_cites": 9,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0106",
+    "n_key_cites": 8,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 706"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0107",
+    "n_key_cites": 6,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0108",
+    "n_key_cites": 3,
+    "n_key_unique": 3,
+    "n_extracted": 3,
+    "n_matched": 3,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0109",
+    "n_key_cites": 9,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.095",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 99"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0110",
+    "n_key_cites": 5,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.24.910",
+      "Alaska R. Civ. P. 99"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0111",
+    "n_key_cites": 12,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 18.66.100",
+      "AS 25.20.061",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0112",
+    "n_key_cites": 13,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.24.924",
+      "AS 25.24.950",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0113",
+    "n_key_cites": 16,
+    "n_key_unique": 7,
+    "n_extracted": 8,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.20.910",
+      "AS 25.20.914",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0114",
+    "n_key_cites": 10,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0115",
+    "n_key_cites": 7,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0116",
+    "n_key_cites": 6,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0117",
+    "n_key_cites": 6,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 958"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0118",
+    "n_key_cites": 13,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 201",
+      "Alaska R. Evid. 706"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0119",
+    "n_key_cites": 8,
+    "n_key_unique": 6,
+    "n_extracted": 8,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.070",
+      "AS 25.20.090",
+      "AS 25.20.928",
+      "AS 25.20.944",
+      "AS 25.24.974",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0120",
+    "n_key_cites": 6,
+    "n_key_unique": 5,
+    "n_extracted": 7,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.090",
+      "AS 25.20.095",
+      "AS 25.20.900",
+      "AS 25.24.947",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0121",
+    "n_key_cites": 16,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.990",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0122",
+    "n_key_cites": 19,
+    "n_key_unique": 12,
+    "n_extracted": 13,
+    "n_matched": 12,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.916",
+      "AS 18.66.990",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Civ. P. 923",
+      "Alaska R. Evid. 505",
+      "Alaska R. Evid. 926"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0123",
+    "n_key_cites": 17,
+    "n_key_unique": 11,
+    "n_extracted": 11,
+    "n_matched": 11,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.150",
+      "AS 18.66.180",
+      "AS 25.24.060",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0124",
+    "n_key_cites": 11,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0125",
+    "n_key_cites": 14,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 18.65.520",
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.998",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Civ. P. 931"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0126",
+    "n_key_cites": 15,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.130",
+      "AS 18.66.150",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0127",
+    "n_key_cites": 13,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.130",
+      "AS 25.24.060",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0128",
+    "n_key_cites": 13,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 404"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0129",
+    "n_key_cites": 15,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.910",
+      "AS 18.66.922",
+      "AS 18.66.990",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 65"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0130",
+    "n_key_cites": 16,
+    "n_key_unique": 12,
+    "n_extracted": 12,
+    "n_matched": 12,
+    "matched": [
+      "AS 18.65.520",
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.941",
+      "AS 18.66.994",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 505",
+      "Alaska R. Evid. 986"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0131",
+    "n_key_cites": 16,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.990",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0132",
+    "n_key_cites": 11,
+    "n_key_unique": 7,
+    "n_extracted": 8,
+    "n_matched": 7,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.130",
+      "AS 18.66.915",
+      "AS 25.24.060",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Civ. P. 903"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0133",
+    "n_key_cites": 12,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0134",
+    "n_key_cites": 14,
+    "n_key_unique": 9,
+    "n_extracted": 10,
+    "n_matched": 9,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.130",
+      "AS 18.66.926",
+      "AS 18.66.964",
+      "AS 18.66.977",
+      "AS 18.66.990",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0135",
+    "n_key_cites": 11,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.907",
+      "AS 18.66.987",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0136",
+    "n_key_cites": 21,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 11.56.807",
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.990",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0137",
+    "n_key_cites": 13,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.150",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Evid. 404"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0138",
+    "n_key_cites": 12,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.180",
+      "AS 18.66.931",
+      "AS 18.66.965",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0139",
+    "n_key_cites": 17,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.990",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0140",
+    "n_key_cites": 16,
+    "n_key_unique": 8,
+    "n_extracted": 9,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 951"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0141",
+    "n_key_cites": 15,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.920",
+      "AS 18.66.982",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0142",
+    "n_key_cites": 18,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.130",
+      "AS 25.24.060",
+      "AS 25.24.140",
+      "AS 25.24.150",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0143",
+    "n_key_cites": 12,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.910",
+      "AS 18.66.982",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Civ. P. 970",
+      "Alaska R. Evid. 404"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0144",
+    "n_key_cites": 14,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0145",
+    "n_key_cites": 13,
+    "n_key_unique": 8,
+    "n_extracted": 9,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.964",
+      "AS 18.66.990",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 933"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0146",
+    "n_key_cites": 11,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.920",
+      "AS 18.66.942",
+      "AS 18.66.944",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0147",
+    "n_key_cites": 12,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0148",
+    "n_key_cites": 18,
+    "n_key_unique": 11,
+    "n_extracted": 11,
+    "n_matched": 11,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.990",
+      "AS 25.24.060",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0149",
+    "n_key_cites": 13,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.908",
+      "AS 18.66.965",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0150",
+    "n_key_cites": 15,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 18.65.520",
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.180",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0151",
+    "n_key_cites": 16,
+    "n_key_unique": 10,
+    "n_extracted": 10,
+    "n_matched": 10,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.130",
+      "AS 18.66.904",
+      "AS 18.66.990",
+      "AS 18.66.999",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0152",
+    "n_key_cites": 13,
+    "n_key_unique": 9,
+    "n_extracted": 11,
+    "n_matched": 9,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.180",
+      "AS 18.66.956",
+      "AS 25.24.910",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 942"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0153",
+    "n_key_cites": 10,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.130",
+      "AS 18.66.925",
+      "AS 18.66.961",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 907"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0154",
+    "n_key_cites": 11,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.932",
+      "AS 18.66.962",
+      "AS 18.66.990",
+      "AS 18.66.994",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0155",
+    "n_key_cites": 13,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.990",
+      "AS 25.24.060",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0156",
+    "n_key_cites": 15,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0157",
+    "n_key_cites": 12,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.130",
+      "AS 18.66.901",
+      "AS 25.24.060",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0158",
+    "n_key_cites": 13,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0159",
+    "n_key_cites": 15,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 18.65.520",
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 65.1"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0160",
+    "n_key_cites": 17,
+    "n_key_unique": 12,
+    "n_extracted": 13,
+    "n_matched": 12,
+    "matched": [
+      "AS 18.66.100",
+      "AS 18.66.110",
+      "AS 18.66.130",
+      "AS 18.66.946",
+      "AS 18.66.990",
+      "AS 25.24.140",
+      "Alaska R. Civ. P. 100",
+      "Alaska R. Civ. P. 3",
+      "Alaska R. Civ. P. 65",
+      "Alaska R. Civ. P. 923",
+      "Alaska R. Evid. 504",
+      "Alaska R. Evid. 505"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0161",
+    "n_key_cites": 14,
+    "n_key_unique": 9,
+    "n_extracted": 9,
+    "n_matched": 9,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 908",
+      "Alaska R. Civ. P. 956",
+      "Alaska R. Evid. 201",
+      "Alaska R. Evid. 401"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0162",
+    "n_key_cites": 9,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 913"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0163",
+    "n_key_cites": 8,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 905"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0164",
+    "n_key_cites": 12,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "AS 25.27.070",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 942",
+      "Alaska R. Civ. P. 982",
+      "Alaska R. Civ. P. 994"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0165",
+    "n_key_cites": 5,
+    "n_key_unique": 3,
+    "n_extracted": 3,
+    "n_matched": 3,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0166",
+    "n_key_cites": 12,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.24.170",
+      "AS 25.25.205",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0167",
+    "n_key_cites": 11,
+    "n_key_unique": 3,
+    "n_extracted": 3,
+    "n_matched": 3,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0168",
+    "n_key_cites": 11,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0169",
+    "n_key_cites": 13,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "AS 25.27.900",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 918",
+      "Alaska R. Evid. 1006"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0170",
+    "n_key_cites": 10,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 917",
+      "Alaska R. Civ. P. 979"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0171",
+    "n_key_cites": 12,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.062",
+      "AS 25.27.927",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 952"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0172",
+    "n_key_cites": 7,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 936"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0173",
+    "n_key_cites": 11,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "AS 25.27.947",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 903"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0174",
+    "n_key_cites": 12,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.30.310",
+      "AS 25.30.320",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0175",
+    "n_key_cites": 13,
+    "n_key_unique": 7,
+    "n_extracted": 8,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.062",
+      "AS 25.27.905",
+      "AS 25.27.975",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 960"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0176",
+    "n_key_cites": 10,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 926",
+      "Alaska R. Civ. P. 927",
+      "Alaska R. Civ. P. 972"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0177",
+    "n_key_cites": 8,
+    "n_key_unique": 4,
+    "n_extracted": 4,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.24.150",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0178",
+    "n_key_cites": 9,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 912",
+      "Alaska R. Civ. P. 983"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0179",
+    "n_key_cites": 10,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.24.976",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "AS 25.27.900",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 944"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0180",
+    "n_key_cites": 8,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.24.977",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 911"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0181",
+    "n_key_cites": 9,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 936",
+      "Alaska R. Civ. P. 982"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0182",
+    "n_key_cites": 13,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.24.920",
+      "AS 25.24.950",
+      "AS 25.27.062",
+      "AS 25.27.200",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0183",
+    "n_key_cites": 11,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.25.205",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0184",
+    "n_key_cites": 7,
+    "n_key_unique": 3,
+    "n_extracted": 3,
+    "n_matched": 3,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0185",
+    "n_key_cites": 10,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.27.062",
+      "AS 25.27.070",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 201"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0186",
+    "n_key_cites": 15,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.115",
+      "AS 25.20.919",
+      "AS 25.20.960",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 201"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0187",
+    "n_key_cites": 7,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 201",
+      "Alaska R. Evid. 401"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0188",
+    "n_key_cites": 7,
+    "n_key_unique": 3,
+    "n_extracted": 3,
+    "n_matched": 3,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0189",
+    "n_key_cites": 9,
+    "n_key_unique": 8,
+    "n_extracted": 8,
+    "n_matched": 8,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.25.205",
+      "AS 25.30.310",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 966",
+      "Alaska R. Civ. P. 967",
+      "Alaska R. Civ. P. 978"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0190",
+    "n_key_cites": 10,
+    "n_key_unique": 7,
+    "n_extracted": 8,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.934",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "AS 25.27.987",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 900"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0191",
+    "n_key_cites": 12,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.150",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "AS 25.27.190",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0192",
+    "n_key_cites": 11,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.060",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 201"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0193",
+    "n_key_cites": 7,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.24.170",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 909",
+      "Alaska R. Civ. P. 921",
+      "Alaska R. Civ. P. 983"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0194",
+    "n_key_cites": 9,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.24.927",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 903",
+      "Alaska R. Civ. P. 906",
+      "Alaska R. Evid. 401"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0195",
+    "n_key_cites": 7,
+    "n_key_unique": 4,
+    "n_extracted": 5,
+    "n_matched": 4,
+    "matched": [
+      "AS 25.20.941",
+      "AS 25.27.060",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 964"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0196",
+    "n_key_cites": 12,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.24.170",
+      "AS 25.27.062",
+      "AS 25.27.190",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 934",
+      "Alaska R. Civ. P. 964",
+      "Alaska R. Civ. P. 991"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0197",
+    "n_key_cites": 11,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.062",
+      "AS 25.27.070",
+      "Alaska R. Civ. P. 90.3"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0198",
+    "n_key_cites": 9,
+    "n_key_unique": 6,
+    "n_extracted": 6,
+    "n_matched": 6,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.900",
+      "AS 25.27.062",
+      "AS 25.27.914",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 953"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0199",
+    "n_key_cites": 7,
+    "n_key_unique": 5,
+    "n_extracted": 5,
+    "n_matched": 5,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Evid. 201"
+    ],
+    "missing": []
+  },
+  {
+    "doc_id": "doc-0200",
+    "n_key_cites": 9,
+    "n_key_unique": 7,
+    "n_extracted": 7,
+    "n_matched": 7,
+    "matched": [
+      "AS 25.20.110",
+      "AS 25.24.170",
+      "AS 25.24.976",
+      "AS 25.27.062",
+      "Alaska R. Civ. P. 90.3",
+      "Alaska R. Civ. P. 989",
+      "Alaska R. Civ. P. 997"
+    ],
+    "missing": []
+  }
+]
