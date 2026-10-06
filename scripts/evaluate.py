@@ -9,9 +9,9 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXTRACTED_PATH = ROOT / "outputs" / "extracted_citations.json"
-ANSWER_KEY_PATH = ROOT / "answer-key.json"
-CORPUS_PATH = ROOT / "cases.jsonl"
+EXTRACTED_PATH = ROOT / "data" / "extracted-citations.json"
+ANSWER_KEY_PATH = ROOT / "data" / "benchmark" / "answer-key.json"
+CORPUS_PATH = ROOT / "data" / "corpus" / "cases.jsonl"
 
 
 def normalize(text):
@@ -72,38 +72,52 @@ def corpus_prediction(case_name, reporter, name_index):
         for case in matches
     )
 
-
-def match_extracted(answer_case, extracted_cases, used_indexes):
-    """Match one answer-key case to one extracted full citation occurrence."""
+def find_exact(answer_case, extracted_cases, used_indexes):
+    """Find an unused extraction with an exact cleaned case-name and reporter match."""
     answer_name = normalize(answer_case["case_name"])
     answer_reporter = normalize(answer_case["reporter"])
-
-    # Prefer exact case-name + reporter matches.
+    
     for i, item in enumerate(extracted_cases):
-        if i in used_indexes or item.get("citation_type") != "full_case_citation":
+        if i in used_indexes:
             continue
+        if item.get("citation_type") != "full_case_citation":
+            continue
+
         if (
             normalize(item.get("case_name")) == answer_name
             and normalize(item.get("reporter_cite")) == answer_reporter
         ):
-            used_indexes.add(i)
-            return item
+            return i, item
 
-    # Tolerate leading prose in a fallback-parsed case name, but still require
-    # the reporter to match exactly.
+    return None
+
+
+def find_substring_fallback(answer_case, extracted_cases, used_indexes):
+    """Find an unused extraction using the legacy case-name substring tolerance.
+
+    The reporter must still match exactly. This fallback accepts the match,
+    but callers should count how often it is required.
+    """
+    answer_name = normalize(answer_case["case_name"])
+    answer_reporter = normalize(answer_case["reporter"])
+
     for i, item in enumerate(extracted_cases):
-        if i in used_indexes or item.get("citation_type") != "full_case_citation":
+        if i in used_indexes:
             continue
+        if item.get("citation_type") != "full_case_citation":
+            continue
+
         extracted_name = normalize(item.get("case_name"))
+
         if (
             normalize(item.get("reporter_cite")) == answer_reporter
             and answer_name
             and answer_name in extracted_name
         ):
-            used_indexes.add(i)
-            return item
+            return i, item
 
     return None
+    
 
 
 def safe_divide(a, b):
@@ -129,6 +143,7 @@ def main():
 
     expected = 0
     found = 0
+    fallback_hits = 0  # CHANGED(2026-10-06): key cases that only matched the fallback
     missing = []
     y_true = []
     y_pred = []
@@ -147,12 +162,20 @@ def main():
                 continue
 
             expected += 1
-            match = match_extracted(parsed, extracted_cases, used_indexes)
+            # CHANGED(2026-10-06): Try the exact name+reporter match first, then the 
+            #   fallback, count and printed how often the fallback was needed
+            result = find_exact(parsed, extracted_cases, used_indexes)
+            if result is None:
+                result = find_substring_fallback(parsed, extracted_cases, used_indexes)
+                if result is not None:
+                    fallback_hits += 1
 
-            if match is None:
+            if result is None:
                 missing.append((doc_id, citation.get("cite", "")))
                 continue
 
+            match_index, match = result
+            used_indexes.add(match_index)
             found += 1
 
             # Ground truth comes from answer-key.json.
@@ -186,6 +209,7 @@ def main():
     print(f"Expected case cites:   {expected}")
     print(f"Found case cites:      {found}")
     print(f"Missing case cites:    {len(missing)}")
+    print(f"Needed substring fallback: {fallback_hits} of {expected}")  # CHANGED(2026-10-06): report how often exact matching was not enough
     print(f"Extraction recall:     {extraction_recall:.2%}")
     print()
     print(f"Cases evaluated:       {len(y_true)}")
@@ -199,6 +223,7 @@ def main():
         print("\nMissing answer-key citations (first 20):")
         for doc_id, cite in missing[:20]:
             print(f"- {doc_id}: {cite}")
+
 
 
 if __name__ == "__main__":

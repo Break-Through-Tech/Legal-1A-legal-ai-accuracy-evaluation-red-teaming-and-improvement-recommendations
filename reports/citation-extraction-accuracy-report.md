@@ -193,7 +193,7 @@ python scripts/extract_all.py
 
 This produces:
 
-`outputs/extracted_citations.json`
+`outputs/extracted-citations.json`
 
 Then evaluate the extracted citations against the answer key:
 
@@ -205,7 +205,7 @@ python scripts/evaluate.py
 
 Full extracted citation output:
 
-`outputs/extracted_citations.json`
+`outputs/extracted-citations.json`
 
 The output contains structured citation records for all processed documents, including document and paragraph location information, normalized citation data, extraction method, and verification result.
 
