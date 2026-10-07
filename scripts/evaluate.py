@@ -6,19 +6,23 @@ The answer key is used only for scoring; predictions are produced from cases.jso
 
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+
+from citation_extractor.existence import (
+    REAL,
+    check_case_existence,
+    load_corpus_name_index,
+    load_corpus_reporter_index,
+    normalize_key as normalize,
+)
+
 EXTRACTED_PATH = ROOT / "data" / "extracted-citations.json"
 ANSWER_KEY_PATH = ROOT / "data" / "benchmark" / "answer-key.json"
 CORPUS_PATH = ROOT / "data" / "corpus" / "cases.jsonl"
-
-
-def normalize(text):
-    if not text:
-        return ""
-    text = text.casefold().replace("’", "'")
-    return re.sub(r"\s+", " ", text).strip(" ,.;:")
 
 
 def parse_answer_case(citation):
@@ -45,52 +49,6 @@ def parse_answer_case(citation):
         "reporter": match.group("reporter").strip(),
     }
 
-
-def load_corpus_name_index(path):
-    """Build normalized case-name -> known corpus records."""
-    index = {}
-    with path.open("r", encoding="utf-8") as f:
-        for line in f:
-            if not line.strip():
-                continue
-            case = json.loads(line)
-            name = normalize(case.get("case_name"))
-            if name:
-                index.setdefault(name, []).append(case)
-    return index
-
-# ADDED(2026-10-06): index the corpus by reporter cite
-#   since reporter cites are exact same and case names are not'\
-def load_corpus_reporter_index(path):
-    """Build normalized reporter cite -> known corpus records."""
-    index = {}
-    with path.open("r", encoding="utf-8") as f:
-        for line in f:
-            if not line.strip():
-                continue
-            case = json.loads(line)
-            reporter = normalize(case.get("reporter_cite"))
-            if reporter:
-                index.setdefault(reporter, []).append(case)
-    return index
-
-
-def names_compatible(a, b):
-    """True when one normalized case name is a suffix of the other."""
-    # ADDED(2026-10-06): tolerate short captions ("rosario v. clare" vs "del rosario v. clare")
-    return bool(a and b) and (a == b or a.endswith(b) or b.endswith(a))
-
-# CHANGED(2026-10-06): look up by reporter first and return a reason
-def corpus_prediction(case_name, reporter, reporter_index, name_index):
-    """Predict "real", "wrong_reporter" or "fabricated" using only cases.jsonl."""
-    name = normalize(case_name)
-    for case in reporter_index.get(normalize(reporter), []):
-        if names_compatible(name, normalize(case.get("case_name"))):
-            return "real"
-    if name in name_index or any(names_compatible(name, known) for known in name_index):
-        return "wrong_reporter" 
-
-    return "fabricated"
 
 def find_exact(answer_case, extracted_cases, used_indexes):
     """Find an unused extraction with an exact cleaned case-name and reporter match."""
@@ -223,13 +181,13 @@ def main():
             actual_exists = bool(citation.get("exists"))
 
             # Prediction comes from the extracted values + cases.jsonl only.
-            prediction = corpus_prediction(
+            prediction = check_case_existence(
                 match.get("case_name"),
                 match.get("reporter_cite"),
                 reporter_index,
                 name_index,
             )
-            predicted_exists = prediction == "real"
+            predicted_exists = prediction == REAL
 
             # FABRICATED is the positive class: 1 = fabricated, 0 = real.
             y_true.append(0 if actual_exists else 1)

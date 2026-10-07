@@ -49,7 +49,7 @@ The resulting classification is:
 * **FABRICATED** — case name is not found or the reporter does not match the known case
 * **UNPARSED / UNVERIFIED** — insufficient information was extracted to make the normal case-name/reporter determination
 
-Code: `src/case_parser.py`
+Code: `src/citation_extractor/case_parser.py`
 Unit tests: `tests/test_case_parser.py`
 Extraction runner: `scripts/extract_all.py`
 Evaluation runner: `scripts/evaluate.py`
@@ -193,7 +193,7 @@ python scripts/extract_all.py
 
 This produces:
 
-`outputs/extracted-citations.json`
+`data/extracted-citations.json`
 
 Then evaluate the extracted citations against the answer key:
 
@@ -205,7 +205,7 @@ python scripts/evaluate.py
 
 Full extracted citation output:
 
-`outputs/extracted-citations.json`
+`data/extracted-citations.json`
 
 The output contains structured citation records for all processed documents, including document and paragraph location information, normalized citation data, extraction method, and verification result.
 
