@@ -4,18 +4,6 @@ import re
 from pathlib import Path
 from docx import Document
 
-# CHANGED(2026-10-06) overall notes for this module (numbers measured on the 200 benchmark documents against the answer key):
-#   * The case name is still taken FROM cases.jsonl whenever the reporter is known (corpus_case_name): 1,603 of 1,666 extractions use that
-#     path, so a "100% recall" with the corpus lookup mostly reflects a corpus lookup. The real text-parsing path (reporter_index=None) was
-#     the weak spot: only 52 extractions used it and 26 of those over-captured prose. After the fixes marked CHANGED below it matches
-#     the key's cleaned case name for 1,154 of 1,172 key cases (was 761), and all 7 `raw_extracted` examples (DATA_DICTIONARY 4.2) are
-#     exact. The accuracy report should still say which path produced each result.
-#   * Remaining: 18 extracted names still carry extra words. Some are the document's own wording ("State, Child Support Enforcement
-#     Division v. Bromley"; the key's cleaned cite omits "State,"); the rest are lead-ins such as "The Court should further ensure,
-#     consistent with ...", which cannot be removed without a real grammar.
-#   * Still open (team decision, see the __init__.py note): this module is not exported and uses dicts, not extractor.Citation.
-
-
 def normalize(text):
     if not text:
         return ""
