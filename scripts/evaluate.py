@@ -59,18 +59,38 @@ def load_corpus_name_index(path):
                 index.setdefault(name, []).append(case)
     return index
 
+# ADDED(2026-10-06): index the corpus by reporter cite
+#   since reporter cites are exact same and case names are not'\
+def load_corpus_reporter_index(path):
+    """Build normalized reporter cite -> known corpus records."""
+    index = {}
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            case = json.loads(line)
+            reporter = normalize(case.get("reporter_cite"))
+            if reporter:
+                index.setdefault(reporter, []).append(case)
+    return index
 
-def corpus_prediction(case_name, reporter, name_index):
-    """Predict REAL/FABRICATED using only cases.jsonl."""
-    matches = name_index.get(normalize(case_name), [])
-    if not matches:
-        return False
 
-    target_reporter = normalize(reporter)
-    return any(
-        normalize(case.get("reporter_cite")) == target_reporter
-        for case in matches
-    )
+def names_compatible(a, b):
+    """True when one normalized case name is a suffix of the other."""
+    # ADDED(2026-10-06): tolerate short captions ("rosario v. clare" vs "del rosario v. clare")
+    return bool(a and b) and (a == b or a.endswith(b) or b.endswith(a))
+
+# CHANGED(2026-10-06): look up by reporter first and return a reason
+def corpus_prediction(case_name, reporter, reporter_index, name_index):
+    """Predict "real", "wrong_reporter" or "fabricated" using only cases.jsonl."""
+    name = normalize(case_name)
+    for case in reporter_index.get(normalize(reporter), []):
+        if names_compatible(name, normalize(case.get("case_name"))):
+            return "real"
+    if name in name_index or any(names_compatible(name, known) for known in name_index):
+        return "wrong_reporter" 
+
+    return "fabricated"
 
 def find_exact(answer_case, extracted_cases, used_indexes):
     """Find an unused extraction with an exact cleaned case-name and reporter match."""
@@ -124,6 +144,16 @@ def safe_divide(a, b):
     return a / b if b else 0.0
 
 
+def confusion(rows):
+    """TP/FP/FN/TN for scored rows, with fabricated = 1."""
+    return {
+        "TP": sum(r["true"] == 1 and r["pred"] == 1 for r in rows),
+        "FP": sum(r["true"] == 0 and r["pred"] == 1 for r in rows),
+        "FN": sum(r["true"] == 1 and r["pred"] == 0 for r in rows),
+        "TN": sum(r["true"] == 0 and r["pred"] == 0 for r in rows),
+    }
+
+
 def main():
     for path in (EXTRACTED_PATH, ANSWER_KEY_PATH, CORPUS_PATH):
         if not path.exists():
@@ -140,6 +170,7 @@ def main():
         for document in extracted_documents
     }
     name_index = load_corpus_name_index(CORPUS_PATH)
+    reporter_index = load_corpus_reporter_index(CORPUS_PATH)
 
     expected = 0
     found = 0
@@ -147,6 +178,8 @@ def main():
     missing = []
     y_true = []
     y_pred = []
+    unverified = []    # ADDED(2026-10-06): collect unverified cites and per-citation rows
+    rows = []
 
     for document in answer_key:
         doc_id = document["doc_id"]
@@ -157,18 +190,26 @@ def main():
             if citation.get("type") != "case":
                 continue
 
+            # ADDED(2026-10-06): exists:false + not injected = unverified/out of scope so skip
+            if not citation["exists"] and not citation["injected"]:
+                unverified.append((doc_id, citation["cite"]))
+                continue
+
+            # CHANGED(2026-10-06): now match on cleaned `cite`
             parsed = parse_answer_case(citation.get("cite", ""))
             if parsed is None:
                 continue
 
             expected += 1
-            # CHANGED(2026-10-06): Try the exact name+reporter match first, then the 
-            #   fallback, count and printed how often the fallback was needed
+            # CHANGED(2026-10-06): try the exact name+reporter match first, then the fallback
+            #   count and printed how often the fallback was needed
             result = find_exact(parsed, extracted_cases, used_indexes)
+            used_fallback = False
             if result is None:
                 result = find_substring_fallback(parsed, extracted_cases, used_indexes)
                 if result is not None:
                     fallback_hits += 1
+                    used_fallback = True
 
             if result is None:
                 missing.append((doc_id, citation.get("cite", "")))
@@ -182,15 +223,26 @@ def main():
             actual_exists = bool(citation.get("exists"))
 
             # Prediction comes from the extracted values + cases.jsonl only.
-            predicted_exists = corpus_prediction(
+            prediction = corpus_prediction(
                 match.get("case_name"),
                 match.get("reporter_cite"),
+                reporter_index,
                 name_index,
             )
+            predicted_exists = prediction == "real"
 
             # FABRICATED is the positive class: 1 = fabricated, 0 = real.
             y_true.append(0 if actual_exists else 1)
             y_pred.append(0 if predicted_exists else 1)
+
+            rows.append({
+                "injected": citation["injected"],  # False / "fabricated_case" / "wrong_reporter"
+                "condition": document["condition"],  # "clean" / "corrupt"
+                "fallback": used_fallback,
+                "true": y_true[-1],
+                "pred": y_pred[-1],
+                "reason": prediction,
+            })
 
     tp = sum(t == 1 and p == 1 for t, p in zip(y_true, y_pred))
     fp = sum(t == 0 and p == 1 for t, p in zip(y_true, y_pred))
@@ -218,6 +270,27 @@ def main():
     print(f"Fabrication recall:    {recall:.2%}")
     print(f"Fabrication F1:        {f1:.2%}")
     print(f"TP: {tp} | FP: {fp} | FN: {fn} | TN: {tn}")
+
+    # ADDED (2026-10-06): break down the score
+    #   Note: `exists` means "in corpus" and the predictor checks the corpus too, so expect 100% on non-injected cases
+    print("\nBY INJECTED ERROR TYPE")
+    print("=" * 45)
+    for kind, reason in (("fabricated_case", "fabricated"), ("wrong_reporter", "wrong_reporter")):
+        subset = [r for r in rows if r["injected"] == kind]
+        caught = sum(r["pred"] for r in subset)
+        right_reason = sum(r["reason"] == reason for r in subset)
+        print(
+            f"{kind:<16} n={len(subset):<3} caught: {caught}/{len(subset)}"
+            f" | right reason: {right_reason}/{len(subset)}"
+        )
+
+    print("\nBY DOCUMENT CONDITION")
+    print("=" * 45)
+    for condition in ("clean", "corrupt"):
+        subset = [r for r in rows if r["condition"] == condition]
+        print(f"{condition:<8} n={len(subset):<5} {confusion(subset)}")
+
+    print(f"\nUnverified (excluded): {len(unverified)}")
 
     if missing:
         print("\nMissing answer-key citations (first 20):")
