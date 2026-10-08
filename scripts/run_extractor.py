@@ -24,7 +24,7 @@ OUT = os.path.join(ROOT, "data", "extraction-results.json")
 
 
 def main() -> None:
-    key = json.load(open(KEY))
+    key = json.load(open(KEY, encoding="utf-8"))
     key_by_doc = {doc["doc_id"]: doc for doc in key}
 
     per_doc = []
@@ -40,12 +40,15 @@ def main() -> None:
 
         matched = key_norms & extracted_norms
         missing = key_norms - extracted_norms
+        # CHANGED(2026-10-06): also keep what the extractor found that the answer key does not list for THIS document
+        extra = extracted_norms - key_norms
 
         totals["key_total"] += len(key_statute_rule)
         totals["key_unique"] += len(key_norms)
         totals["matched"] += len(matched)
         totals["missing"] += len(missing)
         totals["extracted"] += len(extracted_norms)
+        totals["fp"] += len(extra)  # CHANGED(2026-10-06): running total of per-document extras
 
         per_doc.append(
             {
@@ -56,10 +59,19 @@ def main() -> None:
                 "n_matched": len(matched),
                 "matched": sorted(matched),
                 "missing": sorted(missing),
+                # CHANGED(2026-10-06): store the extras per document so each one can be inspected and labelled "key omission" in the report
+                "n_extra": len(extra),
+                "extra": sorted(extra),
             }
         )
 
+    # CHANGED(2026-10-06): FP = 30 (in 26 docs), precision ~0.978, recall 1.0
+    # Those 30 are real citations in the text that the answer key omits for that document, so not parser errors
     recall = totals["matched"] / totals["key_unique"] if totals["key_unique"] else 0
+    precision = (
+        totals["matched"] / (totals["matched"] + totals["fp"])
+        if (totals["matched"] + totals["fp"]) else 0
+    )
 
     print("=== statutes/rules extraction vs answer key ===")
     print(f"answer-key statute+rule citations: {totals['key_total']}")
@@ -68,6 +80,9 @@ def main() -> None:
     print(f"matched answer-key cites:          {totals['matched']}")
     print(f"missed answer-key cites:           {totals['missing']}")
     print(f"recall (matched / key unique):     {recall:.3f}")
+    # CHANGED(2026-10-06): report extras and precision next to recall
+    print(f"extracted but not in that doc's key: {totals['fp']}")
+    print(f"precision (matched / (matched + extra)): {precision:.3f}")
 
     missing_freq = Counter()
     for d in per_doc:
@@ -77,7 +92,7 @@ def main() -> None:
     for cite, n in missing_freq.most_common(15):
         print(f"  {n:3d}  {cite}")
 
-    json.dump(per_doc, open(OUT, "w"), indent=2)
+    json.dump(per_doc, open(OUT, "w", encoding="utf-8"), indent=2)
     print(f"\nwrote per-doc results to {os.path.relpath(OUT, ROOT)}")
 
 
