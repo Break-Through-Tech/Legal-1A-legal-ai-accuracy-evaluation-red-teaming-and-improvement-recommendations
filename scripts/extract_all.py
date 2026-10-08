@@ -8,12 +8,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from case_parser import extract_document, normalize  # noqa: E402
+from citation_extractor.case_parser import extract_document, normalize  # noqa: E402
 
-
-DOCUMENTS_DIR = ROOT / "documents"
-CORPUS_PATH = ROOT / "cases.jsonl"
-OUTPUT_PATH = ROOT / "outputs" / "extracted_citations.json"
+DOCUMENTS_DIR = ROOT / "data" / "benchmark" / "documents"
+CORPUS_PATH = ROOT / "data" / "corpus" / "cases.jsonl"
+OUTPUT_PATH = ROOT / "data" / "extracted_citations.json"
 
 
 def load_reporter_index(path):
@@ -33,7 +32,7 @@ def load_reporter_index(path):
 def main():
     if not DOCUMENTS_DIR.exists():
         raise FileNotFoundError(
-            f"Missing {DOCUMENTS_DIR}. Put the 200 doc-XXXX.docx files in a 'documents' folder."
+            f"Missing {DOCUMENTS_DIR}. Put the 200 doc-XXXX.docx files in '/data/benchmark/documents' folder."
         )
     if not CORPUS_PATH.exists():
         raise FileNotFoundError(f"Missing corpus: {CORPUS_PATH}")
