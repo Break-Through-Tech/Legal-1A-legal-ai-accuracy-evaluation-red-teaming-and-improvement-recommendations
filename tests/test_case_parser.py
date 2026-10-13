@@ -1,7 +1,7 @@
-from src.case_parser import (
+from citation_extractor.case_parser import (
     extract_case_name_from_context,
     extract_paragraph,
-    normalize_citation,
+    normalize_case_key,
 )
 
 
@@ -40,7 +40,7 @@ def test_reporter_only_citation():
 
 
 def test_normalized_form():
-    assert normalize_citation("Smith v. Jones,   123 P.3d 456 (Alaska 2005)") == (
+    assert normalize_case_key("Smith v. Jones,   123 P.3d 456 (Alaska 2005)") == (
         "smith v. jones, 123 p.3d 456 (alaska 2005)"
     )
 
