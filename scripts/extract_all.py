@@ -8,32 +8,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from case_parser import extract_document, normalize  # noqa: E402
+from citation_extractor.case_parser import extract_document
+from citation_extractor.existence import load_corpus_reporter_index     # CHANGED(2026-10-06): use the shared corpus loader from existence.py
 
-
-DOCUMENTS_DIR = ROOT / "documents"
-CORPUS_PATH = ROOT / "cases.jsonl"
-OUTPUT_PATH = ROOT / "outputs" / "extracted_citations.json"
-
-
-def load_reporter_index(path):
-    """Build reporter -> corpus cases index used for corpus-assisted extraction."""
-    index = {}
-    with path.open("r", encoding="utf-8") as f:
-        for line in f:
-            if not line.strip():
-                continue
-            case = json.loads(line)
-            reporter = normalize(case.get("reporter_cite"))
-            if reporter:
-                index.setdefault(reporter, []).append(case)
-    return index
+DOCUMENTS_DIR = ROOT / "data" / "benchmark" / "documents"
+CORPUS_PATH = ROOT / "data" / "corpus" / "cases.jsonl"
+OUTPUT_PATH = ROOT / "data" / "extracted-citations.json"
 
 
 def main():
     if not DOCUMENTS_DIR.exists():
         raise FileNotFoundError(
-            f"Missing {DOCUMENTS_DIR}. Put the 200 doc-XXXX.docx files in a 'documents' folder."
+            f"Missing {DOCUMENTS_DIR}. Put the 200 doc-XXXX.docx files in '/data/benchmark/documents' folder."
         )
     if not CORPUS_PATH.exists():
         raise FileNotFoundError(f"Missing corpus: {CORPUS_PATH}")
@@ -45,7 +31,7 @@ def main():
     if len(files) != 200:
         raise ValueError(f"Expected 200 DOCX files, found {len(files)} in {DOCUMENTS_DIR}")
 
-    reporter_index = load_reporter_index(CORPUS_PATH)
+    reporter_index = load_corpus_reporter_index(CORPUS_PATH)
     results = [extract_document(path, reporter_index) for path in files]
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
