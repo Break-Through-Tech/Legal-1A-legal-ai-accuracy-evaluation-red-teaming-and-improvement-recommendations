@@ -16,7 +16,7 @@ from __future__ import annotations
 
 import re
 
-from .extractor import CIVIL_RULE_RE, CIVP_RULE_RE, EVID_RULE_RE, STATUTE_RE
+from .extractor import RULE_RE, CIVP_RULE_RE, EVID_RULE_RE, STATUTE_RE
 
 # Quotes shorter than this many words are usually defined-term labels
 # ("Petitioner") rather than quotations of law.
@@ -32,7 +32,7 @@ QUOTE_PATTERNS = [
 # A defined-term label: (hereinafter "Petitioner")
 LABEL_RE = re.compile(r"hereinafter\W*$", re.IGNORECASE)
 
-CITATION_PATTERNS = [STATUTE_RE, CIVIL_RULE_RE, CIVP_RULE_RE, EVID_RULE_RE]
+CITATION_PATTERNS = [STATUTE_RE, RULE_RE, CIVP_RULE_RE, EVID_RULE_RE]
 
 
 def find_quotes(paragraph_text: str) -> list[dict]:
