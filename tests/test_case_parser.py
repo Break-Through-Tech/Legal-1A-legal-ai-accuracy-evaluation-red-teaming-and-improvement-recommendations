@@ -1,4 +1,4 @@
-from src.case_parser import (
+from citation_extractor.case_parser import (
     extract_case_name_from_context,
     extract_paragraph,
     normalize_citation,
