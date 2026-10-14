@@ -1,14 +1,18 @@
 """Evaluate quote fidelity against answer-key.json.
 
-Extracts quotes from each document, checks each against its source text,
-and scores the FAITHFUL/ALTERED predictions against the answer key's quotes.
+Extracts quoted and unquoted passages of law from each document, checks
+each against its source text, and scores the FAITHFUL/ALTERED predictions against the answer key's quotes.
 The answer key is used only to pair extracted quotes with key entries and to
 score; predictions use only the document text and the corpus.
 
 Writes every scored quote to data/quote-fidelity-results.json for the
 threshold analysis.
+
+    python scripts/evaluate_quotes.py                # quoted + unquoted passages
+    python scripts/evaluate_quotes.py --quoted-only  # quote-mark passages only
 """
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -20,6 +24,7 @@ from citation_extractor.extractor import normalize_citation
 from citation_extractor.quote_extractor import extract_quotes
 from citation_extractor.quote_fidelity import check_quote
 from citation_extractor.source_lookup import clean_whitespace, get_source_text, load_corpus
+from citation_extractor.unquoted_passages import extract_passages
 
 ANSWER_KEY_PATH = ROOT / "data" / "benchmark" / "answer-key.json"
 DOCUMENTS_DIR = ROOT / "data" / "benchmark" / "documents"
@@ -82,6 +87,9 @@ def report(title, rows):
 def main():
     with ANSWER_KEY_PATH.open("r", encoding="utf-8") as f:
         answer_key = json.load(f)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--quoted-only", action="store_true", help="skip unquoted passages")
+    args = parser.parse_args()
     corpus = load_corpus()
 
     rows = []       # one per answer-key quote
@@ -90,7 +98,11 @@ def main():
     for document in answer_key:
         doc_id = document["doc_id"]
         key_quotes = document.get("quotes", [])
-        extracted = extract_quotes(str(DOCUMENTS_DIR / f"{doc_id}.docx"), doc_id)
+        path = str(DOCUMENTS_DIR / f"{doc_id}.docx")
+        if args.quoted_only:
+            extracted = [dict(q, quoted=True) for q in extract_quotes(path, doc_id)]
+        else:
+            extracted = extract_passages(path, corpus, doc_id)
         used_indexes = set()
 
         # Altered first: they can be paired by text, which is unambiguous.
@@ -107,7 +119,7 @@ def main():
                 "extracted": match is not None,
             }
             if match is None:
-                row.update(text=None, citation=None, tier="not_extracted", score=None, pred=0)
+                row.update(text=None, citation=None, quoted=None, tier="not_extracted", score=None, pred=0)
             else:
                 index, item = match
                 used_indexes.add(index)
@@ -115,6 +127,7 @@ def main():
                 row.update(
                     text=item["text"],
                     citation=item["citation"],
+                    quoted=item["quoted"],
                     tier=result["tier"],
                     score=result["score"],
                     # Not flagged unless the checker says altered.
@@ -130,6 +143,7 @@ def main():
                 "doc_id": doc_id,
                 "text": item["text"],
                 "citation": item["citation"],
+                "quoted": item["quoted"],
                 "tier": result["tier"],
                 "score": result["score"],
                 "flagged": result["faithful"] is False,
@@ -143,22 +157,25 @@ def main():
     for label, value in ((1, "altered"), (0, "faithful")):
         subset = [r for r in rows if r["true"] == label]
         n_found = sum(r["extracted"] for r in subset)
-        print(f"{value:<9} found {n_found}/{len(subset)} ({safe_divide(n_found, len(subset)):.0%})")
+        n_unquoted = sum(r["quoted"] is False for r in subset)
+        print(f"{value:<9} found {n_found}/{len(subset)} ({safe_divide(n_found, len(subset)):.0%})"
+              f"  of which unquoted: {n_unquoted}")
 
     report("FIDELITY CHECKER (extracted quotes only)", found)
     report("END TO END (missed quotes count as not flagged)", rows)
 
     print("\nBY MATCH TIER (extracted quotes)")
     print("=" * 45)
-    for tier in ("exact", "normalized", "fuzzy", "no_source"):
+    for tier in ("exact", "normalized", "fuzzy", "unrelated", "no_source"):
         subset = [r for r in found if r["tier"] == tier]
         n_altered = sum(r["true"] for r in subset)
         print(f"{tier:<11} n={len(subset):<4} altered: {n_altered:<3} faithful: {len(subset) - n_altered}")
 
     flagged_extras = [e for e in extras if e["flagged"]]
-    print(f"\nExtracted quotes not in answer key: {len(extras)}  (flagged altered: {len(flagged_extras)})")
-    for e in flagged_extras[:10]:
-        print(f"- {e['doc_id']} [{e['citation']}] score={e['score']:.1f}: {e['text'][:70]}")
+    print(f"\nExtracted passages not in answer key: {len(extras)}  (flagged altered: {len(flagged_extras)})")
+    for e in flagged_extras[:20]:
+        kind = "quoted" if e["quoted"] else "unquoted"
+        print(f"- {e['doc_id']} [{e['citation']}] {kind} score={e['score']:.1f}: {e['text'][:70]}")
 
     if missing:
         print("\nMissed answer-key quotes (first 20):")
