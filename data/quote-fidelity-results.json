@@ -1,0 +1,4815 @@
+{
+  "quotes": [
+    {
+      "doc_id": "doc-0001",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 1,
+      "extracted": true,
+      "text": "will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2) under all circumstances.",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "fuzzy",
+      "score": 92.04545454545455,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0013",
+      "source_cite": "AS 25.24.160",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0013",
+      "source_cite": "Civil Rule 90.3(a)(1)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0013",
+      "source_cite": "AS 25.24.150",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0013",
+      "source_cite": "AS 25.20.090",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0014",
+      "source_cite": "AS 25.24.160",
+      "true": 1,
+      "extracted": true,
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has sole physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "fuzzy",
+      "score": 95.56962025316456,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0014",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "a child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0017",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 1,
+      "extracted": true,
+      "text": "the parent's total income from all sources minus under all circumstances",
+      "citation": "Civil Rule 90.3(a)(2)(B)",
+      "tier": "fuzzy",
+      "score": 79.16666666666666,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0023",
+      "source_cite": "Civil Rule 90.3(a)(1)",
+      "true": 0,
+      "extracted": true,
+      "text": "adjusted annual income",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0024",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "if the children reside with the other parent for a period specified in the custody order of less than 30 percent of the year.",
+      "citation": "Civil Rule 90.3(f)(2)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0024",
+      "source_cite": "Civil Rule 90.3(f)",
+      "true": 0,
+      "extracted": true,
+      "text": "will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0024",
+      "source_cite": "AS 25.24.152",
+      "true": 0,
+      "extracted": true,
+      "text": "the court may not unconditionally grant to a noncustodial parent the right to claim a child as a dependent under federal income tax laws.",
+      "citation": "AS 25.24.152(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0024",
+      "source_cite": "AS 25.24.232",
+      "true": 0,
+      "extracted": true,
+      "text": "unconditionally entitles a noncustodial parent to claim a child as a dependent under federal income tax laws.",
+      "citation": "AS 25.24.232",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0024",
+      "source_cite": "AS 25.24.160",
+      "true": 0,
+      "extracted": true,
+      "text": "fairly allocate the economic effect of divorce",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0024",
+      "source_cite": "AS 25.24.200",
+      "true": 0,
+      "extracted": true,
+      "text": "the payment of all unpaid obligations incurred by either or both of them.",
+      "citation": "AS 25.24.200(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0028",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "a child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0028",
+      "source_cite": "Civil Rule 90.3(a)(1)",
+      "true": 0,
+      "extracted": true,
+      "text": "the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0028",
+      "source_cite": "AS 25.24.160(a)(4)",
+      "true": 0,
+      "extracted": true,
+      "text": "fairly allocate the economic effect of divorce",
+      "citation": "AS 25.24.160",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0028",
+      "source_cite": "AS 25.24.160(a)(1)",
+      "true": 0,
+      "extracted": true,
+      "text": "in a just manner",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0028",
+      "source_cite": "AS 25.24.200(a)(4)",
+      "true": 0,
+      "extracted": true,
+      "text": "as to the payment of all unpaid obligations incurred by either or both of them.",
+      "citation": "AS 25.24.200(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0030",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "the children reside with the other parent for a period specified in the custody order of less than 30 percent of the year.",
+      "citation": "Civil Rule 90.3(f)(2)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0030",
+      "source_cite": "Civil Rule 90.3(f)(2)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0030",
+      "source_cite": "AS 25.24.160(a)(4)",
+      "true": 0,
+      "extracted": true,
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0030",
+      "source_cite": "AS 25.24.220(i)",
+      "true": 0,
+      "extracted": true,
+      "text": "examine the written agreements between the spouses to determine that they are just, that they constitute the entire agreement between the parties, and that the agreements concerning child custody, child support, and visitation are in the best interest of the children of the marriage.",
+      "citation": "AS 25.24.220(i)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0031",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "a child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0031",
+      "source_cite": "AS 25.24.160",
+      "true": 0,
+      "extracted": true,
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0032",
+      "source_cite": "AS 25.24.160",
+      "true": 1,
+      "extracted": true,
+      "text": "the conduct of the parties, including whether there has been unreasonable depletion of marital assets under all circumstances.",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "fuzzy",
+      "score": 87.90322580645162,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0034",
+      "source_cite": "AS 25.24.200",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0034",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "a child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0034",
+      "source_cite": "Civil Rule 90.3(a)(1)",
+      "true": 0,
+      "extracted": true,
+      "text": "the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0034",
+      "source_cite": "AS 25.24.160",
+      "true": 0,
+      "extracted": true,
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0036",
+      "source_cite": "AS 25.24.160(a)(4)(F)",
+      "true": 0,
+      "extracted": true,
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0037",
+      "source_cite": "AS 25.24.160",
+      "true": 0,
+      "extracted": true,
+      "text": "in a just manner and without regard to which of the parties is in fault,",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0037",
+      "source_cite": "AS 25.24.220",
+      "true": 0,
+      "extracted": true,
+      "text": "the written agreements between the spouses concerning child custody, child support, and visitation are just as between the spouses and in the best interests of the children of the marriage.",
+      "citation": "AS 25.24.220(d)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0037",
+      "source_cite": "Civil Rule 90.3(d)",
+      "true": 0,
+      "extracted": true,
+      "text": "the court shall address coverage of the children's health care needs and require health insurance for the children if insurance is available to either parent at a reasonable cost and accessible to the children.",
+      "citation": "Civil Rule 90.3(d)(1)(A)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0043",
+      "source_cite": "AS 25.20.060",
+      "true": 1,
+      "extracted": true,
+      "text": "consider all relevant factors, including those factors enumerated in AS 25.24.150(c), and the presumption established in AS 25.24.150(g) under all circumstances.",
+      "citation": "AS 25.20.060(a)",
+      "tier": "fuzzy",
+      "score": 91.02564102564102,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0043",
+      "source_cite": "AS 25.24.150",
+      "true": 0,
+      "extracted": true,
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": "AS 25.24.150(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0043",
+      "source_cite": "AS 25.20.070",
+      "true": 0,
+      "extracted": true,
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody under AS 25.20.060, 25.20.130.",
+      "citation": "AS 25.20.070",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0043",
+      "source_cite": "Civil Rule 90.7(e)",
+      "true": 0,
+      "extracted": true,
+      "text": "shall represent and advocate the best interests of the child",
+      "citation": "Civil Rule 90.7(e)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0046",
+      "source_cite": "AS 25.24.150(c)",
+      "true": 0,
+      "extracted": true,
+      "text": "during the pendency of the action, or at the final hearing or at any time thereafter during the minority of a child.",
+      "citation": "AS 25.24.150(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0047",
+      "source_cite": "AS 25.24.150(c)(6)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0047",
+      "source_cite": "AS 25.24.150(c)(1)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0047",
+      "source_cite": "AS 25.24.150(c)(2)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0047",
+      "source_cite": "AS 25.24.150(c)(5)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0049",
+      "source_cite": "AS 25.20.060",
+      "true": 0,
+      "extracted": true,
+      "text": "either parent may petition the superior court for resolution of the matter.",
+      "citation": "AS 25.20.060(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0049",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0049",
+      "source_cite": "Alaska R. Evid. 706(a)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0054",
+      "source_cite": "AS 25.24.150(c)(1)",
+      "true": 0,
+      "extracted": true,
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": "AS 25.24.150(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0054",
+      "source_cite": "AS 25.24.150(c)(2)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0054",
+      "source_cite": "AS 25.24.150(c)(4)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0054",
+      "source_cite": "AS 25.24.150(c)(5)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0054",
+      "source_cite": "AS 25.24.150(c)(6)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0057",
+      "source_cite": "Civil Rule 65(e)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0057",
+      "source_cite": "AS 25.30.909",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0057",
+      "source_cite": "AS 25.24.150",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0057",
+      "source_cite": "AS 25.20.060",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0058",
+      "source_cite": "AS 25.20.060(b)",
+      "true": 1,
+      "extracted": true,
+      "text": "neither parent, regardless of the question of the child's legitimacy, is entitled to preference in the awarding of custody under all circumstances.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0058",
+      "source_cite": "AS 25.30.300(a)(1)",
+      "true": 0,
+      "extracted": true,
+      "text": "this state is the home state of the child on the date of the commencement of the proceeding.",
+      "citation": "Alaska Statute AS 25.30.300",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0058",
+      "source_cite": "AS 25.20.060(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "shall assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060(b)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0058",
+      "source_cite": "AS 25.20.060(c)",
+      "true": 0,
+      "extracted": true,
+      "text": "assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060(c)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0058",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0058",
+      "source_cite": "Civil Rule 90.3(c)(1)",
+      "true": 0,
+      "extracted": true,
+      "text": "manifest injustice would result if the support award were not varied.",
+      "citation": "Civil Rule 90.3(b)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0058",
+      "source_cite": "AS 25.24.150(c)(5)",
+      "true": 0,
+      "extracted": true,
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": "AS 25.24.150(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0059",
+      "source_cite": "AS 25.24.150",
+      "true": 1,
+      "extracted": true,
+      "text": "evidence that substance abuse by either parent or other members of the household directly affects the emotional or physical well-being of the child under all circumstances.",
+      "citation": "AS 25.24.150(c)(8)",
+      "tier": "fuzzy",
+      "score": 91.81286549707602,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0060",
+      "source_cite": "AS 25.24.150(c)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0061",
+      "source_cite": "AS 25.24.150(c)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0062",
+      "source_cite": "AS 25.30.909",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0064",
+      "source_cite": "AS 25.24.150(d)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0064",
+      "source_cite": "AS 25.24.150(c)(1)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0064",
+      "source_cite": "AS 25.24.150(c)(5)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0067",
+      "source_cite": "AS 25.20.060",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0070",
+      "source_cite": "AS 25.24.150(c)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0070",
+      "source_cite": "AS 25.20.060",
+      "true": 0,
+      "extracted": true,
+      "text": "shall assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0070",
+      "source_cite": "AS 25.24.310(c)",
+      "true": 0,
+      "extracted": true,
+      "text": "when, in the opinion of the court, representation of the child's best interests, to be distinguished from preferences, would serve the welfare of the child.",
+      "citation": "AS 25.24.310(c)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0070",
+      "source_cite": "Civil Rule 90.7(e)",
+      "true": 0,
+      "extracted": true,
+      "text": "shall represent and advocate the best interests of the child",
+      "citation": "Civil Rule 90.7(e)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0076",
+      "source_cite": "AS 25.20.060",
+      "true": 1,
+      "extracted": true,
+      "text": "an award of shared custody may assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060(c)",
+      "tier": "fuzzy",
+      "score": 97.05882352941177,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0083",
+      "source_cite": "Civil Rule 90.3(h)(1)",
+      "true": 1,
+      "extracted": true,
+      "text": "a material change of circumstances will be presumed if support as calculated under this rule is more than 15 percent greater or less than the outstanding support order under all circumstances.",
+      "citation": "Civil Rule 90.3(h)",
+      "tier": "fuzzy",
+      "score": 91.62303664921467,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0083",
+      "source_cite": "AS 25.24.150(c)(1)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0083",
+      "source_cite": "AS 25.24.150(c)(2)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0083",
+      "source_cite": "AS 25.24.150(c)(5)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0083",
+      "source_cite": "AS 25.24.150(c)(6)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0084",
+      "source_cite": "AS 25.24.150(c)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0084",
+      "source_cite": "AS 25.20.110(e)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0086",
+      "source_cite": "AS 25.20.110(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0087",
+      "source_cite": "AS 25.20.110(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0087",
+      "source_cite": "AS 25.20.070",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0087",
+      "source_cite": "Civil Rule 90.3(g)",
+      "true": 0,
+      "extracted": true,
+      "text": "the court shall allocate reasonable travel expenses which are necessary to exercise visitation between the parties as may be just and proper for them to contribute.",
+      "citation": "Civil Rule 90.3(g)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0088",
+      "source_cite": "AS 25.24.150(c)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0090",
+      "source_cite": "AS 25.20.070",
+      "true": 0,
+      "extracted": true,
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody.",
+      "citation": "AS 25.20.070",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0091",
+      "source_cite": "AS 25.20.110(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0091",
+      "source_cite": "AS 25.20.070",
+      "true": 0,
+      "extracted": true,
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents",
+      "citation": "AS 25.20.070",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0092",
+      "source_cite": "AS 25.24.150(c)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0099",
+      "source_cite": "AS 25.24.150(c)(6)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0099",
+      "source_cite": "AS 25.24.150(c)",
+      "true": 0,
+      "extracted": true,
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": "AS 25.24.150(c)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0099",
+      "source_cite": "AS 25.20.090(5)",
+      "true": 0,
+      "extracted": true,
+      "text": "the advantages of keeping the child in the community where the child presently resides.",
+      "citation": "AS 25.20.090(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0099",
+      "source_cite": "AS 25.24.150(d)",
+      "true": 0,
+      "extracted": true,
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": "AS 25.24.150(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0100",
+      "source_cite": "AS 25.20.070",
+      "true": 0,
+      "extracted": true,
+      "text": "to the greatest degree practical, equal access to both parents",
+      "citation": "AS 25.20.070",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0110",
+      "source_cite": "AS 25.24.150(c)(1)",
+      "true": 0,
+      "extracted": true,
+      "text": "the physical, emotional, mental, religious, and social needs of the child.",
+      "citation": "AS 25.24.150(c)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0110",
+      "source_cite": "AS 25.24.150(c)(5)",
+      "true": 0,
+      "extracted": true,
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": "AS 25.24.150(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0110",
+      "source_cite": "AS 25.24.150(c)(6)",
+      "true": 0,
+      "extracted": true,
+      "text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+      "citation": "AS 25.24.150(c)(6)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0110",
+      "source_cite": "AS 25.24.150(d)",
+      "true": 0,
+      "extracted": true,
+      "text": "in awarding custody the court may consider only those facts that directly affect the well-being of the child.",
+      "citation": "AS 25.24.150(d)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0110",
+      "source_cite": "Civil Rule 99(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "the court shall allow video or Internet testimony if the hearing or deposition involves the custody or visitation of a child,",
+      "citation": "Civil Rule 99(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0112",
+      "source_cite": "AS 25.24.150(d)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0112",
+      "source_cite": "AS 25.24.150(c)(1)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0112",
+      "source_cite": "AS 25.24.150(c)(5)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0125",
+      "source_cite": "AS 18.66.100(c)(1)",
+      "true": 0,
+      "extracted": true,
+      "text": "order other relief the court determines necessary to protect the petitioner or any household member,",
+      "citation": "AS 18.66.100(c)(16)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0125",
+      "source_cite": "AS 18.66.100(c)(2)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0125",
+      "source_cite": "AS 18.66.100(c)(3)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0125",
+      "source_cite": "AS 18.66.100(c)(16)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0129",
+      "source_cite": "AS 18.66.990",
+      "true": 0,
+      "extracted": true,
+      "text": "adults or minors who are current or former spouses.",
+      "citation": "AS 18.66.990(5)(A)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0129",
+      "source_cite": "AS 18.66.100",
+      "true": 0,
+      "extracted": true,
+      "text": "prohibit the respondent from telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0129",
+      "source_cite": "AS 18.66.130",
+      "true": 0,
+      "extracted": true,
+      "text": "an invitation by the petitioner to communicate, enter the residence or vehicle, or have other prohibited contact with the petitioner does not waive or nullify any provision in a protective order.",
+      "citation": "AS 18.66.130(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0130",
+      "source_cite": "AS 18.66.100",
+      "true": 1,
+      "extracted": true,
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member under all circumstances.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "fuzzy",
+      "score": 92.45283018867924,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0132",
+      "source_cite": "AS 18.66.100",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0132",
+      "source_cite": "Civil Rule 65(e)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0132",
+      "source_cite": "AS 25.24.140",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0134",
+      "source_cite": "Alaska R. Evid. 505",
+      "true": 1,
+      "extracted": true,
+      "text": "a crime involving domestic violence as defined in AS 18.66.990 under all circumstances.",
+      "citation": "Alaska R. Evid. 505(a)",
+      "tier": "fuzzy",
+      "score": 81.3953488372093,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0134",
+      "source_cite": "AS 18.66.100",
+      "true": 0,
+      "extracted": true,
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0134",
+      "source_cite": "AS 18.66.130",
+      "true": 0,
+      "extracted": true,
+      "text": "an invitation by the petitioner to communicate, enter the residence or vehicle, or have other prohibited contact with the petitioner does not waive or nullify any provision in a protective order.",
+      "citation": "AS 18.66.130(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0134",
+      "source_cite": "AS 18.66.990",
+      "true": 0,
+      "extracted": true,
+      "text": "adults or minors who are current or former spouses",
+      "citation": "AS 18.66.990(5)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0135",
+      "source_cite": "AS 18.66.100",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0135",
+      "source_cite": "Civil Rule 65(e)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0140",
+      "source_cite": "AS 18.66.110",
+      "true": 1,
+      "extracted": true,
+      "text": "if the court finds that the petition establishes probable cause that a crime involving domestic violence has occurred, it is necessary to protect the petitioner from domestic violence, and if the petitioner has certified to the court in writing the efforts, if any, that have been made to provide notice to the respondent, the court may ex parte and without notice to the respondent issue a protective order.",
+      "citation": "AS 18.66.110(a)",
+      "tier": "fuzzy",
+      "score": 99.00497512437812,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0141",
+      "source_cite": "AS 18.66.100",
+      "true": 0,
+      "extracted": true,
+      "text": "prohibit the respondent from telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0141",
+      "source_cite": "AS 18.66.130",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0143",
+      "source_cite": "Alaska R. Evid. 404(b)",
+      "true": 1,
+      "extracted": true,
+      "text": "evidence of other crimes involving domestic violence by the defendant against the same or another person . . . is admissible under all circumstances.",
+      "citation": "Alaska R. Evid. 404(b)",
+      "tier": "fuzzy",
+      "score": 81.69014084507043,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0143",
+      "source_cite": "AS 18.66.100",
+      "true": 0,
+      "extracted": true,
+      "text": "telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0146",
+      "source_cite": "AS 18.66.100",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0149",
+      "source_cite": "AS 18.66.130",
+      "true": 1,
+      "extracted": true,
+      "text": "a court may  order parties into mediation or refer them to mediation for resolution of the issues arising from a petition for a protective order under AS 18.66.100 through 18.66.180.",
+      "citation": "AS 18.66.130(c)",
+      "tier": "fuzzy",
+      "score": 95.55555555555556,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0149",
+      "source_cite": "AS 18.66.100",
+      "true": 0,
+      "extracted": true,
+      "text": "telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0152",
+      "source_cite": "AS 18.66.100",
+      "true": 1,
+      "extracted": true,
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member under all circumstances.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "fuzzy",
+      "score": 92.45283018867924,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0152",
+      "source_cite": "Civil Rule 65(e)",
+      "true": 0,
+      "extracted": true,
+      "text": "threatening, harassing, or harming the other party.",
+      "citation": "Civil Rule 65(e)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0153",
+      "source_cite": "AS 18.66.100(c)(16)",
+      "true": 1,
+      "extracted": true,
+      "text": "order other relief the court determines necessary to protect the petitioner or any household member under all circumstances,",
+      "citation": "AS 18.66.100(c)(16)",
+      "tier": "fuzzy",
+      "score": 87.8048780487805,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0153",
+      "source_cite": "AS 18.66.100(c)(3)",
+      "true": 0,
+      "extracted": true,
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0153",
+      "source_cite": "AS 18.66.130(e)",
+      "true": 0,
+      "extracted": true,
+      "text": "in addition to and not in place of any other civil or criminal remedy,",
+      "citation": "AS 18.66.130(e)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0157",
+      "source_cite": "AS 18.66.100",
+      "true": 1,
+      "extracted": true,
+      "text": "possession and use of a vehicle and other essential personal items, including a pet, regardless of ownership of the items under all circumstances.",
+      "citation": "AS 18.66.100(c)(10)",
+      "tier": "fuzzy",
+      "score": 88.11188811188812,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0160",
+      "source_cite": "AS 18.66.100",
+      "true": 1,
+      "extracted": true,
+      "text": "other relief the court determines necessary to protect the petitioner or any household member under all circumstances.",
+      "citation": "AS 18.66.100(c)(16)",
+      "tier": "fuzzy",
+      "score": 87.17948717948718,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0161",
+      "source_cite": "AS 25.24.170",
+      "true": 0,
+      "extracted": true,
+      "text": "any time after judgment the court, upon the motion of either party, may set aside, alter, or modify so much of the judgment as may provide for . . . the maintenance of either party to the action,",
+      "citation": "AS 25.24.170",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0163",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0164",
+      "source_cite": "AS 25.24.170",
+      "true": 0,
+      "extracted": true,
+      "text": "any time after judgment the court, upon the motion of either party, may set aside, alter, or modify so much of the judgment as may provide for . . . the maintenance of either party to the action.",
+      "citation": "AS 25.24.170(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0164",
+      "source_cite": "AS 25.27.060",
+      "true": 0,
+      "extracted": true,
+      "text": "an order for prospective child support may be modified or revoked under AS 25.24.170.",
+      "citation": "AS 25.27.060(d)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0164",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "A child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0169",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0170",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 1,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0171",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0176",
+      "source_cite": "AS 25.27.060",
+      "true": 1,
+      "extracted": true,
+      "text": "may order either parent or both parents to pay the amount necessary for support, maintenance, nurture, and education of the child. under all circumstances",
+      "citation": "AS 25.27.060(c)",
+      "tier": "fuzzy",
+      "score": 88.66666666666667,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0176",
+      "source_cite": "AS 25.24.170",
+      "true": 0,
+      "extracted": true,
+      "text": "any time after judgment the court, upon the motion of either party, may set aside, alter, or modify so much of the judgment as may provide for alimony, for the appointment of trustees for the care and custody of the minor children or for their nurture and education, for the care, nurture, and education of unmarried 18-year-old children of the marriage while they are actively pursuing a high school diploma or an equivalent level of technical or vocational training and living as dependents with a parent, guardian, or designee of the parent or guardian, or for the maintenance of either party to the action.",
+      "citation": "AS 25.24.170(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0178",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "a child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0179",
+      "source_cite": "AS 25.24.170",
+      "true": 1,
+      "extracted": true,
+      "text": "any time after judgment the court, upon the motion of either party, may set aside, alter, or modify so much of the judgment as may provide for alimony, for the appointment of trustees for the care and custody of the minor children or for their nurture and education, for the care, nurture, and education of unmarried 18-year-old children of the marriage while they are actively pursuing a high school diploma or an equivalent level of technical or vocational training and living as dependents with a parent, guardian, or designee of the parent or guardian, or for the maintenance of either party to the action. under all circumstances",
+      "citation": "AS 25.24.976(a)",
+      "tier": "no_source",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0179",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0181",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 1,
+      "extracted": true,
+      "text": "as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2) under all circumstances.",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "fuzzy",
+      "score": 91.0828025477707,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0181",
+      "source_cite": "AS 25.24.170",
+      "true": 0,
+      "extracted": true,
+      "text": "any time after judgment the court, upon the motion of either party, may set aside, alter, or modify so much of the judgment as may provide for . . . the appointment of trustees for the care and custody of the minor children or for their nurture and education.",
+      "citation": "AS 25.24.170",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0181",
+      "source_cite": "AS 25.20.110",
+      "true": 0,
+      "extracted": true,
+      "text": "an award of custody of a child or visitation with the child may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0189",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 1,
+      "extracted": true,
+      "text": "a child support award in a case in which one parent is awarded sole physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "fuzzy",
+      "score": 97.33840304182509,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0189",
+      "source_cite": "AS 25.20.110",
+      "true": 0,
+      "extracted": true,
+      "text": "may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0190",
+      "source_cite": "Civil Rule 90.3(h)",
+      "true": 1,
+      "extracted": true,
+      "text": "a material change of circumstances will be presumed if support as calculated under this rule is more than 15 percent greater or less than the outstanding support order under all circumstances.",
+      "citation": "Civil Rule 90.3(h)(1)",
+      "tier": "fuzzy",
+      "score": 91.62303664921467,
+      "pred": 1
+    },
+    {
+      "doc_id": "doc-0193",
+      "source_cite": "AS 25.24.170",
+      "true": 0,
+      "extracted": true,
+      "text": "any time after judgment the court, upon the motion of either party, may set aside, alter, or modify so much of the judgment as may provide for alimony, for the appointment of trustees for the care and custody of the minor children or for their nurture and education, for the care, nurture, and education of unmarried 18-year-old children of the marriage while they are actively pursuing a high school diploma or an equivalent level of technical or vocational training and living as dependents with a parent, guardian, or designee of the parent or guardian, or for the maintenance of either party to the action.",
+      "citation": "AS 25.24.170(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0193",
+      "source_cite": "Civil Rule 90.3(h)",
+      "true": 0,
+      "extracted": true,
+      "text": "a final child support award may be modified upon a showing of a material change of circumstances as provided by state law",
+      "citation": "Civil Rule 90.3(h)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0193",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "a material change of circumstances will be presumed if support as calculated under this rule is more than 15 percent greater or less than the outstanding support order.",
+      "citation": "Civil Rule 90.3(h)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0194",
+      "source_cite": "AS 25.24.170",
+      "true": 0,
+      "extracted": true,
+      "text": "the adoption or enactment of guidelines or a significant amendment to guidelines for determining support is a material change in circumstances if the guidelines are relevant to the motion.",
+      "citation": "AS 25.24.170(b)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0194",
+      "source_cite": "Civil Rule 90.3(a)",
+      "true": 0,
+      "extracted": true,
+      "text": "will be calculated by",
+      "citation": "Civil Rule 90.3(b)",
+      "tier": "exact",
+      "score": 100.0,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0194",
+      "source_cite": "Civil Rule 90.3(b)",
+      "true": 0,
+      "extracted": false,
+      "text": null,
+      "citation": null,
+      "tier": "not_extracted",
+      "score": null,
+      "pred": 0
+    },
+    {
+      "doc_id": "doc-0194",
+      "source_cite": "Alaska R. Evid. 401",
+      "true": 0,
+      "extracted": true,
+      "text": "relevant evidence means evidence having any tendency to make the existence of any fact that is of consequence to the determination of the action more probable or less probable than it would be without the evidence.",
+      "citation": "Alaska R. Evid. 401",
+      "tier": "normalized",
+      "score": 100.0,
+      "pred": 0
+    }
+  ],
+  "extras": [
+    {
+      "doc_id": "doc-0002",
+      "text": "the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0002",
+      "text": "in a just manner",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0002",
+      "text": "fairly allocate the economic effect of divorce",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0002",
+      "text": "fairly allocate the economic effect of dissolution",
+      "citation": "AS 25.24.230(a)(3)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0002",
+      "text": "fully and specifically set out in the decree the written agreements of the spouses and shall order the performance of those written agreements.",
+      "citation": "AS 25.24.230(f)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0003",
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": "AS 25.24.150(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0004",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody under AS 25.20.060 - 25.20.130.",
+      "citation": "AS 25.24.150(g)",
+      "tier": "fuzzy",
+      "score": 54.65116279069768,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0004",
+      "text": "this state is the home state of the child on the date of the commencement of the proceeding.",
+      "citation": "AS 25.30.300(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0004",
+      "text": "are the exclusive jurisdictional bases for making a child custody determination by a court of this state,",
+      "citation": "AS 25.30.300(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0004",
+      "text": "shall award custody on the basis of the best interests of the child.",
+      "citation": "AS 25.20.060(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0004",
+      "text": "assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060(c)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0004",
+      "text": "shall have, to the greatest degree practical, equal access to both parents",
+      "citation": "AS 25.20.070",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0004",
+      "text": "only when the court finds separate representation of the child's best interests is necessary, such as when the guardian ad litem may be expected to present evidence not otherwise likely to be available or presented, or the proceeding is unusually complex.",
+      "citation": "Civil Rule 90.7(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0004",
+      "text": "shall represent and advocate the best interests of the child",
+      "citation": "Civil Rule 90.7(e)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0006",
+      "text": "may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0006",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents",
+      "citation": "AS 25.20.070",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0006",
+      "text": "may appoint expert witnesses",
+      "citation": "Alaska R. Evid. 706(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0006",
+      "text": "shall advise the parties of the witness' findings",
+      "citation": "Alaska R. Evid. 706(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0007",
+      "text": "not live to regret",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0007",
+      "text": "not live to regret",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0008",
+      "text": "make sure she regretted it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "adjusted annual income",
+      "citation": "Civil Rule 90.3(a)(2)(B)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "fairly allocate the economic effect of divorce",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "is in the best interests of the child,",
+      "citation": "AS 25.20.110(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "is just as between the spouses and in the best interests of the children of the marriage.",
+      "citation": "AS 25.24.220(d)(2)",
+      "tier": "fuzzy",
+      "score": 97.72727272727273,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "adjusted annual income",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "voluntarily and unreasonably is unemployed or underemployed.",
+      "citation": "Civil Rule 90.3(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "in a just manner",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "the division of property must fairly allocate the economic effect of divorce",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "be fair and just and take into consideration the factors listed in AS 25.24.160(a)(2) and (4) so that the economic effect of dissolution is fairly allocated.",
+      "citation": "AS 25.24.200(a)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "examine the written agreements between the spouses to determine that they are just, that they constitute the entire agreement between the parties, and that the agreements concerning child custody, child support, and visitation are in the best interest of the children of the marriage.",
+      "citation": "AS 25.24.220(i)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0012",
+      "text": "must specify that the dissolution petition constitutes the entire agreement between the parties.",
+      "citation": "AS 25.24.250(c)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0014",
+      "text": "in a just manner",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0017",
+      "text": "Adjusted annual income",
+      "citation": "Civil Rule 90.3(a)(2)(B)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0017",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0018",
+      "text": "27% (.27) for two children.",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0018",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0019",
+      "text": "whether joint or separate, acquired only during marriage, in a just manner,",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0019",
+      "text": "fairly allocate the economic effect of divorce",
+      "citation": "AS 25.24.160(a)(2)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0019",
+      "text": "the court may allocate the dependent tax deduction for each child between the parties as is just and proper and in the child's best interests.",
+      "citation": "Civil Rule 90.3(k)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0019",
+      "text": "for the division between the parties of their property, including retirement benefits, whether joint or separate, acquired only during marriage, in a just manner.",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0019",
+      "text": "are just as between the spouses and in the best interests of the children of the marriage.",
+      "citation": "AS 25.24.220(d)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0019",
+      "text": "are in the best interest of the children of the marriage",
+      "citation": "AS 25.24.230(b)(2)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0019",
+      "text": "the court may allow the obligor parent to reduce child support payments by up to 75% for any period in which the obligor parent has extended visitation of over 27 consecutive days.",
+      "citation": "Civil Rule 90.3(a)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0019",
+      "text": "adequate to meet the needs of children, subject to the ability of parents to pay,",
+      "citation": "Rule 90.3(a)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0020",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0020",
+      "text": "property, including retirement benefits, whether joint or separate, acquired only during marriage.",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0020",
+      "text": "assign, deliver, or convey any of their real or personal property, including retirement benefits, to the other party",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0022",
+      "text": "the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0022",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "property, including retirement benefits, whether joint or separate, acquired only during marriage, in a just manner.",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "invade the property, including retirement benefits, of either spouse acquired before marriage when the balancing of the equities between the parties requires it.",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "the judgment must meet the requirements of a qualified domestic relations order under the definition of that phrase that is applicable to those provisions.",
+      "citation": "AS 25.24.160(b)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "the earning capacity of the parties, including their educational backgrounds, training, employment skills, work experiences, length of absence from the job market, and custodial responsibilities for children during the marriage.",
+      "citation": "AS 25.24.160(a)(4)(C)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "the circumstances and necessities of each party.",
+      "citation": "AS 25.24.160(a)(4)(G)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "the financial condition of the parties, including the availability and cost of health insurance.",
+      "citation": "AS 25.24.160(a)(4)(D)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "fairly allocate the economic effect of divorce",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "the nurture and education",
+      "citation": "AS 25.24.160(a)(1)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0023",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0024",
+      "text": "the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0024",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0024",
+      "text": "as may be just and necessary without regard to which of the parties is in fault",
+      "citation": "AS 25.24.160(a)(2)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0024",
+      "text": "fairly allocate the economic effect of divorce",
+      "citation": "AS 25.24.160(a)(2)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0026",
+      "text": "just and proper",
+      "citation": "AS 25.24.160",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0026",
+      "text": "fairly allocate[s] the economic effect of divorce",
+      "citation": "AS 25.24.160",
+      "tier": "fuzzy",
+      "score": 95.83333333333334,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0026",
+      "text": "in a just manner",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0026",
+      "text": "in a just manner",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0026",
+      "text": "fairly allocate the economic effect of divorce",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0027",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "Alaska Statute 25.24.160(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0028",
+      "text": "as may be just and proper for the parties to contribute toward the nurture and education of their children.",
+      "citation": "AS 25.24.930(1)",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0028",
+      "text": "fairly allocate[s] the economic effect of divorce",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0029",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0030",
+      "text": "a child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 994(a)",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0031",
+      "text": "the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0033",
+      "text": "the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0034",
+      "text": "retirement benefits, whether joint or separate, acquired only during marriage.",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0034",
+      "text": "the conduct of the parties, including whether there has been unreasonable depletion of marital assets.",
+      "citation": "AS 25.24.160(a)(4)(E)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0034",
+      "text": "incompatibility of temperament has caused the irremediable breakdown of the marriage.",
+      "citation": "AS 25.24.200(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0035",
+      "text": "Adjusted annual income as used in this rule means the parent's total income from all sources minus",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0035",
+      "text": "voluntarily and unreasonably is unemployed or underemployed.",
+      "citation": "Civil Rule 90.3(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0035",
+      "text": "pay stubs, vouchers, or other similar proof of income from all sources for the past two months,",
+      "citation": "Civil Rule 26.1(b)(1)(J)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0035",
+      "text": "in a just manner",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0035",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0036",
+      "text": "fairly allocate the economic effect of divorce.",
+      "citation": "AS 25.24.160(a)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0037",
+      "text": "fairly allocate the economic effect of divorce",
+      "citation": "AS 25.24.160(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0037",
+      "text": "for the payment by either or both parties of an amount of money or goods, in gross or installments that may include cost-of-living adjustments, as may be just and proper for the parties to contribute toward the nurture and education of their children.",
+      "citation": "AS 25.24.160(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0037",
+      "text": "the court shall allocate equally the cost of this insurance between the parties unless the court orders otherwise for good cause.",
+      "citation": "Civil Rule 90.3(d)(1)(B)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0037",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0037",
+      "text": "the time and manner of acquisition of the property in question,",
+      "citation": "AS 25.24.160(a)(4)(H)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0037",
+      "text": "the income-producing capacity of the property and the value of the property at the time of division.",
+      "citation": "AS 25.24.160(a)(4)(I)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0039",
+      "text": "fairly allocate the economic effect of divorce by being based on consideration of",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0039",
+      "text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children.",
+      "citation": "AS 25.24.160(a)(4)(F)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "this state is the home state of the child on the date of the commencement of the proceeding.",
+      "citation": "AS 25.30.300",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "the provisions of (a) of this section are the exclusive jurisdictional bases for making a child custody determination by a court of this state.",
+      "citation": "AS 25.30.300(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "shall award custody on the basis of the best interests of the child.",
+      "citation": "AS 25.20.060",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "shall assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "this state is the home state of the child on the date of the commencement of the proceeding.",
+      "citation": "AS 25.30.300(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "shall assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060(c)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "may consider only those facts that directly affect the well-being of the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "the guardian ad litem shall represent and advocate the best interests of the child",
+      "citation": "Civil Rule 90.7(e)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "shall be treated as a party to the proceeding for all purposes, except as otherwise provided in this rule.",
+      "citation": "Civil Rule 90.7(e)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "the court may on its own motion or on the motion of any party enter an order to show cause why expert witnesses should not be appointed.",
+      "citation": "Alaska R. Evid. 706(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "if there is a dispute over child custody, either parent may petition the superior court for resolution of the matter.",
+      "citation": "AS 25.20.060(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0042",
+      "text": "neither parent, regardless of the question of the child's legitimacy, is entitled to preference in the awarding of custody.",
+      "citation": "AS 25.20.060(b)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0043",
+      "text": "shall be treated as a party to the proceeding for all purposes.",
+      "citation": "Civil Rule 90.7(e)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0045",
+      "text": "in accordance with the best interests of the child",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0047",
+      "text": "the physical, emotional, mental, religious, and social needs of the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0047",
+      "text": "the capability and desire of each parent to meet these needs.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0047",
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0047",
+      "text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0048",
+      "text": "the exclusive jurisdictional bases for making a child custody determination by a court of this state.",
+      "citation": "AS 25.30.300(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0048",
+      "text": "evidence that substance abuse by either parent or other members of the household directly affects the emotional or physical well-being of the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0048",
+      "text": "removing any child who is the subject of the action from the State of Alaska without the written consent of the other party.",
+      "citation": "Civil Rule 65(e)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0049",
+      "text": "an award of shared custody shall assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060(c)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0049",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody.",
+      "citation": "AS 25.24.150(g)",
+      "tier": "fuzzy",
+      "score": 58.04195804195804,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0049",
+      "text": "the court may on its own motion or on the motion of any party enter an order to show cause why expert witnesses should not be appointed.",
+      "citation": "Alaska R. Evid. 938(a)",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0051",
+      "text": "the court shall award custody on the basis of the best interests of the child.",
+      "citation": "Alaska Statute AS 25.20.060",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0051",
+      "text": "an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0051",
+      "text": "manifest injustice would result if the support award were not varied.",
+      "citation": "Civil Rule 90.3(b)(1)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0052",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody under AS 25.20.060, 25.20.130.",
+      "citation": "AS 25.20.070",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0052",
+      "text": "shall represent and advocate the best interests of the child",
+      "citation": "Civil Rule 90.7(e)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0054",
+      "text": "the physical, emotional, mental, religious, and social needs of the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0054",
+      "text": "the capability and desire of each parent to meet these needs.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0054",
+      "text": "the love and affection existing between the child and each parent,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0054",
+      "text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0054",
+      "text": "Adjusted annual income",
+      "citation": "Civil Rule 90.3(a)(2)(A)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0058",
+      "text": "the court shall award custody on the basis of the best interests of the child.",
+      "citation": "AS 25.20.933",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0059",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0059",
+      "text": "assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.070",
+      "tier": "fuzzy",
+      "score": 49.523809523809526,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0059",
+      "text": "the capability and desire of each parent to meet",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0059",
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0059",
+      "text": "during the pendency of the action.",
+      "citation": "AS 25.24.150(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0065",
+      "text": "has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060(b)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0065",
+      "text": "the love and affection existing between the child and each parent.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0065",
+      "text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0065",
+      "text": "frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060(c)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0067",
+      "text": "assure that the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060(c)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0068",
+      "text": "to the greatest degree practical, equal access to both parents.",
+      "citation": "AS 25.20.070",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0069",
+      "text": "the state in which a child lived with a parent or a person acting as a parent for at least six consecutive months, including any temporary absences of the child or parent or person acting as a parent, immediately before the commencement of a child custody proceeding.",
+      "citation": "AS 25.30.909(7)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0069",
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": "AS 25.24.150(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0069",
+      "text": "the capability and desire of each parent to meet",
+      "citation": "AS 25.24.150(c)(2)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0070",
+      "text": "shall be treated as a party to the proceeding for all purposes.",
+      "citation": "Civil Rule 90.7(e)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0070",
+      "text": "the child has frequent and continuing contact with each parent to the maximum extent possible.",
+      "citation": "AS 25.20.060",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0080",
+      "text": "the state in which a child lived with a parent or a person acting as a parent for at least six consecutive months, including any temporary absences of the child or parent or person acting as a parent, immediately before the commencement of a child custody proceeding,",
+      "citation": "AS 25.30.909(7)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0082",
+      "text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+      "citation": "AS 25.24.150(c)(6)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0083",
+      "text": "the physical, emotional, mental, religious, and social needs of the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0083",
+      "text": "the capability and desire of each parent to meet these needs.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0083",
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0083",
+      "text": "willingness and ability to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0083",
+      "text": "shall have, to the greatest degree practical, equal access to both parents",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0087",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody.",
+      "citation": "AS 25.24.150(c)",
+      "tier": "fuzzy",
+      "score": 58.04195804195804,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0089",
+      "text": "equal access to both parents",
+      "citation": "AS 25.20.070",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0089",
+      "text": "the children reside with that parent for a period specified in writing in the custody order of at least 30, but no more than 70, percent of the year.",
+      "citation": "Civil Rule 90.3(f)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0090",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody.",
+      "citation": "AS 25.20.070",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0094",
+      "text": "a final child support award may be modified upon a showing of a material change of circumstances as provided by state law",
+      "citation": "Civil Rule 90.3(h)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0096",
+      "text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0097",
+      "text": "if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0097",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody.",
+      "citation": "AS 25.24.150(g)",
+      "tier": "fuzzy",
+      "score": 58.04195804195804,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0097",
+      "text": "must be demonstrated relative to the facts and circumstances that existed at the time of the prior custody order that the party seeks to modify.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0097",
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": "AS 25.24.150(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0097",
+      "text": "the proximity of each parent to the other and to the school in which the child is enrolled",
+      "citation": "AS 25.20.090",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0097",
+      "text": "the feasibility of travel between the parents.",
+      "citation": "AS 25.20.090",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0097",
+      "text": "the physical, emotional, mental, religious, and social needs of the child.",
+      "citation": "AS 25.24.150(c)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0097",
+      "text": "other factors that the court considers pertinent.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0098",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents",
+      "citation": "AS 25.20.070",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0098",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents",
+      "citation": "AS 25.20.070",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0099",
+      "text": "the court may consider only those facts that directly affect the well-being of the child.",
+      "citation": "AS 25.24.905",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0099",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents during the time that the court considers an award of custody.",
+      "citation": "AS 25.24.941",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0099",
+      "text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+      "citation": "AS 25.24.150(c)(6)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0099",
+      "text": "the capability and desire of each parent to meet these needs.",
+      "citation": "AS 25.24.150(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0099",
+      "text": "the court may consider only those facts that directly affect the well-being of the child.",
+      "citation": "AS 25.24.150(d)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0099",
+      "text": "to the greatest degree practical, equal access to both parents.",
+      "citation": "AS 25.20.070",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0101",
+      "text": "may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0105",
+      "text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0105",
+      "text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+      "citation": "AS 25.24.150(c)(6)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0105",
+      "text": "the physical, emotional, mental, religious, and social needs of the child,",
+      "citation": "AS 25.24.150(c)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0105",
+      "text": "the capability and desire of each parent to meet these needs.",
+      "citation": "AS 25.24.150(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0109",
+      "text": "may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0111",
+      "text": "An award of custody of a child or visitation with the child may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child. If a parent opposes the modification of the award of custody or visitation with the child and the modification is granted, the court shall enter on the record its reason for the modification.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0111",
+      "text": "There is a rebuttable presumption that a parent who has a history of perpetrating domestic violence against the other parent, a child, or a domestic living partner may not be awarded sole legal custody, sole physical custody, joint legal custody, or joint physical custody of a child.",
+      "citation": "AS 25.24.150(g)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0111",
+      "text": "a finding that a crime involving domestic violence has occurred since the last custody or visitation determination is a finding of change of circumstances",
+      "citation": "AS 25.20.110(c)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0115",
+      "text": "the child shall have, to the greatest degree practical, equal access to both parents.",
+      "citation": "AS 25.20.070",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0115",
+      "text": "to the greatest degree practical, equal access to both parents.",
+      "citation": "AS 25.20.070",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "make her regret it",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "a court may not deny a petition for a protective order under this section solely because",
+      "citation": "AS 18.66.100(e)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "is a lapse of time between an act of domestic violence and the filing of the petition.",
+      "citation": "AS 18.66.100(e)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "prohibit the respondent from telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member,",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "prohibit the respondent from entering a propelled vehicle in the possession of or occupied by the petitioner.",
+      "citation": "AS 18.66.100(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "a court may not order parties into mediation or refer them to mediation for resolution of the issues arising from a petition for a protective order under AS 18.66.100.",
+      "citation": "AS 18.66.130(c)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "mediation may not be ordered between the parties to, or in, a case filed under AS 18.66.100-18.66.180.",
+      "citation": "Civil Rule 100(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "an invitation by the petitioner to communicate, enter the residence or vehicle, or have other prohibited contact with the petitioner does not waive or nullify any provision in a protective order.",
+      "citation": "AS 18.66.130(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "there is no privilege under this subdivision",
+      "citation": "Alaska R. Evid. 505(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "a civil proceeding brought by or on behalf of one spouse against the other spouse.",
+      "citation": "Alaska R. Evid. 505(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "a proceeding in which one spouse is charged with",
+      "citation": "Alaska R. Evid. 505(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0121",
+      "text": "a crime involving domestic violence as defined in AS 18.66.990.",
+      "citation": "Alaska R. Evid. 505(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0122",
+      "text": "make sure she never got the kids.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0122",
+      "text": "make sure she never got the kids,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0122",
+      "text": "make sure she never got the kids.",
+      "citation": "AS 18.66.100(c)(9)",
+      "tier": "fuzzy",
+      "score": 56.25,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0123",
+      "text": "make sure she never left him alive.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0124",
+      "text": "If you ever try to leave me, I will make sure you regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0125",
+      "text": "burn the place down",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0126",
+      "text": "if you try to leave me, I will make sure you regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0127",
+      "text": "make Ashley regret it",
+      "citation": "AS 18.66.100",
+      "tier": "fuzzy",
+      "score": 57.14285714285714,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0127",
+      "text": "make Ashley regret it",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0127",
+      "text": "make Ashley regret it",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "fuzzy",
+      "score": 57.14285714285714,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0128",
+      "text": "If you try to leave me or take anything from this house, you will regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0128",
+      "text": "If you try to leave me or take anything from this house, you will regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0128",
+      "text": "telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner",
+      "citation": "AS 18.66.100(c)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0128",
+      "text": "stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner.",
+      "citation": "AS 18.66.100(c)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0128",
+      "text": "immediate and irreparable injury, loss, or damage will result to the applicant before the adverse party or that party's attorney can be heard in opposition.",
+      "citation": "Civil Rule 65(b)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0128",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0128",
+      "text": "prohibit the respondent from telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0128",
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0129",
+      "text": "If you try to leave me I will make sure you regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0129",
+      "text": "crime involving domestic violence",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0129",
+      "text": "crime involving domestic violence",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0129",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0129",
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0129",
+      "text": "a court may not order parties into mediation or refer them to mediation for resolution of the issues arising from a petition for a protective order under AS 18.66.100, 18.66.180.",
+      "citation": "AS 18.66.922",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0129",
+      "text": "may not be ordered between the parties to, or in, a case filed under AS 18.66.100 - 18.66.180.",
+      "citation": "Civil Rule 100(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0129",
+      "text": "a protective order issued under this chapter is in addition to and not in place of any other civil or criminal remedy. A petitioner is not barred from seeking an order under AS 18.66.100, 18.66.180 because of the existence of another civil action between the petitioner and respondent.",
+      "citation": "AS 18.66.130(e)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0129",
+      "text": "a court may not grant protective orders against the petitioner and the respondent in the same action under this chapter.",
+      "citation": "AS 18.66.130(b)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0130",
+      "text": "make sure you pay for this.",
+      "citation": "AS 18.66.941",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0130",
+      "text": "you will regret leaving me",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0130",
+      "text": "I know where you go every day, and I will make sure you pay for this.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0130",
+      "text": "a person who is or has been a victim of a crime involving domestic violence may file a petition in the district or superior court for a protective order against a household member.",
+      "citation": "AS 18.66.100",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0130",
+      "text": "will regret leaving",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0130",
+      "text": "will make sure you pay for this,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0130",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0130",
+      "text": "knows where you go every day",
+      "citation": "AS 18.66.100(c)(5)",
+      "tier": "fuzzy",
+      "score": 50.0,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0130",
+      "text": "effective until further order of the court,",
+      "citation": "AS 18.66.100(c)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "make Elena regret leaving",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "watch her back.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "make Elena regret leaving",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "watch her back.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "make Elena regret leaving",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "watch her back,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "prohibit the respondent from telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "a civil proceeding brought by or on behalf of one spouse against the other spouse.",
+      "citation": "Alaska R. Evid. 505(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "the communication was made, in whole or in part, to enable or aid anyone to commit or plan to commit a crime or a fraud.",
+      "citation": "Alaska R. Evid. 505(b)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0131",
+      "text": "order other relief the court determines necessary to protect the petitioner or any household member.",
+      "citation": "AS 18.66.100(c)(16)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0132",
+      "text": "make him regret it",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0132",
+      "text": "would not be safe",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0132",
+      "text": "would not be safe",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0132",
+      "text": "would not be safe",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0134",
+      "text": "make sure he regretted it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0134",
+      "text": "crime involving domestic violence",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0134",
+      "text": "adults or minors who live together or who have lived together.",
+      "citation": "AS 18.66.990(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0134",
+      "text": "prohibit the respondent from telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0134",
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0134",
+      "text": "prohibit the respondent from entering a propelled vehicle in the possession of or occupied by the petitioner,",
+      "citation": "AS 18.66.100(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0134",
+      "text": "order other relief the court determines necessary to protect the petitioner or any household member,",
+      "citation": "AS 18.66.100(c)(16)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0134",
+      "text": "a court may not deny a petition for a protective order under this section solely because there is a lapse of time between an act of domestic violence and the filing of the petition.",
+      "citation": "AS 18.66.100(e)",
+      "tier": "fuzzy",
+      "score": 98.88888888888889,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0136",
+      "text": "crime involving domestic violence",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0136",
+      "text": "make him regret it",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0136",
+      "text": "make him regret it",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0137",
+      "text": "If you call the police or try to leave, I will make sure you regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0137",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0137",
+      "text": "prohibit the respondent from telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0137",
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0137",
+      "text": "order other relief the court determines necessary to protect the petitioner or any household member.",
+      "citation": "AS 18.66.100(c)(16)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0138",
+      "text": "if you try to leave me I will make sure you never see the kids again, and you will regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0138",
+      "text": "I will make sure you never see the kids again",
+      "citation": "AS 18.66.100(c)(9)",
+      "tier": "fuzzy",
+      "score": 53.333333333333336,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0139",
+      "text": "make sure she never left the house again.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0139",
+      "text": "hurt her badly.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0139",
+      "text": "make sure she never left the house again,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0139",
+      "text": "hurt her badly",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0140",
+      "text": "make her regret it",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0140",
+      "text": "find her no matter where she went.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0140",
+      "text": "make her regret it",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0140",
+      "text": "find her no matter where she went.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0141",
+      "text": "If you try to leave, I will make sure you regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0141",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0141",
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0141",
+      "text": "prohibit the respondent from entering a propelled vehicle in the possession of or occupied by the petitioner,",
+      "citation": "AS 18.66.100(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0141",
+      "text": "other relief the court determines necessary to protect the petitioner or any household member",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0141",
+      "text": "is in addition to and not in place of any other civil or criminal remedy",
+      "citation": "AS 18.66.100",
+      "tier": "fuzzy",
+      "score": 52.77777777777778,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0141",
+      "text": "is not barred from seeking an order under AS 18.66.100, 18.66.180 because of the existence of another civil action between the petitioner and respondent.",
+      "citation": "AS 18.66.100",
+      "tier": "fuzzy",
+      "score": 54.3046357615894,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0142",
+      "text": "make sure she regretted it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0143",
+      "text": "make her regret leaving him,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0143",
+      "text": "make her regret leaving him,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0143",
+      "text": "make her regret leaving him.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "fuzzy",
+      "score": 55.55555555555556,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0143",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0143",
+      "text": "award temporary custody of a minor child to the petitioner",
+      "citation": "AS 18.66.100(c)(9)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0144",
+      "text": "make her regret leaving.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0144",
+      "text": "You will not get away from me, I promise you that.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0144",
+      "text": "a person who is or has been a victim of a crime involving domestic violence may file a petition in the district or superior court for a protective order against a household member.",
+      "citation": "AS 18.66.100(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0144",
+      "text": "prohibit the respondent from telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0144",
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0144",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0144",
+      "text": "directing one spouse to vacate the marital residence or the home of the other spouse",
+      "citation": "AS 25.24.140(b)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0144",
+      "text": "for protection under AS 18.66.100 through 18.66.180.",
+      "citation": "AS 25.24.140(b)",
+      "tier": "fuzzy",
+      "score": 84.31372549019608,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0145",
+      "text": "make sure she never left the house again.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0145",
+      "text": "crime involving domestic violence",
+      "citation": "AS 18.66.990(3)(A)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0145",
+      "text": "make sure she never left the house again,",
+      "citation": "AS 18.66.990(3)(A)",
+      "tier": "fuzzy",
+      "score": 52.5,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0145",
+      "text": "leave the house",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "fuzzy",
+      "score": 66.66666666666667,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0146",
+      "text": "make sure she never left him alive.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0147",
+      "text": "You won't see it coming,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0147",
+      "text": "You won't see it coming.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "make sure he would regret leaving.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "You won't be safe anywhere you go.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "make sure he would regret leaving",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "won't be safe anywhere you go",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "prohibit the respondent from entering a propelled vehicle in the possession of or occupied by the petitioner.",
+      "citation": "AS 18.66.100(c)(5)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "direct the respondent to surrender any firearm owned or possessed by the respondent if the court finds that the respondent was in the actual possession of or used a firearm during the commission of the domestic violence.",
+      "citation": "AS 18.66.100(c)(7)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "order other relief the court determines necessary to protect the petitioner or any household member.",
+      "citation": "AS 18.66.100(c)(16)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "won't be safe anywhere you go,",
+      "citation": "AS 18.66.100(c)(16)",
+      "tier": "fuzzy",
+      "score": 51.72413793103448,
+      "flagged": true
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "a court may not order parties into mediation or refer them to mediation for resolution of the issues arising from a petition for a protective order under AS 18.66.100, 18.66.180.",
+      "citation": "AS 18.66.130(c)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0148",
+      "text": "mediation may not be ordered between the parties to, or in, a case filed under AS 18.66.100, 18.66.180.",
+      "citation": "Civil Rule 100(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0149",
+      "text": "make sure David regretted it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0149",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0149",
+      "text": "the residence, school, or place of employment of the petitioner.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0150",
+      "text": "make sure he regretted leaving",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0150",
+      "text": "would not walk away from this marriage in one piece.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0150",
+      "text": "make sure he regretted leaving",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0150",
+      "text": "would not walk away from this marriage in one piece",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0151",
+      "text": "make him regret it",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0151",
+      "text": "not let him walk away alive.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0151",
+      "text": "make him regret it",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0151",
+      "text": "walking away alive,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0152",
+      "text": "make him regret everything",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0152",
+      "text": "make him regret everything",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0152",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0152",
+      "text": "telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0153",
+      "text": "If you try to leave me, I will make sure you regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0154",
+      "text": "You will regret this,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0154",
+      "text": "crime involving domestic violence",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0154",
+      "text": "You will regret this,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0155",
+      "text": "If you try to leave, I will kill you and then myself.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0155",
+      "text": "crime involving domestic violence",
+      "citation": "AS 18.66.990(3)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0157",
+      "text": "If you ever try to leave me, I will kill you.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0157",
+      "text": "telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0157",
+      "text": "remove and exclude the respondent from the residence of the petitioner, regardless of ownership of the residence.",
+      "citation": "AS 18.66.100(c)(3)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0157",
+      "text": "regardless of ownership,",
+      "citation": "AS 18.66.100(c)(10)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0157",
+      "text": "order other relief the court determines necessary to protect the petitioner or any household member.",
+      "citation": "AS 18.66.100(c)(16)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0158",
+      "text": "Next time you run your mouth, I will make sure you regret it.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0158",
+      "text": "regardless of ownership of the residence",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0159",
+      "text": "make sure he would never leave,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0160",
+      "text": "make her regret leaving,",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0160",
+      "text": "make her regret leaving.",
+      "citation": null,
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0160",
+      "text": "prohibit the respondent from telephoning, contacting, or otherwise communicating directly or indirectly with the petitioner.",
+      "citation": "AS 18.66.100(c)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0160",
+      "text": "any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0160",
+      "text": "the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member.",
+      "citation": "AS 18.66.100(c)(4)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0160",
+      "text": "if the safety of the child and the petitioner can be protected.",
+      "citation": "AS 18.66.100(c)(9)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0160",
+      "text": "for protection under AS 18.66.100 -- 18.66.180.",
+      "citation": "AS 25.24.140(b)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0164",
+      "text": "as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0166",
+      "text": "will be presumed if support as calculated under this rule is more than 15 percent greater or less than the outstanding support order.",
+      "citation": "Civil Rule 90.3(h)(1)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0166",
+      "text": "may include a finding that unusual circumstances exist which require variation of the award in order to award an amount of support which is just and proper for the parties to contribute toward the nurture and education of their children.",
+      "citation": "Civil Rule 90.3(c)(1)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0174",
+      "text": "a periodic modification of child support may be made without a showing of a material change in circumstances if the child support order being modified on the periodic basis has not been modified or adjusted during the three years preceding the periodic modification.",
+      "citation": "AS 25.24.170(b)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0174",
+      "text": "may be modified if the court determines that a change in circumstances requires the modification of the award and the modification is in the best interests of the child.",
+      "citation": "AS 25.20.110(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0174",
+      "text": "in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0174",
+      "text": "shall carefully consider the need for support, the ability of both parents to meet such support obligations, the extent to which the parents supported the child before divorce, and the economic ability of the parents to pay after separation and divorce.",
+      "citation": "AS 25.27.060(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0174",
+      "text": "the amount necessary for support, maintenance, nurture, and education of the child.",
+      "citation": "AS 25.27.060(c)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0176",
+      "text": "for the purposes of a motion to modify or terminate child support, the adoption or enactment of guidelines or a significant amendment to guidelines for determining support is a material change in circumstances if the guidelines are relevant to the motion.",
+      "citation": "AS 25.24.170(b)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0178",
+      "text": "voluntarily and unreasonably is unemployed or underemployed.",
+      "citation": "Civil Rule 90.3(a)(4)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0178",
+      "text": "who is physically or mentally incapacitated.",
+      "citation": "Civil Rule 90.3(a)(4)(E)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0181",
+      "text": "the percentage by which the non-custodial parent's adjusted income must be multiplied in order to calculate the child support award is . . . 27% (.27) for two children.",
+      "citation": "Civil Rule 90.3(a)(2)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0183",
+      "text": "an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0189",
+      "text": "the parent's total income from all sources",
+      "citation": "Civil Rule 90.3(a)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0190",
+      "text": "a final child support award may be modified upon a showing of a material change of circumstances as provided by state law",
+      "citation": "Civil Rule 90.3(h)(1)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0193",
+      "text": "a child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 921(a)",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0193",
+      "text": "work-related child care expenses for the children who are the subject of the child support order.",
+      "citation": "Civil Rule 90.3(a)(1)(E)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0194",
+      "text": "any time after judgment the court, upon the motion of either party, may set aside, alter, or modify so much of the judgment as may provide for alimony, for the appointment of trustees for the care and custody of the minor children or for their nurture and education, for the care, nurture, and education of unmarried 18-year-old children of the marriage while they are actively pursuing a high school diploma or an equivalent level of technical or vocational training and living as dependents with a parent, guardian, or designee of the parent or guardian, or for the maintenance of either party to the action.",
+      "citation": "AS 25.24.927",
+      "tier": "no_source",
+      "score": null,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0194",
+      "text": "a periodic modification of child support may be made without a showing of a material change in circumstances if the child support order being modified on the periodic basis has not been modified or adjusted during the three years preceding the periodic modification.",
+      "citation": "AS 25.24.170(b)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0197",
+      "text": "the percentage by which the non-custodial parent's adjusted income must be multiplied in order to calculate the child support award is . . . 27% (.27) for two children.",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0199",
+      "text": "a child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2).",
+      "citation": "Civil Rule 90.3(a)",
+      "tier": "normalized",
+      "score": 100.0,
+      "flagged": false
+    },
+    {
+      "doc_id": "doc-0199",
+      "text": "the court shall take judicial notice of each matter specified in subdivision (b) if the requesting party furnishes sufficient information and has given each party notice adequate to enable the party to meet the request.",
+      "citation": "Alaska R. Evid. 201(d)",
+      "tier": "exact",
+      "score": 100.0,
+      "flagged": false
+    }
+  ]
+}
