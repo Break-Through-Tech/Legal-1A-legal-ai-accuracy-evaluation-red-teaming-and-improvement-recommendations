@@ -7,10 +7,7 @@ works on any document.
 
 import json
 from .case_parser import normalize as _normalize_whitespace
-
-REAL = "real"
-WRONG_REPORTER = "wrong_reporter"
-FABRICATED = "fabricated"
+from .labels import FABRICATED, REAL, WRONG_REPORTER
 
 
 def normalize_key(text):
