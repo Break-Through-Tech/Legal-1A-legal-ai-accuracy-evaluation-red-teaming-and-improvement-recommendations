@@ -27,5 +27,3 @@ Thumbs.db
 
 # Data (too large for GitHub)
 # data/benchmark/documents/
-data/extracted-citations.json
-data/extraction-results.json
