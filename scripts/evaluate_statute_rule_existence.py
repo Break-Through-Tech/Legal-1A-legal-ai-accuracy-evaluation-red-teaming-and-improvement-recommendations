@@ -6,8 +6,8 @@ compare against the answer key's ``exists`` field. Cases are out of scope here
 (they are scored by ``scripts/evaluate.py``).
 
 Scoring follows §9: recall on fabricated citations is the priority. The single
-citation ``AS 11.56.807`` (doc-0136) is excluded entirely, as §9 requires,
-because it is confirmed real law that sits outside the corpus's curated scope.
+citation ``AS 11.56.807`` (doc-0136) is not scored: check_statute_existence returns OUT_OF_SCOPE for it, 
+because it is confirmed real law outside the corpus's curated scope.
 
 Writes ``reports/statute-rule-existence-report.md`` and prints a summary.
 """
@@ -34,9 +34,6 @@ ANSWER_KEY_PATH = ROOT / "data" / "benchmark" / "answer-key.json"
 CORPUS = ROOT / "data" / "corpus"
 REPORT_PATH = ROOT / "reports" / "statute-rule-existence-report.md"
 
-# DATA_DICTIONARY §9: exclude this single citation from Stage-2 scoring.
-EXCLUDED = {("doc-0136", "AS 11.56.807")}
-
 
 def predict(citation, ctype, statutes, civil, evidence):
     if ctype == "statute":
@@ -51,21 +48,20 @@ def main():
     answer_key = json.loads(ANSWER_KEY_PATH.read_text(encoding="utf-8"))
 
     tp = fp = tn = fn = 0
-    excluded = out_of_scope = 0
     false_positives = []
     false_negatives = []
-
+    # ADDED (2026-10-20): list of skipped OUT_OF_SCOPE citations as (doc_id, cite),
+    #   for the report (AS 11.56.807 plus non civil/evidence rule families).
+    out_of_scope_cites = []
     for doc in answer_key:
         for entry in doc["citations"]:
             if entry["type"] == "case":
                 continue
-            if (doc["doc_id"], entry["cite"]) in EXCLUDED:
-                excluded += 1
-                continue
 
             result = predict(entry["cite"], entry["type"], statutes, civil, evidence)
             if result == OUT_OF_SCOPE:
-                out_of_scope += 1
+                # CHANGED (2026-10-20): OUT_OF_SCOPE citations are added to out_of_scope_cites.
+                out_of_scope_cites.append((doc["doc_id"], entry["cite"]))
                 continue
 
             predicted_real = result == REAL
@@ -93,8 +89,10 @@ def main():
         "answer key's `exists` field (DATA_DICTIONARY §9). Cases are scored "
         "separately in `scripts/evaluate.py`.",
         "",
-        f"Excluded per §9: {excluded} (`AS 11.56.807`, doc-0136). "
-        f"Out-of-scope (non civil/evidence rules): {out_of_scope}.",
+        # CHANGED (2026-10-20): report line lists the out-of-scope citations and count.
+        f"Out of scope (not scored): {len(out_of_scope_cites)}: "
+        + ", ".join(f"`{cite}` ({doc_id})" for doc_id, cite in out_of_scope_cites)
+        + ".",
         "",
         "| metric | value |",
         "|---|---|",
@@ -137,7 +135,7 @@ def main():
 
     print(f"TP={tp} FP={fp} TN={tn} FN={fn}")
     print(f"precision={precision:.4f} recall={recall:.4f} f1={f1:.4f}")
-    print(f"excluded={excluded} out_of_scope={out_of_scope}")
+    print(f"out_of_scope={len(out_of_scope_cites)}")
     print(f"report: {REPORT_PATH}")
 
 
