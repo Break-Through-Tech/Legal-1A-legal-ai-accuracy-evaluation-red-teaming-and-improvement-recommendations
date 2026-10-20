@@ -23,10 +23,7 @@ from pathlib import Path
 from typing import Iterable
 
 from .extractor import normalize_citation
-
-REAL = "real"
-FABRICATED = "fabricated"
-OUT_OF_SCOPE = "out_of_scope"
+from .labels import FABRICATED, OUT_OF_SCOPE, REAL
 
 _STATUTE_NUM_RE = re.compile(r"AS\s+(\d+\.\d+\.\d+)", re.IGNORECASE)
 _RULE_NUM_RE = re.compile(r"(\d+(?:\.\d+)?)\s*$")
