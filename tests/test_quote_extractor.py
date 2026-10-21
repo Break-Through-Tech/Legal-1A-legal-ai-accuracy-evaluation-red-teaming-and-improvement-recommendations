@@ -1,5 +1,7 @@
 """Tests for quote extraction. Examples are taken from real benchmark documents."""
 
+from pathlib import Path
+
 import pytest
 
 from citation_extractor.quote_extractor import (
@@ -92,8 +94,12 @@ def test_no_preceding_citation_returns_none():
 
 # ---------- extract_quotes (real document) ----------
 
+@pytest.mark.integration
 def test_extract_quotes_doc_0014():
-    quotes = extract_quotes("data/benchmark/documents/doc-0014.docx", doc_id="doc-0014")
+    doc = Path(__file__).resolve().parents[1] / "data" / "benchmark" / "documents" / "doc-0014.docx"
+    if not doc.exists():
+        pytest.skip("benchmark documents not present")
+    quotes = extract_quotes(str(doc), doc_id="doc-0014")
     cites = [q["citation"] for q in quotes]
     assert "Civil Rule 90.3(a)" in cites
     assert any(q["text"].startswith("the desirability of awarding the family home") for q in quotes)

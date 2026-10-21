@@ -8,6 +8,11 @@ and quotes with no source are never flagged.
 
 Extracted quotes that are not in the answer key are not labeled, but every
 planted alteration is in the key, so flags on them count as false alarms.
+
+The results file is generated, not committed. Run evaluate_quotes.py first:
+
+    python scripts/evaluate_quotes.py
+    python scripts/sweep_threshold.py
 """
 
 import json
@@ -35,6 +40,8 @@ def safe_divide(a, b):
 
 
 def main():
+    if not RESULTS_PATH.exists():
+        sys.exit(f"Missing {RESULTS_PATH.relative_to(ROOT)}. Run python scripts/evaluate_quotes.py first.")
     with RESULTS_PATH.open("r", encoding="utf-8") as f:
         results = json.load(f)
     quotes = [q for q in results["quotes"] if q["extracted"]]
