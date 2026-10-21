@@ -60,6 +60,12 @@ class TestNormalizeKey:
     def test_empty_input(self):
         assert normalize_key("") == ""
 
+    # ADDED (2026-10-20): "&" and "and" normalize to the same key.
+    def test_ampersand_matches_and(self):
+        assert normalize_key("Dep't of Health & Social Services") == normalize_key(
+            "Dep't of Health and Social Services"
+        )
+
 
 class TestNamesCompatible:
     def test_exact_match(self):
@@ -99,6 +105,15 @@ class TestCheckCaseExistence:
             check_case_existence("Restol v. Manshen", "512 P.3d 88", reporter_index, name_index)
             == FABRICATED
         )
+
+    # ADDED (2026-10-20): reporter-only short cites have no case name to compare.
+    def test_reporter_only_cite_in_corpus_is_real(self, indexes):
+        name_index, reporter_index = indexes
+        assert check_case_existence(None, "987 P.2d 183", reporter_index, name_index) == REAL
+
+    def test_reporter_only_cite_not_in_corpus_is_fabricated(self, indexes):
+        name_index, reporter_index = indexes
+        assert check_case_existence(None, "512 P.3d 88", reporter_index, name_index) == FABRICATED
 
 
 def test_real_corpus():
