@@ -46,10 +46,19 @@ LIST_MARKER_RE = re.compile(r"\((?:\d+|[a-z]|[ivx]+)\)", re.IGNORECASE)
 
 _PUNCT_MAP = str.maketrans({"‘": "'", "’": "'", "“": '"', "”": '"', "–": "-", "—": "-"})
 
+# A section range is written with a dash in the corpus ("AS 18.66.100 — 18.66.180")
+# but often spelled out in drafts ("18.66.100 through 18.66.180").
+RANGE_THROUGH_RE = re.compile(r"(?<=\d)\s+through\s+(?=\d)", re.IGNORECASE)
+
 
 def normalize_text(text: str) -> str:
     """Lowercase, drop list markers and punctuation, collapse whitespace."""
     text = unicodedata.normalize("NFKC", text).translate(_PUNCT_MAP)
+    # ADDED (2026-10-27): "18.66.100 — 18.66.180" and "18.66.100 through 18.66.180"
+    #   compare equal: "through" between numbers is dropped, just as the dash is
+    #   dropped as punctuation below. Was: the faithful quote in clean doc-0144
+    #   scored 84 and was flagged altered.
+    text = RANGE_THROUGH_RE.sub(" ", text)
     text = LIST_MARKER_RE.sub(" ", text).lower()
     return clean_whitespace(re.sub(r"[^\w\s]", " ", text))
 

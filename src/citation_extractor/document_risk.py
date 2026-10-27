@@ -1,8 +1,8 @@
 """Per-document hallucination-risk score.
 
-Combines the per-citation existence results (and, once the quote-fidelity
-checker merges, per-quote results) into one score per document, so a reviewer
-can tell which filings need a human check before they reach a litigant.
+Combines the per-citation existence results and the per-passage quote-fidelity
+results into one score per document, so a reviewer can tell which filings need
+a human check before they reach a litigant.
 
 Each finding has a weight from 0 to 1 by how severe and how certain it is.
 The document score is the chance that at least one finding is a real problem:
@@ -25,6 +25,8 @@ from typing import Iterable
 
 from .existence import check_case_existence
 from .labels import FABRICATED, OUT_OF_SCOPE, REAL, WRONG_REPORTER
+from .quote_fidelity import check_quote
+from .source_lookup import get_source_text
 from .statute_rule_existence import check_rule_existence, check_statute_existence
 
 # Quote-fidelity findings. The quote checker reports faithful/altered;
@@ -111,14 +113,26 @@ def existence_findings(
     return list(checked.values())
 
 
-# TODO(after PR #16): add quote_findings(passages, source_corpus) -> list[str], the
-#   quote-fidelity counterpart of existence_findings. For each passage from
-#   unquoted_passages.extract_passages(docx_path, source_corpus, doc_id):
-#     source = source_lookup.get_source_text(passage["citation"], source_corpus)
-#              if passage["citation"] else None
-#     result = quote_fidelity.check_quote(passage["text"], source)
-#     result["faithful"] is False and passage["quoted"]     -> ALTERED_QUOTE
-#     result["faithful"] is False and not passage["quoted"] -> POSSIBLE_ALTERATION
-#     result["faithful"] is True                            -> REAL
-#     result["faithful"] is None (unrelated / no_source)    -> skip, not judged
-#   Then update the module docstring (drop "once the quote-fidelity checker merges").
+def quote_findings(passages: Iterable[dict], source_corpus: dict[str, str]) -> list[str]:
+    """Run the quote-fidelity checker on one document's passages.
+
+    passages are dicts from unquoted_passages.extract_passages (with "text",
+    "citation" and "quoted"); source_corpus is source_lookup.load_corpus().
+    Returns one label per judged passage: REAL if faithful, ALTERED_QUOTE if an
+    altered passage is in quote marks, POSSIBLE_ALTERATION if it is not.
+    Passages with no source or unrelated to their citation are not judged and
+    add no finding (a fabricated citation is already counted by existence_findings).
+    """
+    findings = []
+    for passage in passages:
+        source = get_source_text(passage["citation"], source_corpus) if passage["citation"] else None
+        faithful = check_quote(passage["text"], source)["faithful"]
+        if faithful is None:
+            continue
+        if faithful:
+            findings.append(REAL)
+        elif passage["quoted"]:
+            findings.append(ALTERED_QUOTE)
+        else:
+            findings.append(POSSIBLE_ALTERATION)
+    return findings

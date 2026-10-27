@@ -191,7 +191,7 @@ A semantic model could help with the unquoted-passage false alarms, by telling a
 
 ```bash
 source .venv/bin/activate
-pytest                                         # 80 tests
+pytest                                         # 131 tests (whole suite)
 python scripts/evaluate_quotes.py              # quoted + unquoted; writes data/quote-fidelity-results.json
 python scripts/evaluate_quotes.py --quoted-only
 python scripts/sweep_threshold.py              # threshold and floor sweeps over the saved results

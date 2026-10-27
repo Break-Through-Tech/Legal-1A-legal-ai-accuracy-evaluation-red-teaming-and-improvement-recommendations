@@ -1,15 +1,14 @@
 """Evaluate the per-document hallucination-risk score against the answer key.
 
-For each of the 200 benchmark documents: extract citations from the .docx,
-run the existence checkers, combine the results with document_risk, and
-compare the flag against the answer key's `condition` ("corrupt" = positive).
-The answer key is used only for scoring.
+For each of the 200 benchmark documents: extract citations and quoted /
+copied passages from the .docx, run the existence and quote-fidelity checkers,
+combine the results with document_risk, and compare the flag against the
+answer key's `condition` ("corrupt" = positive). The answer key is used only
+for scoring.
 
-Quote-fidelity findings are not included yet (the quote checker is in PR #16),
-so corrupt documents whose only planted errors are altered quotes are expected
-to be missed; the report breaks recall down by error type to show this.
-TODO(after PR #16): update this paragraph and the report intro in main() once
-quote findings are added.
+Each document is scored three ways (existence findings only, quote findings
+only, and both combined) so the report shows what each checker adds and how
+many false alarms the quote findings bring.
 
 Threshold check: the threshold is tuned on even-numbered documents and scored
 on odd-numbered ones, so the held-out numbers are not the ones it was tuned on.
@@ -29,14 +28,23 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from citation_extractor.case_parser import extract_document
-from citation_extractor.document_risk import RISK_THRESHOLD, assess_document, existence_findings
+from citation_extractor.document_risk import (
+    RISK_THRESHOLD,
+    assess_document,
+    existence_findings,
+    quote_findings,
+    score_document,
+)
 from citation_extractor.existence import load_corpus_name_index, load_corpus_reporter_index
 from citation_extractor.extractor import extract_citations
+from citation_extractor.labels import FABRICATED
+from citation_extractor.source_lookup import load_corpus
 from citation_extractor.statute_rule_existence import (
     load_civil_rule_index,
     load_evidence_rule_index,
     load_statute_index,
 )
+from citation_extractor.unquoted_passages import extract_passages
 
 ANSWER_KEY_PATH = ROOT / "data" / "benchmark" / "answer-key.json"
 DOCUMENTS_DIR = ROOT / "data" / "benchmark" / "documents"
@@ -57,14 +65,15 @@ def planted_errors(document):
     return "quote_only"
 
 
-def metrics(rows, threshold):
+def metrics(rows, threshold, score_key="score"):
     """Precision, recall, F1 and confusion counts for flagging at `threshold`.
 
     "corrupt" is the positive class: a true positive is a corrupt document
-    whose score is at or above the threshold.
+    whose score is at or above the threshold. score_key picks which score to
+    use: "score" (combined), "existence_score" or "quote_score".
     """
     y_true = [r["condition"] == "corrupt" for r in rows]
-    y_pred = [r["score"] >= threshold for r in rows]
+    y_pred = [r[score_key] >= threshold for r in rows]
     precision, recall, f1, _ = precision_recall_fscore_support(
         y_true, y_pred, average="binary", zero_division=0
     )
@@ -95,6 +104,7 @@ def score_all_documents(answer_key):
     evidence = load_evidence_rule_index(CORPUS / "rules-evidence.jsonl")
     reporter_index = load_corpus_reporter_index(CORPUS / "cases.jsonl")
     name_index = load_corpus_name_index(CORPUS / "cases.jsonl")
+    source_corpus = load_corpus(CORPUS)
 
     rows = []
     for document in answer_key:
@@ -103,25 +113,24 @@ def score_all_documents(answer_key):
         statute_rule_citations = extract_citations(str(path), doc_id)
         case_citations = extract_document(path, reporter_index)["citations"]
 
-        findings = existence_findings(
+        existence = existence_findings(
             statute_rule_citations, case_citations,
             statutes, civil, evidence, reporter_index, name_index,
         )
-        # TODO(after PR #16): add quote-fidelity findings here:
-        #   1. load the source text once, before the loop:
-        #        source_corpus = source_lookup.load_corpus()
-        #   2. per document:
-        #        passages = extract_passages(str(path), source_corpus, doc_id)
-        #        findings += quote_findings(passages, source_corpus)
-        #   3. rerun and compare with the existence-only report: expect more
-        #      POSSIBLE_ALTERATION counts on clean documents (PR #16 found 65 false
-        #      alarms from unquoted passages); check they stay below the threshold.
-        result = assess_document(findings)
+        passages = extract_passages(str(path), source_corpus, doc_id)
+        quotes = quote_findings(passages, source_corpus)
+
+        result = assess_document(existence + quotes)
         rows.append({
             "doc_id": doc_id,
             "condition": document["condition"],
             "planted": planted_errors(document),
+            "altered_quote_planted": any(
+                q["quote_status"] == "altered" for q in document.get("quotes", [])
+            ),
             "score": result["score"],
+            "existence_score": score_document(existence),
+            "quote_score": score_document(quotes),
             "counts": result["counts"],
         })
     return rows
@@ -148,10 +157,24 @@ def main():
     rows = score_all_documents(answer_key)
 
     overall = metrics(rows, RISK_THRESHOLD)
+    by_checker = {
+        "existence only": metrics(rows, RISK_THRESHOLD, "existence_score"),
+        "quotes only": metrics(rows, RISK_THRESHOLD, "quote_score"),
+        "combined": overall,
+    }
+    altered_docs = [r for r in rows if r["altered_quote_planted"]]
+    altered_caught_by_quotes = sum(r["quote_score"] >= RISK_THRESHOLD for r in altered_docs)
     tune_rows = [r for r in rows if int(r["doc_id"].split("-")[1]) % 2 == 0]
     test_rows = [r for r in rows if int(r["doc_id"].split("-")[1]) % 2 == 1]
     tuned = tune_threshold(tune_rows)
     held_out = metrics(test_rows, tuned)
+    held_out_fixed = metrics(test_rows, RISK_THRESHOLD)
+    # ADDED (2026-10-27): corrupt documents with no fabricated citation. When this is 0,
+    #   a threshold of 1.0 ("flag only fabrications") looks perfect here but would never
+    #   flag a document whose only error is a wrong reporter or an altered quote.
+    corrupt_without_fabrication = sum(
+        r["condition"] == "corrupt" and not r["counts"].get(FABRICATED) for r in rows
+    )
     by_planted = recall_by_planted(rows, RISK_THRESHOLD)
     false_alarms = [r for r in rows if r["condition"] == "clean" and r["score"] >= RISK_THRESHOLD]
     missed = [r for r in rows if r["condition"] == "corrupt" and r["score"] < RISK_THRESHOLD]
@@ -162,13 +185,20 @@ def main():
         "",
         "Flags a document when its risk score (`document_risk.py`) is at or above the "
         "threshold, and scores the flag against the answer key's `condition` "
-        "(`corrupt` = positive). Existence findings only: quote-fidelity findings "
-        "are added once PR #16 merges.",
+        "(`corrupt` = positive). Findings come from the existence checkers and the "
+        "quote-fidelity checker.",
         "",
         f"## All 200 documents (threshold {RISK_THRESHOLD})",
         "",
-        header,
-        format_metrics(overall),
+        "| findings used | precision | recall | F1 | TP | FP | FN | TN |",
+        "|---|---|---|---|---|---|---|---|",
+    ]
+    for name, m in by_checker.items():
+        lines.append(f"| {name} " + format_metrics(m))
+    lines += [
+        "",
+        f"Of the {len(altered_docs)} documents with a planted altered quote, quote findings "
+        f"alone flag {altered_caught_by_quotes}.",
         "",
         "## Held-out check",
         "",
@@ -177,6 +207,23 @@ def main():
         "",
         header,
         format_metrics(held_out),
+        "",
+        # ADDED (2026-10-27): explain why the tuned threshold is not the one used.
+        f"Same odd-numbered documents at the fixed threshold {RISK_THRESHOLD}:",
+        "",
+        header,
+        format_metrics(held_out_fixed),
+        "",
+        "### Threshold choice",
+        "",
+        f"The tuner prefers a high threshold because it avoids the few quote false alarms, "
+        f"and on this benchmark it costs nothing: {corrupt_without_fabrication} of "
+        f"{sum(r['condition'] == 'corrupt' for r in rows)} corrupt documents have no "
+        f"fabricated citation, so a threshold of 1.0 (\"flag only fabrications\") still "
+        f"catches all of them. On real filings it would never flag a document whose only "
+        f"problem is a wrong reporter (weight 0.5) or an altered quote (0.8). "
+        f"`RISK_THRESHOLD` stays at {RISK_THRESHOLD}, so any single wrong reporter or "
+        f"stronger finding flags the document (recall first, DATA_DICTIONARY §8.5).",
         "",
         "## Recall by planted error type",
         "",
@@ -201,8 +248,11 @@ def main():
 
     REPORT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-    print(f"threshold={RISK_THRESHOLD} " + " ".join(f"{k}={v:.3f}" if isinstance(v, float) else f"{k}={v}"
-                                                  for k, v in overall.items()))
+    for name, m in by_checker.items():
+        print(f"{name:<15} threshold={RISK_THRESHOLD} " + " ".join(
+            f"{k}={v:.3f}" if isinstance(v, float) else f"{k}={v}" for k, v in m.items()))
+    print(f"altered-quote documents flagged by quote findings alone: "
+          f"{altered_caught_by_quotes}/{len(altered_docs)}")
     print(f"held-out: tuned threshold={tuned:.3f} " + " ".join(
         f"{k}={v:.3f}" if isinstance(v, float) else f"{k}={v}" for k, v in held_out.items()))
     for kind, (caught, total) in by_planted.items():

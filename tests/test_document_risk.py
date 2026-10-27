@@ -10,6 +10,7 @@ from citation_extractor.document_risk import (
     RISK_THRESHOLD,
     assess_document,
     existence_findings,
+    quote_findings,
     score_document,
 )
 from citation_extractor.existence import load_corpus_name_index, load_corpus_reporter_index
@@ -90,15 +91,58 @@ def test_existence_findings_labels_each_citation(case_indexes):
     assert sorted(findings) == sorted([REAL, FABRICATED, REAL])
 
 
-# TODO(after PR #16): add quote_findings tests with hand-built passages and a small
-#   {citation: source text} dict (no .docx needed):
-#   - quoted passage that matches its source        -> REAL
-#   - quoted passage with "under all circumstances" -> ALTERED_QUOTE
-#   - unquoted passage with added words             -> POSSIBLE_ALTERATION
-#   - passage with no citation / unrelated text     -> no finding
-
 def test_repeated_citation_counts_once(case_indexes):
     reporter_index, name_index = case_indexes
     cases = [{"case_name": "Restol v. Manshen", "reporter_cite": "512 P.3d 88"}] * 3
     findings = existence_findings([], cases, set(), set(), set(), reporter_index, name_index)
     assert findings == [FABRICATED]
+
+
+# ---------- quote_findings ----------
+
+SOURCE = (
+    "In determining the best interests of the child the court shall consider "
+    "the physical, emotional, mental, religious, and social needs of the child."
+)
+SOURCE_CORPUS = {"AS 25.24.150": SOURCE}
+
+
+def passage(text, quoted=True, citation="AS 25.24.150(c)"):
+    """A passage dict shaped like unquoted_passages.extract_passages output."""
+    return {"text": text, "citation": citation, "quoted": quoted}
+
+
+def test_faithful_quote_is_real():
+    findings = quote_findings([passage("the court shall consider the physical")], SOURCE_CORPUS)
+    assert findings == [REAL]
+
+
+ALTERED = (
+    "the physical, emotional, mental, religious, and social needs of the child "
+    "under all circumstances"
+)
+
+
+def test_altered_quote_in_quote_marks():
+    assert quote_findings([passage(ALTERED)], SOURCE_CORPUS) == [ALTERED_QUOTE]
+
+
+def test_altered_unquoted_passage_is_possible_alteration():
+    assert quote_findings([passage(ALTERED, quoted=False)], SOURCE_CORPUS) == [POSSIBLE_ALTERATION]
+
+
+def test_short_altered_quote_falls_below_unrelated_floor():
+    # Known limit of quote_fidelity's floor (70): on a short quote the appended
+    # phrase is a large share of the text, so it scores ~66 and is not judged.
+    text = "the social needs of the child under all circumstances"
+    assert quote_findings([passage(text)], SOURCE_CORPUS) == []
+
+
+def test_unjudged_passages_add_no_finding():
+    # no citation, citation not in corpus, and text unrelated to its source
+    passages = [
+        passage("the court shall consider", citation=None),
+        passage("the court shall consider", citation="AS 25.24.946"),
+        passage("I will make sure you never see the kids again"),
+    ]
+    assert quote_findings(passages, SOURCE_CORPUS) == []
