@@ -2,7 +2,7 @@
 
 **Deliverable:** Detecting Hallucinated Legal Citations in AI-Generated Court Documents
 **Prepared by:** ProSe AI, for the Break Through Tech AI Studio 2026 Challenge
-**Status:** Frozen benchmark — do not regenerate; integrity is verified by the per-document hashes in `manifest.json`.
+**Status:** Frozen benchmark — do not regenerate; integrity is verified by the per-document `docx_sha256` values in `manifest.json`.
 
 ---
 
@@ -10,7 +10,7 @@
 
 A fixed, labeled set of AI-generated Alaska family-law legal documents, built with fictional
 party names. Roughly half are **clean** (no errors were planted: no injected citations and no
-altered quotes) and roughly half are **corrupt** (containing deliberately planted errors —
+planted altered quotes) and roughly half are **corrupt** (containing deliberately planted errors —
 fabricated citations and altered quotes).
 
 > ⚠️ **"Clean" means "nothing was planted", not "nothing can be flagged."** An earlier version
@@ -18,9 +18,13 @@ fabricated citations and altered quotes).
 > which contradicted §4.1 and was not quite true: the drafting model occasionally cited an
 > authority that was real but had not been retrieved for that document, and those citations
 > appear in clean documents. They are now labeled `exists: true` (see the corrections note in
-> §3.1), so a detector that flags nothing in a clean document is still correct — but the
+> §3.2), so a detector that flags nothing in a clean document is still correct — but the
 > guarantee is about **planting**, not about the model's citation behaviour. Every document ships with an **answer key** marking each citation as
-real or fabricated. Quote labels exist only on some corrupt documents; see §8.6.
+real or fabricated. Quote labels are a sample, not an inventory; see §8.6.
+
+> ⚠️ **Clean documents can contain natural misquotes.** The drafting model sometimes changed
+> source wording on its own. Those changes were not planted, so a document that has one is still
+> clean. Where they are labeled, they carry `planted: false` (§4.3, §8.6).
 
 The benchmark exists to let a team build and measure a **hallucinated-citation detector**:
 a tool that reads a generated legal document and flags citations that do not exist, or that
@@ -38,7 +42,7 @@ corrupted.
 |------|----------|
 | `benchmark/documents/doc-NNNN.docx` | The generated legal documents (Word format). Some clean, some corrupt. |
 | `benchmark/answer-key.json` | One record per document: every citation labeled real/fabricated, plus quote labels where present (see §8.6). The scoring target. |
-| `benchmark/manifest.json` | Document inventory + per-document SHA-256 hashes (the freeze fingerprint) + clean/corrupt counts. |
+| `benchmark/manifest.json` | Document inventory + `docx_sha256` (full SHA-256 of each `.docx` file, the integrity check) + `hash` (the original fingerprint, see §4.1) + clean/corrupt counts. |
 | `data/corpus/*.jsonl` | The citation corpus: real Alaska statutes, court rules, and case citations with source text. The lookup target for existence and fidelity checks. |
 
 ---
@@ -51,7 +55,7 @@ types, each as structured JSON records (one JSON object per line, `.jsonl`):
 | Corpus file | Authority type | Approx. size |
 |-------------|----------------|--------------|
 | `statutes.jsonl` | Alaska Statutes (Title 25 family law; Title 18 ch. 65–66 DV/protective orders) | ~500 records |
-| `rules.jsonl` | Alaska Rules of Civil Procedure (incl. Rule 90.3 child support) | ~155 records |
+| `rules.jsonl` | Alaska Rules of Civil Procedure (incl. Rule 90.3 child support) | ~185 records |
 | `rules-evidence.jsonl` | Alaska Rules of Evidence + commentary | ~302 records |
 | `cases.jsonl` | Published Alaska Supreme Court family-law opinions | ~1,255 cases |
 
@@ -61,7 +65,7 @@ types, each as structured JSON records (one JSON object per line, `.jsonl`):
 |------|-----------------|-------------|-------|
 | `statutes.jsonl` | `citation` (e.g. `"AS 25.24.150"`) | `source_text` | Also: `title`, `jurisdiction`, `cross_refs`. |
 | `rules.jsonl` | `citation` (e.g. `"Alaska R. Civ. P. 90.3"`) | `source_text` | Civil rules; `subrule` may be set. |
-| `cases.jsonl` | `citation`; also `case_name` + `reporter_cite` separately | `source_text` | `holding`, `pinpoint`, `year`, `court` also present. |
+| `cases.jsonl` | `citation`; also `case_name` + `reporter_cite` separately | `source_text` | `year` and `court` also present. `holding` and `pinpoint` are empty on all 1,255 records. 23 records have no `reporter_cite`. 89 reporter cites each appear on two records, usually caption variants, so a reporter lookup can return two records. 5 of those reporters are key authorities. |
 | `rules-evidence.jsonl` | **constructed** from `ruleNumber` (+ `subrule`) — there is no single `citation` field; e.g. `ruleNumber:"505"` → `"Alaska R. Evid. 505"` | `text` (not `source_text`) | Evidence rules use `ruleNumber`/`ruleTitle`/`text`; `ruleset:"evidence"`. Commentary records have `type:"rule_commentary"`. |
 
 So three of the four files (`statutes`, `rules`, `cases`) expose a ready-made `citation` string and `source_text`. Only `rules-evidence.jsonl` differs: build the citation from `ruleNumber` and read text from `text`.
@@ -89,7 +93,7 @@ Both are correct. They do not match as strings.
 | **documents** | `Civil Rule NN` | `Civil Rule 90.3(a)` | 642 |
 | **documents** | bare `Rule NN` | `Rule 90.3` | 80 |
 | **documents** | `Alaska R. Evid. NN` | `Alaska R. Evid. 505` | 58 |
-| **corpus** (`rules.jsonl`) | `Alaska R. Civ. P. NN` | `Alaska R. Civ. P. 90.3` | all 185 records |
+| **corpus** (`rules.jsonl`) | `Alaska R. Civ. P. NN` | `Alaska R. Civ. P. 90.3` | 172 records; the other 13 end in `, Commentary` |
 | **corpus** (`rules-evidence.jsonl`) | ⛔ **no `citation` field at all** | build from `ruleNumber` + `subrule` | all records |
 
 ⛔ **A naive exact-match of the document's citation string against the corpus `citation` field
@@ -129,7 +133,7 @@ wrongly pass them.**
 | `doc-0194` | `Civil Rule 903(a)` | `Civil Rule 90.3(a)` |
 
 ⚠️ Statutes and cases do **not** have this problem. Statute citations match `citation` in
-`statutes.jsonl` directly. Case citations should be matched on **reporter cite**
+`statutes.jsonl` once the pinpoint is stripped (`AS 25.24.150(c)` → `AS 25.24.150`). Case citations should be matched on **reporter cite**
 (`"987 P.2d 183"`), not case name — see §8.
 
 ---
@@ -187,9 +191,10 @@ corpus deliberately does not cover.
 
 ### 3.3 📌 Corrections applied 2026-11-01 (final consolidated correction)
 
-A full audit compared the answer key with the text of all 200 documents. `answer-key.json` and
-this dictionary were corrected. **No document, corpus file or manifest entry changed, and every
-document hash in `manifest.json` remains valid.**
+A full audit compared the answer key with the text of all 200 documents. `answer-key.json`,
+`manifest.json` and this dictionary were corrected. **No document or corpus file changed.**
+`manifest.json` gained `docx_sha256` for every document, and its existing `hash` values are
+unchanged.
 
 | Measure | Before | After |
 |---------|--------|-------|
@@ -198,7 +203,11 @@ document hash in `manifest.json` remains valid.**
 | `exists: false`, planted (injected citations) | 278 | 273 |
 | `exists: false`, real law outside the corpus, excluded from Stage 2 | 1 | 2 |
 | Authority targets (unique `norm` per document, §4.4) | 2,398 | 2,493 |
-| Planted errors (injected citations + 40 altered quotes) | 318 | 313 |
+| Planted errors (injected citations + 40 planted altered quotes) | 318 | 313 |
+| Quote rows | 163 | 202 |
+| Quote rows: altered, planted | 40 | 40 |
+| Quote rows: altered, natural | 0 | 40 |
+| Quote rows: faithful | 123 | 122 |
 
 1. **5 injected statutes relabeled as real.** The injector picked 900-range section numbers at
    random and never checked them. Five landed on real, active sections: `AS 25.24.900`
@@ -230,8 +239,14 @@ document hash in `manifest.json` remains valid.**
 4. **`norm` added to every citation entry.** See §4.4.
 5. **1 exact duplicate removed.** The 2026-09-21 cleanup turned `The Nelson v. Nelson, 263 P.3d 49
    (Alaska 2011)` in `doc-0082` into a string that already had an entry. The plain copy is gone,
-   and the entry carrying `raw_extracted` stays. This is the only entry removed: every pinpoint
-   and form variant remains.
+   and the entry carrying `raw_extracted` stays. This is the only citation entry removed: every
+   pinpoint and form variant remains.
+6. **40 natural misquotes labeled** (§8.6), and the 40 planted rows gained `planted: true`.
+   `doc-0083`'s faithful row for `AS 25.24.150(c)(6)` became one of the 40, because it described
+   the passage that dropped "of each parent". No `condition`, `injected`, `n_errors_planted` or
+   citation label changed.
+7. **`docx_sha256` added to `manifest.json`,** computed from the `.docx` files, so the documents
+   can be verified directly (§4.1).
 
 **Known corpus limitation:** the corpus does **not** include the Alaska Administrative Code
 (AAC) — e.g. the CSSD child-support regulations. Documents were generated to cite only
@@ -292,12 +307,12 @@ this corpus.
 | Field | Type | Meaning |
 |-------|------|---------|
 | `doc_id` | string | Unique document id, e.g. `doc-0042`. Matches the filename `documents/doc-0042.docx`. |
-| `condition` | `"clean"` \| `"corrupt"` | Whether this document had errors planted. Clean documents have no injected citations and no altered quotes. |
+| `condition` | `"clean"` \| `"corrupt"` | Whether this document had errors planted. Clean documents have no injected citations and no planted altered quotes. They can have natural rows (§8.6). |
 | `doc_type` | string | The family-law document category (see §6). |
 | `citations` | array | Every authority cited in the document. Pinpoint and form variants keep separate entries, so one authority can have several (see §4.2 and §4.4). |
-| `quotes` | array | One entry per verbatim quoted passage the document drew from a source (see §4.3). Empty on all 97 clean documents, whether or not they quote a source, and on 34 corrupt documents (see §8.6). |
-| `n_errors_planted` | integer | Total planted errors (fabricated/wrong citations + altered quotes). Present on corrupt docs. Excludes the 5 injected statutes that landed on real sections (§3.3). |
-| `hash` | string | SHA-256 (first 16 hex chars) of the final document text. Freeze/integrity fingerprint. |
+| `quotes` | array | Labeled passages, planted and natural (see §4.3). A sample, not an inventory: many passages have no row. Empty on 74 clean documents and 30 corrupt documents (see §8.6). |
+| `n_errors_planted` | integer | Total planted errors (fabricated/wrong citations + altered quotes). Present on corrupt docs. Excludes the 5 injected statutes that landed on real sections (§3.3) and all natural misquotes. |
+| `hash` | string | SHA-256 (first 16 hex chars) of the pre-render draft text. A stable document fingerprint, also in `manifest.json`. ⚠️ **It cannot be recomputed from the `.docx`:** rendering adds the caption, strips markdown and drops anything before the first heading, and the draft text is not part of the benchmark. To confirm a document is unmodified, use `docx_sha256` in `manifest.json`. |
 
 ### 4.2 Citation-entry fields
 
@@ -307,7 +322,7 @@ this corpus.
 | `norm` | string | The authority this entry refers to, with pinpoints and form differences removed. **The scoring unit:** dedupe on this field (see §4.4). |
 | `type` | `"statute"` \| `"rule"` \| `"case"` | Kind of authority. |
 | `exists` | boolean | **The Stage-2 label.** `true` = a real authority present in the corpus. `false` = **not present in this corpus** — which for every entry except two means fabricated by construction. ⚠️ **The exceptions, documented in §3.2:** `AS 11.56.807` and `AS 11.56.810` in `doc-0136` are `false` because Title 11 is outside the corpus's scope, **not because they are fabricated — they are confirmed real Alaska law.** They are the only such entries, and §9 excludes both from Stage-2 scoring. |
-| `quote_status` | `"na"` \| `"faithful"` \| `"altered"` | Fidelity status of a quote attached to this citation. `"na"` when the citation carries no quoted text. (Quote fidelity is primarily tracked in the `quotes` array; see §4.3.) |
+| `quote_status` | `"na"` | Always `"na"` on citation entries. Quote fidelity is tracked only in the `quotes` array (see §4.3). |
 | `injected` | `false` \| string | `false` for a genuine (untouched) citation, and for the 5 injected statutes that landed on real sections (§3.3). Otherwise the **corruption type** that produced this citation (see §5). |
 | `replaced_real` | string | *(on injected citations and the 5 entries in §3.3)* The real citation that was replaced by this fabricated one. Useful for analysis; not needed for scoring. |
 | `raw_extracted` | string | *(7 entries only)* The original extractor output, where it over-captured words preceding the case name — e.g. `"The Gorton v. Mann, 281 P.3d 81 (Alaska 2012)"` or `"Alaska Supreme Court. See Ruppe v. Ruppe, …"`. `cite` holds the cleaned citation; this field preserves the realistic hard case, because your extractor will face the same sentence. |
@@ -316,10 +331,16 @@ this corpus.
 
 | Field | Type | Meaning |
 |-------|------|---------|
-| `source_cite` | string | The authority the quoted passage was drawn from. |
-| `quote_status` | `"faithful"` \| `"altered"` | **The Stage-3 label.** `"faithful"` = the quoted text matches the true source. `"altered"` = the quoted text was deliberately changed and no longer matches. |
-| `injected` | `false` \| `"altered_quote"` | `false` for a faithful quote; `"altered_quote"` for a planted fidelity error. |
-| `altered_text` / `original_text` | string | *(only on altered quotes)* The changed text and the original, for analysis. |
+| `source_cite` | string | The authority the passage was drawn from. It names the original authority even where the document now cites a planted fake in its place (for example `doc-0028`, `doc-0049`, `doc-0132`, `doc-0179`). |
+| `quote_status` | `"faithful"` \| `"altered"` | **The Stage-3 label.** `"faithful"` = the passage matches the true source. `"altered"` = the wording differs from the source, whether planted or changed by the drafting model. |
+| `injected` | `false` \| `"altered_quote"` | `"altered_quote"` for a planted fidelity error. `false` for a faithful quote or a natural misquote. |
+| `planted` | boolean | *(only on altered quotes)* `true` for the 40 planted alterations. `false` for the 40 natural misquotes. |
+| `altered_text` / `original_text` | string | *(only on altered quotes)* The passage as the document has it, and the source wording. Rows can describe copied text outside quote marks. Natural `altered_text` is a short verbatim stretch around the change. |
+
+**Quote rows are a sample.** The generator recorded quotes only for corrupt documents, and kept one
+row per `source_cite` in a document, so a second passage from the same source has no row of its
+own. Faithful rows carry no text, so each labels a (document, `source_cite`) pair, not a specific
+passage. Natural rows are per passage, so a document can have two for one source (`doc-0073`).
 
 ### 4.4 `norm` and the scoring unit
 
@@ -348,6 +369,11 @@ text appears in that document's key entry. In a range or list, each stated endpo
 sections inside a range are not expanded. Chapter-level references (`AS 11.41`), `Id.`, name-only
 short forms and court form numbers are not counted.
 
+⚠️ **The rule holds at authority level, not pinpoint level.** 123 first-level pinpoints in the text
+have no entry of their own, because their authority is already listed under another form. The key
+usually records one pinpoint level, and only 3 entries go deeper. Do not treat a pinpoint without
+its own entry as an unlabeled citation.
+
 ---
 
 ## 5. Corruption types (how the errors were planted)
@@ -369,6 +395,10 @@ what was changed, so the ground truth is exact.
 All fabricated citations are designed to be **plausible** — they resemble real citations in
 form — so the detector must actually verify against the corpus rather than flag obviously
 malformed strings.
+
+⚠️ **Natural misquotes are outside this menu.** The drafting model made them, not the injector.
+They have `injected: false` and `planted: false`, and they do not count toward `n_errors_planted`
+(see §8.6).
 
 ⚠️ **Five injected statutes landed on real sections.** They are labeled `exists: true`, not
 fabricated. See §3.3.
@@ -409,7 +439,7 @@ different regions of the corpus:
 | `domestic_violence` | DV protective orders (AS 18.66), related evidence rules |
 | `child_support` | Rule 90.3 and commentary, support enforcement/modification |
 
-Documents are distributed roughly evenly across the five types.
+`married_divorcing_with_children` has 32 documents, and each of the other four types has 42.
 
 ---
 
@@ -453,12 +483,57 @@ Documented honestly so the team can interpret detection metrics correctly:
    reach a user. Tune and report accordingly: prioritize recall on `exists: false` citations,
    and report precision/recall/F1 separately for existence (Stage 2) and fidelity (Stage 3).
 
-6. **Clean documents have no quote labels.** All 97 clean documents have empty `quotes` arrays,
-   although they contain 208 long quoted spans (double-quoted, 60 characters or more). This comes
-   from the generator, which recorded quotes only for corrupt documents, and not from paraphrasing.
-   34 corrupt documents are also empty. **Stage 3 therefore has no labels for clean documents.**
-   Score fidelity against the 163 labeled quotes only, and do not count an unlabeled passage as
-   either a correct or an incorrect prediction.
+6. **Quote labels are a sample, and the documents contain natural misquotes.** There are 202 quote
+   rows: 40 planted alterations, 40 natural misquotes and 122 faithful. Many passages have no row:
+   74 clean documents and 30 corrupt documents have empty `quotes` arrays, although clean documents
+   contain 208 long quoted spans (double-quoted, 60 characters or more). The generator recorded
+   quotes only for corrupt documents, so this does not mean those documents paraphrased.
+   **Unlabeled passages must not be scored as negatives** (§9).
+
+   **What was labeled.** Every quoted span and every copied statute or rule passage in the 200
+   documents was checked against the corpus. Natural labels (`planted: false`) mark a material
+   change inside quote marks, or a modal, negation, quantifier or number change in copied text
+   outside quote marks. The AS 25.30.310, AS 25.24.170 and `doc-0004` rows below were labeled after
+   individual review because they change the rule stated or its cross-reference.
+
+   | Natural misquote | Rows | Documents |
+   |------------------|------|-----------|
+   | Civil Rule 65(b): "only if" became "if", "when" or "where" | 10 | 0121, 0123, 0128, 0129, 0136, 0146, 0150, 0152, 0156, 0158 |
+   | AS 25.30.300: "only if" became "if" or "when" | 7 | 0047, 0050, 0056, 0060, 0073 (two rows), 0078 |
+   | AS 25.30.310(a): "and that substantial evidence is no longer available" dropped | 5 | 0005, 0082, 0088, 0095, 0112 |
+   | AS 25.24.170(a): "unmarried 18-year-old children" became "minor children" | 5 | 0170, 0175, 0177, 0191, 0197 |
+   | Civil Rule 90.7(a): "only when" became "when" | 3 | 0052, 0063, 0068 |
+   | AS 25.24.150(c)(6): "of each parent" dropped, the only natural change inside quote marks | 1 | 0083 |
+   | AS 25.24.150(c): cross-reference to AS 25.20.060 - 25.20.130 became AS 25.24.150(c) | 1 | 0004 |
+   | Civil Rule 90.3(a)(3): "for any period" became "only for periods" | 1 | 0020 |
+   | Civil Rule 90.3(a)(4)(A): "only" added | 1 | 0197 |
+   | Civil Rule 90.3(d)(1)(A)(i): "who may be" dropped | 1 | 0037 |
+   | Civil Rule 26.1(b): "a party" became "each party"; "all" dropped | 2 | 0039, 0035 |
+   | Civil Rule 65(e): "any" dropped | 1 | 0148 |
+   | AS 25.24.310: "any" dropped | 1 | 0054 |
+   | Civil Rule 90.6: "either party" became "any party" | 1 | 0066 |
+
+   ⚠️ **The AS 25.30.300 rows are wording changes, not legal errors.** The statute lists four
+   alternative bases, "only if (1) ... (2) ... (3) ... (4)", so citing one basis without "only" is
+   still accurate law. They are labeled because Stage 3 measures fidelity to the wording.
+
+   **Not labeled by rule:** punctuation, case, hyphenation, ellipsis omissions, `[bracketed]` edits,
+   dropped list labels such as `(1)`, equivalent wording (is/are, a/an, singular/plural), and
+   ordinary paraphrase in unquoted text. `doc-0012`'s "is just as" for "are just as" is therefore
+   unlabeled, although the words differ.
+
+   **Reviewed and intentionally unlabeled (45 items):**
+
+   | Group | Items | Documents | Why unlabeled |
+   |-------|-------|-----------|---------------|
+   | "Shall" and "must" swapped in copied text | 11 | 0005, 0041, 0045, 0061, 0066, 0073, 0085, 0088, 0092, 0099, 0156 | Same force |
+   | Other modal swaps ("will" to "shall" or "is", "shall be" to "is") | 6 | 0005, 0057, 0075, 0084, 0123, 0163 | Same force |
+   | Modal replaced by a lead-in such as "requires that" | 3 | 0002, 0033, 0130 | The obligation is preserved |
+   | AS 25.30.300 with "only" qualified or outside the quotation | 6 | 0004, 0042, 0048, 0053, 0058, 0080 | "If, among other bases" is accurate, and in 0004 and 0058 the quoted words are correct |
+   | Change inside a passage attributed to a fabricated citation | 7 | 0016, 0040, 0043, 0061, 0070, 0071, 0122 | The change comes from a planted citation, already labeled in `citations` |
+   | Cross-reference changed in a short phrase | 3 | 0052, 0094, 0114 | A short reference, with no rule stated |
+   | Copied from rule commentary and credited to the court | 1 | 0187 | Commentary is not rule text |
+   | Quantifier changed, meaning unchanged | 8 | 0011, 0039, 0053, 0070, 0130, 0142, 0146, 0159 | No rule changes |
 
 ---
 
@@ -475,9 +550,17 @@ Documented honestly so the team can interpret detection metrics correctly:
      detectors that correctly recognise them as real. See §3.2 for the confirmation and the
      reasoning. **These are the only citations excluded; the rule above applies unchanged to
      all other 3,582 entries (2,491 authority targets).**
-3. **Stage 3 — fidelity:** for each quoted passage, decide faithful vs. altered. Score against
-   `quote_status`, on the 163 labeled quotes only (see §8.6).
+3. **Stage 3 — fidelity:** for each passage, decide faithful vs. altered, and report two separate
+   results:
+   - **Planted score (primary).** Score against the 40 rows with `planted: true` and the faithful
+     rows. Natural misquotes count as neither a hit nor a miss here.
+   - **Natural misquotes (separate metric).** Report how many of the 40 rows with `planted: false`
+     the detector found. Do not merge this into the planted score.
+   - ⚠️ **Quote labels are a sample, so unlabeled passages must not be scored as negatives.** A
+     flag on an unlabeled passage is neither a false positive nor a true positive, and a passage
+     left unflagged is not a true negative. Report flags on unlabeled passages separately (§8.6).
 4. Report precision, recall, and F1 — separately for existence and fidelity — with emphasis
    on **recall of fabricated citations**.
 5. The evaluation notebook should reproduce every reported number from the frozen files, and
-   the per-document `hash` in `manifest.json` lets anyone confirm the documents are unmodified.
+   the per-document `docx_sha256` in `manifest.json` lets anyone confirm the documents are
+   unmodified. The older `hash` field cannot be recomputed from the `.docx` files (§4.1).

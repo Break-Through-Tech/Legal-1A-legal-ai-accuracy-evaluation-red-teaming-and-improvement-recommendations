@@ -165,7 +165,8 @@
         "quote_status": "altered",
         "altered_text": "will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2) under all circumstances",
         "original_text": "will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2)",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -795,7 +796,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.24.150(c)",
+        "quote_status": "altered",
+        "altered_text": "in determining the best interests of the child under AS 25.24.150(c)",
+        "original_text": "the best interests of the child under AS 25.20.060 - 25.20.130",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "520842a3ad477c22",
     "doc_type": "unmarried_custody"
   },
@@ -935,7 +945,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.30.310(a)",
+        "quote_status": "altered",
+        "altered_text": "have a significant connection with this state, or that neither the child, a parent, nor a person acting as a parent presently resides in this state",
+        "original_text": "have a significant connection with this state and that substantial evidence is no longer available in this state concerning the child's care, protection, training, and personal relationships",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "n_errors_planted": 3,
     "hash": "3f60bce5ca30cfde",
     "doc_type": "modify_custody_visitation"
@@ -2039,7 +2058,8 @@
         "quote_status": "altered",
         "altered_text": "the circumstances and necessities of each party under all circumstances",
         "original_text": "the circumstances and necessities of each party",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "Civil Rule 90.3(a)(1)",
@@ -2251,7 +2271,8 @@
         "quote_status": "altered",
         "altered_text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has sole physical custody of children",
         "original_text": "the desirability of awarding the family home, or the right to live in it for a reasonable period of time, to the party who has primary physical custody of children",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "Civil Rule 90.3(a)",
@@ -2843,7 +2864,8 @@
         "quote_status": "altered",
         "altered_text": "the parent's total income from all sources minus under all circumstances",
         "original_text": "the parent's total income from all sources minus",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -3281,7 +3303,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 90.3(a)(3)",
+        "quote_status": "altered",
+        "altered_text": "by up to 75% only for periods in which the obligor parent has extended visitation of over 27 consecutive days",
+        "original_text": "reduce child support payments by up to 75% for any period in which the obligor parent has extended visitation of over 27 consecutive days",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "b4090c65965c9fdf",
     "doc_type": "married_divorcing_with_children"
   },
@@ -5321,7 +5352,8 @@
         "quote_status": "altered",
         "altered_text": "the conduct of the parties, including whether there has been unreasonable depletion of marital assets under all circumstances",
         "original_text": "the conduct of the parties, including whether there has been unreasonable depletion of marital assets",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -5743,7 +5775,8 @@
         "quote_status": "altered",
         "altered_text": "incompatibility of temperament has caused the irremediable breakdown of the marriage under all circumstances",
         "original_text": "incompatibility of temperament has caused the irremediable breakdown of the marriage",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "Civil Rule 90.3(a)",
@@ -5986,7 +6019,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 26.1(b)",
+        "quote_status": "altered",
+        "altered_text": "authorizing the other party to obtain earnings and employee benefit information",
+        "original_text": "authorizing the other party to obtain all earnings and employee benefit information",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "3bc8e444abe82249",
     "doc_type": "married_divorcing_with_children"
   },
@@ -6352,6 +6394,14 @@
         "source_cite": "Civil Rule 90.3(d)",
         "quote_status": "faithful",
         "injected": false
+      },
+      {
+        "source_cite": "Civil Rule 90.3(d)(1)(A)(i)",
+        "quote_status": "altered",
+        "altered_text": "adjusted annual income of the parent required to purchase the insurance",
+        "original_text": "adjusted annual income of the parent who may be required to purchase the insurance",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 3,
@@ -6676,7 +6726,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 26.1(b)",
+        "quote_status": "altered",
+        "altered_text": "each party shall, without awaiting a discovery request",
+        "original_text": "a party shall, without awaiting a discovery request",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "2189906316c4a9ad",
     "doc_type": "married_divorcing_with_children"
   },
@@ -7421,7 +7480,8 @@
         "quote_status": "altered",
         "altered_text": "consider all relevant factors, including those factors enumerated in AS 25.24.150(c), and the presumption established in AS 25.24.150(g) under all circumstances",
         "original_text": "consider all relevant factors, including those factors enumerated in AS 25.24.150(c), and the presumption established in AS 25.24.150(g)",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.24.150",
@@ -8054,7 +8114,8 @@
         "quote_status": "altered",
         "altered_text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child under all circumstances",
         "original_text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.24.150(c)(1)",
@@ -8070,6 +8131,14 @@
         "source_cite": "AS 25.24.150(c)(5)",
         "quote_status": "faithful",
         "injected": false
+      },
+      {
+        "source_cite": "AS 25.30.300(a)",
+        "quote_status": "altered",
+        "altered_text": "jurisdiction to make an initial child custody determination if this state is the home state of the child on the date of the commencement of the proceeding",
+        "original_text": "a court of this state has jurisdiction to make an initial child custody determination only if (1) this state is the home state of the child on the date of the commencement of the proceeding",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 4,
@@ -8617,7 +8686,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.30.300(a)",
+        "quote_status": "altered",
+        "altered_text": "jurisdiction to make an initial child custody determination if this state is the home state of the child on the date of the commencement of the proceeding",
+        "original_text": "a court of this state has jurisdiction to make an initial child custody determination only if (1) this state is the home state of the child on the date of the commencement of the proceeding",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "n_errors_planted": 2,
     "hash": "774685bd9778de24",
     "doc_type": "unmarried_custody"
@@ -8900,7 +8978,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 90.7(a)",
+        "quote_status": "altered",
+        "altered_text": "may appoint a guardian ad litem when separate representation of the child's best interests is necessary",
+        "original_text": "the court may appoint a guardian ad litem for the child only when the court finds separate representation of the child's best interests is necessary",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "69bc3248cc6c2161",
     "doc_type": "unmarried_custody"
   },
@@ -9353,6 +9440,14 @@
         "source_cite": "AS 25.24.150(c)(6)",
         "quote_status": "faithful",
         "injected": false
+      },
+      {
+        "source_cite": "AS 25.24.310",
+        "quote_status": "altered",
+        "altered_text": "to a child in legal proceedings involving the child's welfare",
+        "original_text": "to a child in any legal proceedings involving the child's welfare",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 2,
@@ -9629,7 +9724,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.30.300(a)",
+        "quote_status": "altered",
+        "altered_text": "jurisdiction to make an initial child custody determination if this state is the home state of the child on the date of the commencement of the proceeding",
+        "original_text": "a court of this state has jurisdiction to make an initial child custody determination only if (1) this state is the home state of the child on the date of the commencement of the proceeding",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "d91e0f7ea9ff3f34",
     "doc_type": "unmarried_custody"
   },
@@ -9766,7 +9870,8 @@
         "quote_status": "altered",
         "altered_text": "removing any child who is the subject of the action from the State of Alaska without the written consent of the other party under all circumstances",
         "original_text": "removing any child who is the subject of the action from the State of Alaska without the written consent of the other party",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.30.909",
@@ -9978,7 +10083,8 @@
         "quote_status": "altered",
         "altered_text": "neither parent, regardless of the question of the child's legitimacy, is entitled to preference in the awarding of custody under all circumstances",
         "original_text": "neither parent, regardless of the question of the child's legitimacy, is entitled to preference in the awarding of custody",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.30.300(a)(1)",
@@ -10197,7 +10303,8 @@
         "quote_status": "altered",
         "altered_text": "evidence that substance abuse by either parent or other members of the household directly affects the emotional or physical well-being of the child under all circumstances",
         "original_text": "evidence that substance abuse by either parent or other members of the household directly affects the emotional or physical well-being of the child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 3,
@@ -10378,7 +10485,16 @@
         "quote_status": "altered",
         "altered_text": "the physical, emotional, mental, religious, and social needs of the child under all circumstances",
         "original_text": "the physical, emotional, mental, religious, and social needs of the child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
+      },
+      {
+        "source_cite": "AS 25.30.300(a)",
+        "quote_status": "altered",
+        "altered_text": "jurisdiction over an initial custody determination when this state is the home state of the child on the date of the commencement of the proceeding",
+        "original_text": "a court of this state has jurisdiction to make an initial child custody determination only if (1) this state is the home state of the child on the date of the commencement of the proceeding",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 4,
@@ -10559,7 +10675,8 @@
         "quote_status": "altered",
         "altered_text": "evidence that substance abuse by either parent or other members of the household directly affects the emotional or physical well-being of the child under all circumstances",
         "original_text": "evidence that substance abuse by either parent or other members of the household directly affects the emotional or physical well-being of the child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -10772,7 +10889,8 @@
         "quote_status": "altered",
         "altered_text": "the first child custody determination concerning a particular child under all circumstances",
         "original_text": "the first child custody determination concerning a particular child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -10912,7 +11030,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 90.7(a)",
+        "quote_status": "altered",
+        "altered_text": "may appoint a guardian ad litem for the child when it finds that separate representation of the child's best interests is necessary",
+        "original_text": "the court may appoint a guardian ad litem for the child only when the court finds separate representation of the child's best interests is necessary",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "9ce8a11fb4c8caab",
     "doc_type": "unmarried_custody"
   },
@@ -11057,7 +11184,8 @@
         "quote_status": "altered",
         "altered_text": "in awarding custody the court may consider only those facts that directly affect the well-being of the child under all circumstances",
         "original_text": "in awarding custody the court may consider only those facts that directly affect the well-being of the child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.24.150(c)(1)",
@@ -11384,7 +11512,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 90.6",
+        "quote_status": "altered",
+        "altered_text": "may be deposed by any party",
+        "original_text": "may be deposed by either party",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "2aa4b6e8f23e3ca5",
     "doc_type": "unmarried_custody"
   },
@@ -11537,7 +11674,8 @@
         "quote_status": "altered",
         "altered_text": "assure that the child has frequent and continuing contact with each parent to the maximum extent possible under all circumstances",
         "original_text": "assure that the child has frequent and continuing contact with each parent to the maximum extent possible",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 3,
@@ -11693,7 +11831,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 90.7(a)",
+        "quote_status": "altered",
+        "altered_text": "visitation of a child when the court finds that separate representation of the child's best interests is necessary",
+        "original_text": "involving custody, support, or visitation of a child, the court may appoint a guardian ad litem for the child only when the court finds separate representation of the child's best interests is necessary",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "fd6fec9077cf0acc",
     "doc_type": "unmarried_custody"
   },
@@ -11967,7 +12114,8 @@
         "quote_status": "altered",
         "altered_text": "the physical, emotional, mental, religious, and social needs of the child under all circumstances",
         "original_text": "the physical, emotional, mental, religious, and social needs of the child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.20.060",
@@ -12443,7 +12591,24 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.30.300(a)",
+        "quote_status": "altered",
+        "altered_text": "jurisdiction to make an initial child custody determination when this state is the home state of the child on the date of the commencement of the proceeding",
+        "original_text": "a court of this state has jurisdiction to make an initial child custody determination only if (1) this state is the home state of the child on the date of the commencement of the proceeding",
+        "injected": false,
+        "planted": false
+      },
+      {
+        "source_cite": "AS 25.30.300(a)",
+        "quote_status": "altered",
+        "altered_text": "jurisdiction to a court of this state to make an initial child custody determination when this state is the home state of the child on the date of the commencement of the proceeding",
+        "original_text": "a court of this state has jurisdiction to make an initial child custody determination only if (1) this state is the home state of the child on the date of the commencement of the proceeding",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "n_errors_planted": 3,
     "hash": "a40fa97bcb4200cb",
     "doc_type": "unmarried_custody"
@@ -12864,7 +13029,8 @@
         "quote_status": "altered",
         "altered_text": "an award of shared custody may assure that the child has frequent and continuing contact with each parent to the maximum extent possible",
         "original_text": "an award of shared custody shall assure that the child has frequent and continuing contact with each parent to the maximum extent possible",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -13157,7 +13323,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.30.300(a)",
+        "quote_status": "altered",
+        "altered_text": "jurisdiction to make an initial child custody determination if this state is the home state of the child on the date of the commencement of the proceeding",
+        "original_text": "a court of this state has jurisdiction to make an initial child custody determination only if (1) this state is the home state of the child on the date of the commencement of the proceeding",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "96352f44d5758678",
     "doc_type": "unmarried_custody"
   },
@@ -13635,7 +13810,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.30.310(a)",
+        "quote_status": "altered",
+        "altered_text": "have a significant connection with this state, or until neither the child nor either parent presently resides in this state",
+        "original_text": "have a significant connection with this state and that substantial evidence is no longer available in this state concerning the child's care, protection, training, and personal relationships",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "9d9b68138bec4f17",
     "doc_type": "modify_custody_visitation"
   },
@@ -13789,7 +13973,8 @@
         "quote_status": "altered",
         "altered_text": "a material change of circumstances will be presumed if support as calculated under this rule is more than 15 percent greater or less than the outstanding support order under all circumstances",
         "original_text": "a material change of circumstances will be presumed if support as calculated under this rule is more than 15 percent greater or less than the outstanding support order",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.24.150(c)(1)",
@@ -13808,8 +13993,11 @@
       },
       {
         "source_cite": "AS 25.24.150(c)(6)",
-        "quote_status": "faithful",
-        "injected": false
+        "quote_status": "altered",
+        "altered_text": "willingness and ability to facilitate and encourage a close and continuing relationship between the other parent and the child.",
+        "original_text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 4,
@@ -14550,7 +14738,16 @@
         "quote_status": "altered",
         "altered_text": "the physical, emotional, mental, religious, and social needs of the child under all circumstances",
         "original_text": "the physical, emotional, mental, religious, and social needs of the child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
+      },
+      {
+        "source_cite": "AS 25.30.310(a)",
+        "quote_status": "altered",
+        "altered_text": "have a significant connection with this state, or until a court of this state or another state determines that none of the relevant parties presently reside in this state",
+        "original_text": "have a significant connection with this state and that substantial evidence is no longer available in this state concerning the child's care, protection, training, and personal relationships",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 4,
@@ -15125,7 +15322,8 @@
         "quote_status": "altered",
         "altered_text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity under all circumstances",
         "original_text": "the length of time the child has lived in a stable, satisfactory environment and the desirability of maintaining continuity",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 3,
@@ -15502,7 +15700,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.30.310",
+        "quote_status": "altered",
+        "altered_text": "no longer have a significant connection with this state or neither the child, a parent, nor a person acting as a parent resides in this state",
+        "original_text": "have a significant connection with this state and that substantial evidence is no longer available in this state concerning the child's care, protection, training, and personal relationships",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "0d967583e3b63055",
     "doc_type": "modify_custody_visitation"
   },
@@ -16087,7 +16294,8 @@
         "quote_status": "altered",
         "altered_text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child under all circumstances",
         "original_text": "the willingness and ability of each parent to facilitate and encourage a close and continuing relationship between the other parent and the child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.24.150(c)",
@@ -17863,7 +18071,8 @@
         "quote_status": "altered",
         "altered_text": "in awarding custody the court may consider only those facts that directly affect the well-being of the child under all circumstances",
         "original_text": "in awarding custody the court may consider only those facts that directly affect the well-being of the child",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.24.150(c)(1)",
@@ -17874,6 +18083,14 @@
         "source_cite": "AS 25.24.150(c)(5)",
         "quote_status": "faithful",
         "injected": false
+      },
+      {
+        "source_cite": "AS 25.30.310(a)",
+        "quote_status": "altered",
+        "altered_text": "nor the child and a person acting as a parent have a significant connection with this state.",
+        "original_text": "have a significant connection with this state and that substantial evidence is no longer available in this state concerning the child's care, protection, training, and personal relationships",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 4,
@@ -19099,7 +19316,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be issued without notice to the adverse party when it clearly appears from specific facts shown by affidavit or verified",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "f79ba35101dba22e",
     "doc_type": "domestic_violence"
   },
@@ -19513,7 +19739,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be granted without notice to the adverse party if it clearly appears from specific facts shown by affidavit or verified",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "ee81a27ed3b0ab0a",
     "doc_type": "domestic_violence"
   },
@@ -20270,7 +20505,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be granted without notice to the adverse party if it clearly appears from specific facts shown by affidavit or verified",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "2d20b896df552140",
     "doc_type": "domestic_violence"
   },
@@ -20448,6 +20692,14 @@
         "source_cite": "AS 18.66.130",
         "quote_status": "faithful",
         "injected": false
+      },
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be granted without prior notice to the adverse party where specific facts shown by affidavit or verified complaint establish tha",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 2,
@@ -20620,7 +20872,8 @@
         "quote_status": "altered",
         "altered_text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member under all circumstances",
         "original_text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -21280,7 +21533,8 @@
         "quote_status": "altered",
         "altered_text": "a crime involving domestic violence as defined in AS 18.66.990 under all circumstances",
         "original_text": "a crime involving domestic violence as defined in AS 18.66.990",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 18.66.100",
@@ -21699,7 +21953,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be granted without notice to the adverse party where specific facts shown by affidavit or verified complaint establish tha",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "29068e2b2cc2c460",
     "doc_type": "domestic_violence"
   },
@@ -22393,7 +22656,8 @@
         "quote_status": "altered",
         "altered_text": "if the court finds that the petition establishes probable cause that a crime involving domestic violence has occurred, it is necessary to protect the petitioner from domestic violence, and if the petitioner has certified to the court in writing the efforts, if any, that have been made to provide notice to the respondent, the court may ex parte and without notice to the respondent issue a protective order",
         "original_text": "if the court finds that the petition establishes probable cause that a crime involving domestic violence has occurred, it is necessary to protect the petitioner from domestic violence, and if the petitioner has certified to the court in writing the efforts, if any, that have been made to provide notice to the respondent, the court shall ex parte and without notice to the respondent issue a protective order",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 2,
@@ -22927,7 +23191,8 @@
         "quote_status": "altered",
         "altered_text": "evidence of other crimes involving domestic violence by the defendant against the same or another person . . . is admissible under all circumstances",
         "original_text": "evidence of other crimes involving domestic violence by the defendant against the same or another person . . . is admissible",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 18.66.100",
@@ -23398,7 +23663,16 @@
         "quote_status": "altered",
         "altered_text": "prohibit the respondent from entering a propelled vehicle in the possession of or occupied by the petitioner under all circumstances",
         "original_text": "prohibit the respondent from entering a propelled vehicle in the possession of or occupied by the petitioner",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
+      },
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be granted without notice to the adverse party when it clearly appears from specific facts shown by affidavit or by verif",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 4,
@@ -23748,7 +24022,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 65(e)",
+        "quote_status": "altered",
+        "altered_text": "disposing of, encumbering, or transferring marital property",
+        "original_text": "disposing of, encumbering or transferring any marital property",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "5c63af6ed5e679ce",
     "doc_type": "domestic_violence"
   },
@@ -23909,7 +24192,8 @@
         "quote_status": "altered",
         "altered_text": "a court may  order parties into mediation or refer them to mediation for resolution of the issues arising from a petition for a protective order under AS 18.66.100 through 18.66.180",
         "original_text": "a court may not order parties into mediation or refer them to mediation for resolution of the issues arising from a petition for a protective order under AS 18.66.100 through 18.66.180",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 18.66.100",
@@ -24095,7 +24379,16 @@
         "raw_extracted": "Ongoing Marriage. In Veronica Louise Hudson v. Daniel Lee Hudson, 532 P.3d 272 (Alaska 2023)"
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be granted without notice to the adverse party where it clearly appears from specific facts shown by affidavit or verified",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "b49b07742f8f1e97",
     "doc_type": "domestic_violence"
   },
@@ -24470,12 +24763,21 @@
         "quote_status": "altered",
         "altered_text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member under all circumstances",
         "original_text": "direct the respondent to stay away from the residence, school, or place of employment of the petitioner or any specified place frequented by the petitioner or any designated household member",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "Civil Rule 65(e)",
         "quote_status": "faithful",
         "injected": false
+      },
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be granted without notice to the adverse party where specific facts shown by affidavit or verified complaint establish tha",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 3,
@@ -24616,7 +24918,8 @@
         "quote_status": "altered",
         "altered_text": "order other relief the court determines necessary to protect the petitioner or any household member under all circumstances",
         "original_text": "order other relief the court determines necessary to protect the petitioner or any household member",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 18.66.100(c)(3)",
@@ -25076,7 +25379,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be granted without prior notice to the adverse party where it clearly appears from specific facts shown by affidavit or by the v",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "98b43c8d5da623bd",
     "doc_type": "domestic_violence"
   },
@@ -25230,7 +25542,8 @@
         "quote_status": "altered",
         "altered_text": "possession and use of a vehicle and other essential personal items, including a pet, regardless of ownership of the items under all circumstances",
         "original_text": "possession and use of a vehicle and other essential personal items, including a pet, regardless of ownership of the items",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -25370,7 +25683,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 65(b)",
+        "quote_status": "altered",
+        "altered_text": "temporary restraining order may be granted without notice to the adverse party if it clearly appears from specific facts shown by affidavit or verified",
+        "original_text": "A temporary restraining order may be granted without written or oral notice to the adverse party or that party's attorney only if (1) it clearly appears from specific facts shown by affidavit or by the verified complaint",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "14875fcf43a9748f",
     "doc_type": "domestic_violence"
   },
@@ -25749,7 +26071,8 @@
         "quote_status": "altered",
         "altered_text": "other relief the court determines necessary to protect the petitioner or any household member under all circumstances",
         "original_text": "other relief the court determines necessary to protect the petitioner or any household member",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -27227,7 +27550,8 @@
         "quote_status": "altered",
         "altered_text": "a parent who is physically or mentally incapacitated under all circumstances",
         "original_text": "a parent who is physically or mentally incapacitated",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 3,
@@ -27392,7 +27716,16 @@
         "quote_status": "altered",
         "altered_text": "an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2) under all circumstances",
         "original_text": "an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2)",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
+      },
+      {
+        "source_cite": "AS 25.24.170(a)",
+        "quote_status": "altered",
+        "altered_text": "the care, nurture, and education of minor children of the marriage",
+        "original_text": "for the care, nurture, and education of unmarried 18-year-old children of the marriage",
+        "injected": false,
+        "planted": false
       }
     ],
     "n_errors_planted": 4,
@@ -28181,7 +28514,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.24.170(a)",
+        "quote_status": "altered",
+        "altered_text": "the care, nurture, and education of minor children",
+        "original_text": "for the care, nurture, and education of unmarried 18-year-old children of the marriage",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "n_errors_planted": 3,
     "hash": "76c5c4b539179afc",
     "doc_type": "child_support"
@@ -28320,7 +28662,8 @@
         "quote_status": "altered",
         "altered_text": "may order either parent or both parents to pay the amount necessary for support, maintenance, nurture, and education of the child. under all circumstances",
         "original_text": "may order either parent or both parents to pay the amount necessary for support, maintenance, nurture, and education of the child.",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.24.170",
@@ -28457,7 +28800,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.24.170",
+        "quote_status": "altered",
+        "altered_text": "the care, nurture, and education of the minor children",
+        "original_text": "for the care, nurture, and education of unmarried 18-year-old children of the marriage",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "7f327cb0e2d4f80c",
     "doc_type": "child_support"
   },
@@ -28756,7 +29108,8 @@
         "quote_status": "altered",
         "altered_text": "any time after judgment the court, upon the motion of either party, may set aside, alter, or modify so much of the judgment as may provide for alimony, for the appointment of trustees for the care and custody of the minor children or for their nurture and education, for the care, nurture, and education of unmarried 18-year-old children of the marriage while they are actively pursuing a high school diploma or an equivalent level of technical or vocational training and living as dependents with a parent, guardian, or designee of the parent or guardian, or for the maintenance of either party to the action. under all circumstances",
         "original_text": "any time after judgment the court, upon the motion of either party, may set aside, alter, or modify so much of the judgment as may provide for alimony, for the appointment of trustees for the care and custody of the minor children or for their nurture and education, for the care, nurture, and education of unmarried 18-year-old children of the marriage while they are actively pursuing a high school diploma or an equivalent level of technical or vocational training and living as dependents with a parent, guardian, or designee of the parent or guardian, or for the maintenance of either party to the action.",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "Civil Rule 90.3(a)",
@@ -29043,7 +29396,8 @@
         "quote_status": "altered",
         "altered_text": "as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2) under all circumstances",
         "original_text": "as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2)",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.24.170",
@@ -30256,7 +30610,8 @@
         "quote_status": "altered",
         "altered_text": "a child support award in a case in which one parent is awarded sole physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2)",
         "original_text": "a child support award in a case in which one parent is awarded primary physical custody as defined by paragraph (f) will be calculated as an amount equal to the adjusted annual income of the non-custodial parent multiplied by a percentage specified in subparagraph (a)(2)",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       },
       {
         "source_cite": "AS 25.20.110",
@@ -30434,7 +30789,8 @@
         "quote_status": "altered",
         "altered_text": "a material change of circumstances will be presumed if support as calculated under this rule is more than 15 percent greater or less than the outstanding support order under all circumstances",
         "original_text": "a material change of circumstances will be presumed if support as calculated under this rule is more than 15 percent greater or less than the outstanding support order",
-        "injected": "altered_quote"
+        "injected": "altered_quote",
+        "planted": true
       }
     ],
     "n_errors_planted": 4,
@@ -30598,7 +30954,16 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "AS 25.24.170(a)",
+        "quote_status": "altered",
+        "altered_text": "the care, nurture, and education of the minor children of the marriage",
+        "original_text": "for the care, nurture, and education of unmarried 18-year-old children of the marriage",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "93b223170da5bbbd",
     "doc_type": "child_support"
   },
@@ -31432,7 +31797,24 @@
         "injected": false
       }
     ],
-    "quotes": [],
+    "quotes": [
+      {
+        "source_cite": "Civil Rule 90.3(a)(4)(A)",
+        "quote_status": "altered",
+        "altered_text": "voluntarily and unreasonably unemployed or underemployed only when the parent's current situation",
+        "original_text": "voluntarily and unreasonably unemployed or underemployed when the parent's current situation",
+        "injected": false,
+        "planted": false
+      },
+      {
+        "source_cite": "AS 25.24.170(a)",
+        "quote_status": "altered",
+        "altered_text": "the care, nurture, and education of minor children",
+        "original_text": "for the care, nurture, and education of unmarried 18-year-old children of the marriage",
+        "injected": false,
+        "planted": false
+      }
+    ],
     "hash": "73dfd70aec3e9581",
     "doc_type": "child_support"
   },
