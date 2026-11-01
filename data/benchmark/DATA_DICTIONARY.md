@@ -114,6 +114,20 @@ only the `Civil Rule` prefix still leaves those 80 unmatched.
 4. Keep civil and evidence rules in separate namespaces: `Civil Rule 90.3` and
    `Alaska R. Evid. 90.3` are different authorities that would collide on number alone.
 
+⚠️ **5 fabricated civil rules share a number with a real evidence rule.** Alaska Evidence Rules
+901 and 903 are real, and these planted citations use the same numbers in the civil family. They
+are **correctly labeled fabricated**: there is no Civil Rule 901 or 903, and each one replaced a
+real civil rule. **A detector matching on rule number alone, without the rule family, would
+wrongly pass them.**
+
+| Document | Fabricated citation | `replaced_real` |
+|----------|---------------------|-----------------|
+| `doc-0008` | `Civil Rule 903(e)` | `Civil Rule 65(e)` |
+| `doc-0010` | `Civil Rule 901(a)` | `Civil Rule 90.3(a)` |
+| `doc-0132` | `Civil Rule 903(e)` | `Civil Rule 65(e)` |
+| `doc-0173` | `Civil Rule 903(a)` | `Civil Rule 90.3(a)` |
+| `doc-0194` | `Civil Rule 903(a)` | `Civil Rule 90.3(a)` |
+
 ⚠️ Statutes and cases do **not** have this problem. Statute citations match `citation` in
 `statutes.jsonl` directly. Case citations should be matched on **reporter cite**
 (`"987 P.2d 183"`), not case name — see §8.
@@ -163,7 +177,7 @@ having MISSED a hallucination** — a false negative against the recall metric �
 emphasise.
 
 > **Required handling: EXCLUDE both citations from Stage-2 scoring** rather than count them
-> either way (see §9). They are the only two of their kind in the benchmark — 2 of 3,585
+> either way (see §9). They are the only two of their kind in the benchmark — 2 of 3,584
 > citations — so excluding them changes no reported figure materially, and counting them
 > penalises exactly the detectors that are working correctly.
 
@@ -179,8 +193,8 @@ document hash in `manifest.json` remains valid.**
 
 | Measure | Before | After |
 |---------|--------|-------|
-| Citation entries | 3,490 | 3,585 |
-| `exists: true` | 3,211 | 3,310 |
+| Citation entries | 3,490 | 3,584 |
+| `exists: true` | 3,211 | 3,309 |
 | `exists: false`, planted (injected citations) | 278 | 273 |
 | `exists: false`, real law outside the corpus, excluded from Stage 2 | 1 | 2 |
 | Authority targets (unique `norm` per document, §4.4) | 2,398 | 2,493 |
@@ -214,10 +228,10 @@ document hash in `manifest.json` remains valid.**
    - 9 case names regained the start the extractor dropped (7 `State, Child Support Enforcement
      Division v. Bromley`, 2 `del Rosario v. Clare`).
 4. **`norm` added to every citation entry.** See §4.4.
-
-No entry was removed. One exact-string duplicate remains in `doc-0082` (`Nelson v. Nelson, 263
-P.3d 49 (Alaska 2011)`, a side effect of the 2026-09-21 cleanup). The two entries share a `norm`,
-so scoring counts them once.
+5. **1 exact duplicate removed.** The 2026-09-21 cleanup turned `The Nelson v. Nelson, 263 P.3d 49
+   (Alaska 2011)` in `doc-0082` into a string that already had an entry. The plain copy is gone,
+   and the entry carrying `raw_extracted` stays. This is the only entry removed: every pinpoint
+   and form variant remains.
 
 **Known corpus limitation:** the corpus does **not** include the Alaska Administrative Code
 (AAC) — e.g. the CSSD child-support regulations. Documents were generated to cite only
@@ -320,7 +334,7 @@ Every citation entry has a `norm`: the authority it refers to, regardless of pin
 
 **How to dedupe.** Within each document, group entries by `norm` and score one target per group.
 Reduce your extractor's output to the same form and compare per document. Every entry in a group
-carries the same `exists` label. The 3,585 entries reduce to 2,493 authority targets, or 2,491
+carries the same `exists` label. The 3,584 entries reduce to 2,493 authority targets, or 2,491
 after the §9 exclusions. Do not dedupe across documents: the same authority in two documents is
 two targets.
 
@@ -358,6 +372,9 @@ malformed strings.
 
 ⚠️ **Five injected statutes landed on real sections.** They are labeled `exists: true`, not
 fabricated. See §3.3.
+
+⚠️ **5 fabricated civil rules share a number with a real evidence rule.** They stay fabricated.
+See §3.1.
 
 ⚠️ **9 fabricated reporters resolve to real but unrelated opinions.** Volumes and pages were
 picked at random, and these 9 happen to exist in the reporter. All 9 are absent from this corpus
@@ -457,7 +474,7 @@ Documented honestly so the team can interpret detection metrics correctly:
      that sits outside this corpus's curated scope, so scoring them as hallucinations penalises
      detectors that correctly recognise them as real. See §3.2 for the confirmation and the
      reasoning. **These are the only citations excluded; the rule above applies unchanged to
-     all other 3,583 entries (2,491 authority targets).**
+     all other 3,582 entries (2,491 authority targets).**
 3. **Stage 3 — fidelity:** for each quoted passage, decide faithful vs. altered. Score against
    `quote_status`, on the 163 labeled quotes only (see §8.6).
 4. Report precision, recall, and F1 — separately for existence and fidelity — with emphasis
