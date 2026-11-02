@@ -1,13 +1,25 @@
-"""Legal 1A citation extractor.
+"""Legal 1A citation and quote hallucination detector.
 
-Statutes and court-rule citation extraction for the ProseAI benchmark.
+Public API:
+    analyze_document(path)  full document report (citations, quotes, risk)
+    load_indexes()          load the frozen corpus once and reuse it
+    extract_citations(path) statute/rule extraction only
+    check_citation(cite, type, indexes)  existence verdict for one citation
 """
 
+from .existence import (
+    check_case_existence,
+    load_corpus_name_index,
+    load_corpus_reporter_index,
+)
 from .extractor import extract_citations, extract_citations_from_text, normalize_citation
-# ADDED(2026-10-06): expose the case existence checker as part of the library API.
-from .existence import check_case_existence, load_corpus_name_index, load_corpus_reporter_index
+from .pipeline import analyze_document, check_citation, load_indexes, parse_case_citation
 
 __all__ = [
+    "analyze_document",
+    "check_citation",
+    "load_indexes",
+    "parse_case_citation",
     "extract_citations",
     "extract_citations_from_text",
     "normalize_citation",
