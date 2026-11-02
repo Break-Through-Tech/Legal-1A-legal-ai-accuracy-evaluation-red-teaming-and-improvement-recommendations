@@ -81,11 +81,30 @@ def load_evidence_rule_index(path: str | Path) -> set[str]:
     return index
 
 
+def _statute_title(key: str) -> str | None:
+    """Title number of an ``"as 25.24.150"`` key ("25"), or None."""
+    match = re.match(r"as (\d+)\.", key)
+    return match.group(1) if match else None
+
+
 def check_statute_existence(citation: str, statute_index: set[str]) -> str:
-    """Return REAL or FABRICATED for one statute citation."""
+    """Return REAL, FABRICATED, or OUT_OF_SCOPE for one statute citation.
+
+    The corpus covers only some titles of the Alaska Statutes (18 and 25). A
+    section from any other title cannot be confirmed or refuted, so it is
+    OUT_OF_SCOPE rather than fabricated (DATA_DICTIONARY §3.2, AS 11.56.807).
+    """
     match = _STATUTE_NUM_RE.search(normalize_citation(citation))
     key = f"as {match.group(1)}" if match else normalize_citation(citation).strip().casefold()
-    return REAL if key in statute_index else FABRICATED
+    if key in statute_index:
+        return REAL
+    # ADDED (2026-10-27): was FABRICATED for every miss, so the out-of-scope
+    #   AS 11.56.807 got weight 1.0 and flagged clean doc-0136 in document_risk.
+    title = _statute_title(key)
+    in_scope_titles = {_statute_title(k) for k in statute_index}
+    if title and title not in in_scope_titles:
+        return OUT_OF_SCOPE
+    return FABRICATED
 
 
 def check_rule_existence(
