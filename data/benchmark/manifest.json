@@ -18,1400 +18,1600 @@
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0001.docx",
-      "hash": "813d1c3810185235"
+      "hash": "813d1c3810185235",
+      "docx_sha256": "813d64dfa86bcccf2f9b79482cc7c0638638d6815bc5749a342c50cedf8b1b4f"
     },
     {
       "doc_id": "doc-0002",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0002.docx",
-      "hash": "f6044a9afd97b27d"
+      "hash": "f6044a9afd97b27d",
+      "docx_sha256": "d852f8b1519319f65e1de91c5c31ea1184e4326c3ded9e57881adb1e8c3a5f94"
     },
     {
       "doc_id": "doc-0003",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0003.docx",
-      "hash": "76a49ff04f2a7301"
+      "hash": "76a49ff04f2a7301",
+      "docx_sha256": "52245f118195aa406aae3dcc2e87663c3f9db7d7366f6979fd3b4433a14ae854"
     },
     {
       "doc_id": "doc-0004",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0004.docx",
-      "hash": "520842a3ad477c22"
+      "hash": "520842a3ad477c22",
+      "docx_sha256": "22634f836f24ac47a5bf2c866d9d355b3a343c3f6282e3fda5b0a7f0c7f40f9c"
     },
     {
       "doc_id": "doc-0005",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0005.docx",
-      "hash": "3f60bce5ca30cfde"
+      "hash": "3f60bce5ca30cfde",
+      "docx_sha256": "ece6d27f460f9d878f8572ac00b934b59de03e9bf244c69eff2e2e64c35eabb3"
     },
     {
       "doc_id": "doc-0006",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0006.docx",
-      "hash": "d76fa8d5a4692c26"
+      "hash": "d76fa8d5a4692c26",
+      "docx_sha256": "1c8f249c134d01df5e468ac58bb82001f431c3ff664ed6b2614307c40df818eb"
     },
     {
       "doc_id": "doc-0007",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0007.docx",
-      "hash": "d491519db56f25eb"
+      "hash": "d491519db56f25eb",
+      "docx_sha256": "5a2a678feec419229bf8d7fb9936bde5a773d8b48c3fafd47d474e4e7ed6e731"
     },
     {
       "doc_id": "doc-0008",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0008.docx",
-      "hash": "a18d20178c6e30f1"
+      "hash": "a18d20178c6e30f1",
+      "docx_sha256": "dc9c62ad83e80b356288bd0a59433663168c79bd01c9561e16cbbf0ead69a5ed"
     },
     {
       "doc_id": "doc-0009",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0009.docx",
-      "hash": "8e9ba95589a46b7c"
+      "hash": "8e9ba95589a46b7c",
+      "docx_sha256": "cd4ae0b575cc9e597ac6b873061d859f32808dd3bb88fe3ca56d8863bdd0ed97"
     },
     {
       "doc_id": "doc-0010",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0010.docx",
-      "hash": "aae7a7b5ffc87269"
+      "hash": "aae7a7b5ffc87269",
+      "docx_sha256": "0f002261dfe3e5b7eff9a5b15f3e1e67c36f169b2fa99ae23634ed1e8031f735"
     },
     {
       "doc_id": "doc-0011",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0011.docx",
-      "hash": "17eecbf6be9e6ad3"
+      "hash": "17eecbf6be9e6ad3",
+      "docx_sha256": "7e64008bf5236aaf1832cf1f1dcde94ac6b0edc54af2acdf61a8b6768d0731ad"
     },
     {
       "doc_id": "doc-0012",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0012.docx",
-      "hash": "e066e11de20e40a0"
+      "hash": "e066e11de20e40a0",
+      "docx_sha256": "88a24583084a146a3344b6f70fca3c8373daa25bb664d5fceaa0314b050480d8"
     },
     {
       "doc_id": "doc-0013",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0013.docx",
-      "hash": "e4989cb31e6ef39c"
+      "hash": "e4989cb31e6ef39c",
+      "docx_sha256": "7b9e5ec4280cf5c9d1c89219465d48ac2ae44d636ddf586c41d49bc9a7fef218"
     },
     {
       "doc_id": "doc-0014",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0014.docx",
-      "hash": "22b3287b87fb9bc4"
+      "hash": "22b3287b87fb9bc4",
+      "docx_sha256": "af95b5d771997da536171605e6500c7a27ce583441b2af04a36a139cb91d5050"
     },
     {
       "doc_id": "doc-0015",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0015.docx",
-      "hash": "711eddee00e83147"
+      "hash": "711eddee00e83147",
+      "docx_sha256": "d91f63e8a4cc3b664e48eed872c4eb6457ada87f510a8826eeffc0302dd1fe4c"
     },
     {
       "doc_id": "doc-0016",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0016.docx",
-      "hash": "d592e43a60058267"
+      "hash": "d592e43a60058267",
+      "docx_sha256": "ce85d4852722292e606eb878ada2db34eaefa38df923c5895a868c92cc52af0f"
     },
     {
       "doc_id": "doc-0017",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0017.docx",
-      "hash": "529b8d747bcbfa7d"
+      "hash": "529b8d747bcbfa7d",
+      "docx_sha256": "fc24615ea4c783dcdf9786cceeb090f033473bc30683865fd8204e03ac7a38c4"
     },
     {
       "doc_id": "doc-0018",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0018.docx",
-      "hash": "e5deefdaaead0970"
+      "hash": "e5deefdaaead0970",
+      "docx_sha256": "ad13b6b43874d0b3d08646cd2949e25960c5deed7d5c298dfba73dbaab56cf36"
     },
     {
       "doc_id": "doc-0019",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0019.docx",
-      "hash": "7b62e60e69f02468"
+      "hash": "7b62e60e69f02468",
+      "docx_sha256": "d934bd309f4ed26dc81ec0c77d85387cb30904027b8c9d9e338627c8b875b733"
     },
     {
       "doc_id": "doc-0020",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0020.docx",
-      "hash": "b4090c65965c9fdf"
+      "hash": "b4090c65965c9fdf",
+      "docx_sha256": "99d1504333688f4719810a51295cd8ea34546a2badab5fe799ac38bbda073da8"
     },
     {
       "doc_id": "doc-0021",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0021.docx",
-      "hash": "f91560b45e158ef8"
+      "hash": "f91560b45e158ef8",
+      "docx_sha256": "ecc00c506bd6c15dbcbf430305f61951a27cc393bd23e82170ec196a586f494b"
     },
     {
       "doc_id": "doc-0022",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0022.docx",
-      "hash": "e39cb8fe3aa45ee8"
+      "hash": "e39cb8fe3aa45ee8",
+      "docx_sha256": "bc0692a2484c1b5178568580dffc2bde805663d12e234cc28aa4691f3da9cf23"
     },
     {
       "doc_id": "doc-0023",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0023.docx",
-      "hash": "80bc4b8187f52258"
+      "hash": "80bc4b8187f52258",
+      "docx_sha256": "fc08f90adc679d9c685ac50110438436aca1a2b64211ec9418938b11ebed8415"
     },
     {
       "doc_id": "doc-0024",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0024.docx",
-      "hash": "771feab3485661e1"
+      "hash": "771feab3485661e1",
+      "docx_sha256": "83a07a03788d3b93eb85b11647276ee3ec16cb393420193a2b5079fede072626"
     },
     {
       "doc_id": "doc-0025",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0025.docx",
-      "hash": "23e4984727002ffb"
+      "hash": "23e4984727002ffb",
+      "docx_sha256": "ccf0cf92136b3f7e2681354e538752265fc8325ac46e829af0565fdd02490a7c"
     },
     {
       "doc_id": "doc-0026",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0026.docx",
-      "hash": "8370cdd7a8eb83eb"
+      "hash": "8370cdd7a8eb83eb",
+      "docx_sha256": "873868ac8c70bfe072d867df415f9148eadd378b0f668ad276a79dfcd7790888"
     },
     {
       "doc_id": "doc-0027",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0027.docx",
-      "hash": "f874abd6cafcfc5f"
+      "hash": "f874abd6cafcfc5f",
+      "docx_sha256": "0aa7874ec314d698ca2156b544ce93a66bbeb40c4a4f3d7f9b7d2038e64393f0"
     },
     {
       "doc_id": "doc-0028",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0028.docx",
-      "hash": "de82843a22c7d335"
+      "hash": "de82843a22c7d335",
+      "docx_sha256": "f3113a42d40d9e7202ffad5c973ae82ea9c5728a60612c71982932da95b28b9c"
     },
     {
       "doc_id": "doc-0029",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0029.docx",
-      "hash": "b09399792b842a7b"
+      "hash": "b09399792b842a7b",
+      "docx_sha256": "7df816692f12aaae009986410afa71bec8bcedeb82a685c033a0016db55f397a"
     },
     {
       "doc_id": "doc-0030",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0030.docx",
-      "hash": "d5d8063a022f81bb"
+      "hash": "d5d8063a022f81bb",
+      "docx_sha256": "4c285703f1f0006d0d6e8cb3bb3b987de99c443277a687bd1251f05be792259b"
     },
     {
       "doc_id": "doc-0031",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0031.docx",
-      "hash": "aee8ed78687c74c1"
+      "hash": "aee8ed78687c74c1",
+      "docx_sha256": "1ead7dcc368fc0b901731cb43fcdf72a307806bd9bf41bf29b28fd5cebff434e"
     },
     {
       "doc_id": "doc-0032",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0032.docx",
-      "hash": "9ca53f8e627bbdfe"
+      "hash": "9ca53f8e627bbdfe",
+      "docx_sha256": "8c56599ae388ca0ee36875fd616205371da6e2d858353bf5059955d19a1588b5"
     },
     {
       "doc_id": "doc-0033",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0033.docx",
-      "hash": "ce8b5c1639ba8c6a"
+      "hash": "ce8b5c1639ba8c6a",
+      "docx_sha256": "6f51a31d063dc0448cf7a430e1aa03a47143f61e228e191f1086eac59a283b50"
     },
     {
       "doc_id": "doc-0034",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0034.docx",
-      "hash": "5b558e5c65b5ddbf"
+      "hash": "5b558e5c65b5ddbf",
+      "docx_sha256": "5535538476f060566262d5b5f3f86c997c521fec0729b7a7fa4c6864fb70837e"
     },
     {
       "doc_id": "doc-0035",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0035.docx",
-      "hash": "3bc8e444abe82249"
+      "hash": "3bc8e444abe82249",
+      "docx_sha256": "29f275ab8855d3bc7105cb8fb3e338fbb66c0f36251b12a7d09a37cecd270ef6"
     },
     {
       "doc_id": "doc-0036",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0036.docx",
-      "hash": "0a71d5429eec2061"
+      "hash": "0a71d5429eec2061",
+      "docx_sha256": "44b670c88d0c389f21f660f27662e1e5dde86f577506a879d3213d558106ccf4"
     },
     {
       "doc_id": "doc-0037",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0037.docx",
-      "hash": "fa4b624445cc6ca4"
+      "hash": "fa4b624445cc6ca4",
+      "docx_sha256": "f3f09610aafbd9b6d491cc88bd8c9884357aeec5c8476da5f6b08dad54defab2"
     },
     {
       "doc_id": "doc-0038",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0038.docx",
-      "hash": "39c674a22548ab14"
+      "hash": "39c674a22548ab14",
+      "docx_sha256": "08f91a92f98183ee9fbef2a22eedf43433291df13b4fe0ea5f579479ec81e932"
     },
     {
       "doc_id": "doc-0039",
       "doc_type": "married_divorcing_with_children",
       "condition": "clean",
       "file": "documents/doc-0039.docx",
-      "hash": "2189906316c4a9ad"
+      "hash": "2189906316c4a9ad",
+      "docx_sha256": "3db9d9fe99f3f710f76ac66d6b7be7e12c9417613add4642542ffe5a0eefe10c"
     },
     {
       "doc_id": "doc-0040",
       "doc_type": "married_divorcing_with_children",
       "condition": "corrupt",
       "file": "documents/doc-0040.docx",
-      "hash": "7abd01f4cd872214"
+      "hash": "7abd01f4cd872214",
+      "docx_sha256": "8a8425bdc08c328df616ecf66b72e252162d92cc164f04d9bfd8d88bf81ad1a4"
     },
     {
       "doc_id": "doc-0041",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0041.docx",
-      "hash": "6b7cd721b78b3e0a"
+      "hash": "6b7cd721b78b3e0a",
+      "docx_sha256": "2b1c0bcaafeb5df0379acf96f92e691d5d16bf18c2e1fe5df661bcbb4d1c724f"
     },
     {
       "doc_id": "doc-0042",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0042.docx",
-      "hash": "82243fcc9002f55f"
+      "hash": "82243fcc9002f55f",
+      "docx_sha256": "c3fb078724b68f5af3769a79a8cade1319d639cc5efbd647c031b33f99544566"
     },
     {
       "doc_id": "doc-0043",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0043.docx",
-      "hash": "22e16d8064cdc716"
+      "hash": "22e16d8064cdc716",
+      "docx_sha256": "836d93192c48bd8a1193c7c1d157eb71136e84a30f894b64f20f877faf0c66f8"
     },
     {
       "doc_id": "doc-0044",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0044.docx",
-      "hash": "1d6248dca2101863"
+      "hash": "1d6248dca2101863",
+      "docx_sha256": "f9f4ad4d1afe970e8e960ce5717c6912d7351e3533d2cec07556b44ad670a295"
     },
     {
       "doc_id": "doc-0045",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0045.docx",
-      "hash": "837ff6a530f617b1"
+      "hash": "837ff6a530f617b1",
+      "docx_sha256": "2275452392e58e0a89d35fb37628cf8122f770fc5dd0125e0426e4bbdb61a614"
     },
     {
       "doc_id": "doc-0046",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0046.docx",
-      "hash": "404aa1f7f50b00db"
+      "hash": "404aa1f7f50b00db",
+      "docx_sha256": "26c5cdba55f3aaf11b38276befe573e4fdd1ca13614981d338acacac9d0512fa"
     },
     {
       "doc_id": "doc-0047",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0047.docx",
-      "hash": "4e9c460487d26e73"
+      "hash": "4e9c460487d26e73",
+      "docx_sha256": "36574f4e35056142be2941931cdd142cef6fc188ff7cdf1494dc8ab5ed08d2f2"
     },
     {
       "doc_id": "doc-0048",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0048.docx",
-      "hash": "89e6951c90825934"
+      "hash": "89e6951c90825934",
+      "docx_sha256": "1e529283e9022c037301e3ec4d61d1d9e72542cb5c53401940689b14d7d6e7f8"
     },
     {
       "doc_id": "doc-0049",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0049.docx",
-      "hash": "3fb3377b5a1e1402"
+      "hash": "3fb3377b5a1e1402",
+      "docx_sha256": "3fecac946c3b9c7b2250c2d54606bed24e964829059b07f1b49f6d076dd0793c"
     },
     {
       "doc_id": "doc-0050",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0050.docx",
-      "hash": "774685bd9778de24"
+      "hash": "774685bd9778de24",
+      "docx_sha256": "da976b38d53e2066996f7852416917edcd80bf41f5881315195d9c660f55762d"
     },
     {
       "doc_id": "doc-0051",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0051.docx",
-      "hash": "f3924b2e9edddae9"
+      "hash": "f3924b2e9edddae9",
+      "docx_sha256": "a4f9cd3f939e35668abac96620f63eef0ab56e6742cad6beffcdad36eac6270b"
     },
     {
       "doc_id": "doc-0052",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0052.docx",
-      "hash": "69bc3248cc6c2161"
+      "hash": "69bc3248cc6c2161",
+      "docx_sha256": "d5afd4bb893834aea15e8bb301502b2539fe915e4607003cce6831f95610f301"
     },
     {
       "doc_id": "doc-0053",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0053.docx",
-      "hash": "c61263dc60297a6f"
+      "hash": "c61263dc60297a6f",
+      "docx_sha256": "d06fd88f9d200c9a0c03f816b1cbe5f7d14981e4d2a4f2ed15bc209b12ed4889"
     },
     {
       "doc_id": "doc-0054",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0054.docx",
-      "hash": "f96600f13fd5b52c"
+      "hash": "f96600f13fd5b52c",
+      "docx_sha256": "801a893c7e6d311dfc870289489c88815511e2c3126d50ce3aec9a6f0801f51e"
     },
     {
       "doc_id": "doc-0055",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0055.docx",
-      "hash": "985f7d317bcb653b"
+      "hash": "985f7d317bcb653b",
+      "docx_sha256": "4db110e4c203a079541f3977ed0d53ac1480322d7748fad4e04147160af3980a"
     },
     {
       "doc_id": "doc-0056",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0056.docx",
-      "hash": "d91e0f7ea9ff3f34"
+      "hash": "d91e0f7ea9ff3f34",
+      "docx_sha256": "d7f601bc45f65ddc7004225d059c45f09ab36a6beee3ae130bc9a2f271370b98"
     },
     {
       "doc_id": "doc-0057",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0057.docx",
-      "hash": "fd0a9c1cf11b2c7d"
+      "hash": "fd0a9c1cf11b2c7d",
+      "docx_sha256": "b14f1721e427c04a57f6f4e4f44c871447c126bcf0ad4d92ebfe40436070766a"
     },
     {
       "doc_id": "doc-0058",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0058.docx",
-      "hash": "2e0e43d937d624d7"
+      "hash": "2e0e43d937d624d7",
+      "docx_sha256": "8f7a0e54159d62cdfcb83f2e8db9f17c921767f25821775d871fa18b3020ec0c"
     },
     {
       "doc_id": "doc-0059",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0059.docx",
-      "hash": "5dae540845e2f44a"
+      "hash": "5dae540845e2f44a",
+      "docx_sha256": "5bb23f2de71de52702898b96ee0e13e80c23acc7b6ddb0832106b97f132b7ee7"
     },
     {
       "doc_id": "doc-0060",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0060.docx",
-      "hash": "ab334227341b2dcb"
+      "hash": "ab334227341b2dcb",
+      "docx_sha256": "e7e25080ca873972cf44932aeae791179cf2135f2bc09ea9e2d34bf0abe2746a"
     },
     {
       "doc_id": "doc-0061",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0061.docx",
-      "hash": "4f4d56b52d3496f8"
+      "hash": "4f4d56b52d3496f8",
+      "docx_sha256": "a7cf8f03d5cfdea76e340c4805bf280ee622f78d0c9c37d929688462d263c564"
     },
     {
       "doc_id": "doc-0062",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0062.docx",
-      "hash": "cf6c9cf857d4afda"
+      "hash": "cf6c9cf857d4afda",
+      "docx_sha256": "7ed8d10212201e5d09337ccd168161eb03f80a7b73a2543f55261ad156f140f6"
     },
     {
       "doc_id": "doc-0063",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0063.docx",
-      "hash": "9ce8a11fb4c8caab"
+      "hash": "9ce8a11fb4c8caab",
+      "docx_sha256": "2369a1b8b021db72ae9344644171a7d8d6853c2125c603ac7280352f00da5bcb"
     },
     {
       "doc_id": "doc-0064",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0064.docx",
-      "hash": "4db131b7b1eacd63"
+      "hash": "4db131b7b1eacd63",
+      "docx_sha256": "96960dc7d662ef9778f5d150885952506d44282068271731d084d14631e36e65"
     },
     {
       "doc_id": "doc-0065",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0065.docx",
-      "hash": "e0934601b5ac0664"
+      "hash": "e0934601b5ac0664",
+      "docx_sha256": "1fa814d64f9e81ed836003c2719cafdf665a4a36f559a8dbcd9c97482c6f6d81"
     },
     {
       "doc_id": "doc-0066",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0066.docx",
-      "hash": "2aa4b6e8f23e3ca5"
+      "hash": "2aa4b6e8f23e3ca5",
+      "docx_sha256": "6394abe291bc21d9af58545c4c3a48d80b7686685e0de47f69d858ac9e0c03dd"
     },
     {
       "doc_id": "doc-0067",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0067.docx",
-      "hash": "71366cc3e50a9115"
+      "hash": "71366cc3e50a9115",
+      "docx_sha256": "815bd3bc41c0d6950c91503592806aa65c65a72b37b3913ee42fbfa6dd9090fd"
     },
     {
       "doc_id": "doc-0068",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0068.docx",
-      "hash": "fd6fec9077cf0acc"
+      "hash": "fd6fec9077cf0acc",
+      "docx_sha256": "3ae8c598b6a83e2f2caf54d0a9430fe279c25f2140daeb05b02094b9bc5a8410"
     },
     {
       "doc_id": "doc-0069",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0069.docx",
-      "hash": "c75986a1a9b526bb"
+      "hash": "c75986a1a9b526bb",
+      "docx_sha256": "d0e42895819f8518fa62e8109a16a4a1fcc3ef69d145fa4429b9dc3b64ad1787"
     },
     {
       "doc_id": "doc-0070",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0070.docx",
-      "hash": "1e55bf0185ab8f23"
+      "hash": "1e55bf0185ab8f23",
+      "docx_sha256": "ed3d9694948e587b760c7c188c934e61faf3404b126ee8dd5329a9b125cf3ab6"
     },
     {
       "doc_id": "doc-0071",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0071.docx",
-      "hash": "18010c0c19f8dc14"
+      "hash": "18010c0c19f8dc14",
+      "docx_sha256": "8ef621108951a3baf28dd707836fde8477124b9bd53cca5f484bf21df3690aaf"
     },
     {
       "doc_id": "doc-0072",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0072.docx",
-      "hash": "a4f7f80e288cdfa9"
+      "hash": "a4f7f80e288cdfa9",
+      "docx_sha256": "ea45888b21362f781f41ef0b2678507d8e8db414ff5aaa817ce33ec4c9dc9b4c"
     },
     {
       "doc_id": "doc-0073",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0073.docx",
-      "hash": "a40fa97bcb4200cb"
+      "hash": "a40fa97bcb4200cb",
+      "docx_sha256": "b294f93b0bfe6c6783faddccc3eaa65c7bb286bd3372d06e27f1c79b55082dca"
     },
     {
       "doc_id": "doc-0074",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0074.docx",
-      "hash": "61db60d294ff3176"
+      "hash": "61db60d294ff3176",
+      "docx_sha256": "f7be94a60ce7137a38fac1ab0395d2fd891fd2423744d1bec7259762d2e59152"
     },
     {
       "doc_id": "doc-0075",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0075.docx",
-      "hash": "d004f2751fdb1125"
+      "hash": "d004f2751fdb1125",
+      "docx_sha256": "a2efdb3e8b9ce6501e213c2978840bfb9abc19ecb97c9a4b934c378f7670dba5"
     },
     {
       "doc_id": "doc-0076",
       "doc_type": "unmarried_custody",
       "condition": "corrupt",
       "file": "documents/doc-0076.docx",
-      "hash": "48f94ec484181fbc"
+      "hash": "48f94ec484181fbc",
+      "docx_sha256": "17e8a25c7796a69e32940322d4f208c7f0fa3d94921616de944eba4ae6a7ff28"
     },
     {
       "doc_id": "doc-0077",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0077.docx",
-      "hash": "18c2c278d2e31099"
+      "hash": "18c2c278d2e31099",
+      "docx_sha256": "95afe4459f64b78e8f4ad5459f24010f253107ffeeedb6b1f6f091d920b7a9e5"
     },
     {
       "doc_id": "doc-0078",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0078.docx",
-      "hash": "96352f44d5758678"
+      "hash": "96352f44d5758678",
+      "docx_sha256": "410643fe63b9874210ff5c8f47b1d998c8e809bb24fa64439cf3f58901b515b7"
     },
     {
       "doc_id": "doc-0079",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0079.docx",
-      "hash": "5292798eb1780ef9"
+      "hash": "5292798eb1780ef9",
+      "docx_sha256": "4ff5673f9e43cddb9e81967a82a99e47ff89212e39a36efe9c9989caf4eeb4d8"
     },
     {
       "doc_id": "doc-0080",
       "doc_type": "unmarried_custody",
       "condition": "clean",
       "file": "documents/doc-0080.docx",
-      "hash": "7713918c9bbba2b6"
+      "hash": "7713918c9bbba2b6",
+      "docx_sha256": "dae48bfd05330880ee874a3e66ef707be4fd7253bdb1af18a11072374680d42f"
     },
     {
       "doc_id": "doc-0081",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0081.docx",
-      "hash": "ee9300c7a8ea7791"
+      "hash": "ee9300c7a8ea7791",
+      "docx_sha256": "c9228f32c09855184de2c247c4f4438ab61ffd8c794e8957249e68da297a1cb1"
     },
     {
       "doc_id": "doc-0082",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0082.docx",
-      "hash": "9d9b68138bec4f17"
+      "hash": "9d9b68138bec4f17",
+      "docx_sha256": "80e7dc0b12a5a480e32b8e57fab472adb97c7bd3981620b9ba711b794e677744"
     },
     {
       "doc_id": "doc-0083",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0083.docx",
-      "hash": "263c0cb122abea97"
+      "hash": "263c0cb122abea97",
+      "docx_sha256": "22c134c4ead17e6fcd87db9ef594e82165caeb15d1bb09a8c2d294a2a06566c4"
     },
     {
       "doc_id": "doc-0084",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0084.docx",
-      "hash": "8530d3ad71651293"
+      "hash": "8530d3ad71651293",
+      "docx_sha256": "e2f2ba1b71cfc575287de89ea78510c61701f7a11c8955637fe41f0d013af31c"
     },
     {
       "doc_id": "doc-0085",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0085.docx",
-      "hash": "91066182f2188a9b"
+      "hash": "91066182f2188a9b",
+      "docx_sha256": "7073a00dd6fb8a24100a531cf3c3ee769f14b049b89a390ab39393b2af2f3fb8"
     },
     {
       "doc_id": "doc-0086",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0086.docx",
-      "hash": "30a3433e627abb3a"
+      "hash": "30a3433e627abb3a",
+      "docx_sha256": "7d77a0d7aec5eab5c3de123ac56566c9d57cdd315459981fd0ce2afbf58e8525"
     },
     {
       "doc_id": "doc-0087",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0087.docx",
-      "hash": "320246372118ee60"
+      "hash": "320246372118ee60",
+      "docx_sha256": "e5a1fe8022b65dbce4a1fc77ceea25d5079dee40aff27dc299ae3122e0f6bc16"
     },
     {
       "doc_id": "doc-0088",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0088.docx",
-      "hash": "777e794759cf1f85"
+      "hash": "777e794759cf1f85",
+      "docx_sha256": "d80155b13974672f8684eb4ee8fa7e67424a8f938b6b2b9e37f426a32dc1f0dc"
     },
     {
       "doc_id": "doc-0089",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0089.docx",
-      "hash": "057fd99d9f66a2d2"
+      "hash": "057fd99d9f66a2d2",
+      "docx_sha256": "bbf8ba01c0744c7b6f8a9ec0c3af8e76984435d4f760dc8b874d42fbfd6d7e95"
     },
     {
       "doc_id": "doc-0090",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0090.docx",
-      "hash": "5fa2552fb9ff1c16"
+      "hash": "5fa2552fb9ff1c16",
+      "docx_sha256": "9895b8a3b25a789fca7ba161404aca65f691094fc2b5572796f7da7d2dec3046"
     },
     {
       "doc_id": "doc-0091",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0091.docx",
-      "hash": "84e6e6bb177fe748"
+      "hash": "84e6e6bb177fe748",
+      "docx_sha256": "ea87d09a0ae05e39af0357e8dcf2f644bbd3a04d871da18f870115498ff460bc"
     },
     {
       "doc_id": "doc-0092",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0092.docx",
-      "hash": "e4b61be8a9311a75"
+      "hash": "e4b61be8a9311a75",
+      "docx_sha256": "c50d6b0cc61b918ed03a5da5d4cc66464837457e0d469dca105853e2065a4490"
     },
     {
       "doc_id": "doc-0093",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0093.docx",
-      "hash": "c665f199e539af8b"
+      "hash": "c665f199e539af8b",
+      "docx_sha256": "d54389165afa81d33f43802cbe0eb8367e0ed871f21a7c9364eab14201c516e9"
     },
     {
       "doc_id": "doc-0094",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0094.docx",
-      "hash": "2973052cb2ea7ff8"
+      "hash": "2973052cb2ea7ff8",
+      "docx_sha256": "231571f33a07aa7d7afa4d920f00a660da978b9cffc1ae8d1b047cb8a2372daf"
     },
     {
       "doc_id": "doc-0095",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0095.docx",
-      "hash": "0d967583e3b63055"
+      "hash": "0d967583e3b63055",
+      "docx_sha256": "930732d7296ccadb2da58f24655f5bfb45aacfba367d355c71b1b59fbdb62c13"
     },
     {
       "doc_id": "doc-0096",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0096.docx",
-      "hash": "a26ebe796bbc3a7f"
+      "hash": "a26ebe796bbc3a7f",
+      "docx_sha256": "172d5b7c39db3f3d35536f3c3bfde76c278616d15d467eba49091bc2f6b2ad8c"
     },
     {
       "doc_id": "doc-0097",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0097.docx",
-      "hash": "0462c2d5d0a4b163"
+      "hash": "0462c2d5d0a4b163",
+      "docx_sha256": "ad5c5a2a2d8fc51c9cc79031d0b2ed8ac561cf375b07f6ae811aa8137dc8fe6e"
     },
     {
       "doc_id": "doc-0098",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0098.docx",
-      "hash": "9d1f6fb57e1999ec"
+      "hash": "9d1f6fb57e1999ec",
+      "docx_sha256": "67d8aeb5e1509dd6e65afbf1b12c29f1dc96cfc647379ff5ea7ff2c5c0a394f3"
     },
     {
       "doc_id": "doc-0099",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0099.docx",
-      "hash": "285c687b627d22ac"
+      "hash": "285c687b627d22ac",
+      "docx_sha256": "d3270e7f66de66748fe333574852717b0d01348ab7daf7a6a8ba3fdc846711ff"
     },
     {
       "doc_id": "doc-0100",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0100.docx",
-      "hash": "c2c92930139ea714"
+      "hash": "c2c92930139ea714",
+      "docx_sha256": "3ff767dbe4528cf6428cdda53b9f65dff4a1fc46c6031acdb8e3e968203ee8ea"
     },
     {
       "doc_id": "doc-0101",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0101.docx",
-      "hash": "757c4f620aaee223"
+      "hash": "757c4f620aaee223",
+      "docx_sha256": "1acfd46c13a961f3e0cc96a7575b06bc40b4a3f2872288cb2c52e2ca68398d0a"
     },
     {
       "doc_id": "doc-0102",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0102.docx",
-      "hash": "f418ded8718bb842"
+      "hash": "f418ded8718bb842",
+      "docx_sha256": "244911ac387df2c6a030bd008c443354273cd63795b2ea258433781ab7bf2a27"
     },
     {
       "doc_id": "doc-0103",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0103.docx",
-      "hash": "b8aef208bd9c56ca"
+      "hash": "b8aef208bd9c56ca",
+      "docx_sha256": "76fc5c7b4090cf18843271b6241e130ef2a7f838ceda4ecc57f8aa48fee5f9f5"
     },
     {
       "doc_id": "doc-0104",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0104.docx",
-      "hash": "d1bb50739a4acfd0"
+      "hash": "d1bb50739a4acfd0",
+      "docx_sha256": "91b55ba9823be4fdcf5061036d9c4df1e9cb5c7c158b99c70281188314ba32cd"
     },
     {
       "doc_id": "doc-0105",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0105.docx",
-      "hash": "9c78cda46d323444"
+      "hash": "9c78cda46d323444",
+      "docx_sha256": "c5f707da03568471a2eb67a152e33a3d16515b5cf1a289db2c792e267c616c6b"
     },
     {
       "doc_id": "doc-0106",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0106.docx",
-      "hash": "fbf46e36b730bd65"
+      "hash": "fbf46e36b730bd65",
+      "docx_sha256": "f6abc421a5e765674a3434161bc3a686b3e91060b5640fc63676ae3e445c50cb"
     },
     {
       "doc_id": "doc-0107",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0107.docx",
-      "hash": "163eabd5ec928565"
+      "hash": "163eabd5ec928565",
+      "docx_sha256": "4316a3afb4292d7b7c03d310d043e1f8886d8f390c510558e018afe74d23095e"
     },
     {
       "doc_id": "doc-0108",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0108.docx",
-      "hash": "cc8d9b5da37b831d"
+      "hash": "cc8d9b5da37b831d",
+      "docx_sha256": "38baf9629f88364c0452c89408545625f0a0573e87151bcc89ac715582b2f89a"
     },
     {
       "doc_id": "doc-0109",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0109.docx",
-      "hash": "b90b815e8d816ba8"
+      "hash": "b90b815e8d816ba8",
+      "docx_sha256": "de092c677c91ec3af4456b62ee8a7a58c08d32b658f178beaec2c3e9f5519768"
     },
     {
       "doc_id": "doc-0110",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0110.docx",
-      "hash": "dba4ad537b86a4cf"
+      "hash": "dba4ad537b86a4cf",
+      "docx_sha256": "4c57d5045eceb8e8549f384a9dc2315146b0780b00110a8aad1fb286b5d6ab80"
     },
     {
       "doc_id": "doc-0111",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0111.docx",
-      "hash": "b00b135c94ea66bb"
+      "hash": "b00b135c94ea66bb",
+      "docx_sha256": "540142791fc6ee528dceaeb052ad6cf177d47ffaeeec762d2f133833597d6e35"
     },
     {
       "doc_id": "doc-0112",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0112.docx",
-      "hash": "a9f5269415f6ea8c"
+      "hash": "a9f5269415f6ea8c",
+      "docx_sha256": "74fd72ba6953ea0b151014184d5a69a9629e2ea4ebebcf79050422b231c67325"
     },
     {
       "doc_id": "doc-0113",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0113.docx",
-      "hash": "45334f700be5a28e"
+      "hash": "45334f700be5a28e",
+      "docx_sha256": "5ad078648d90e5581360f69888fea619453000b751a11d16623804789f9553be"
     },
     {
       "doc_id": "doc-0114",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0114.docx",
-      "hash": "ddba389543ad230a"
+      "hash": "ddba389543ad230a",
+      "docx_sha256": "c94ce0f34b627427eb54464afa045aae6d464f4f1e74cfa270f68d3c3a3c5a18"
     },
     {
       "doc_id": "doc-0115",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0115.docx",
-      "hash": "735f25f437618491"
+      "hash": "735f25f437618491",
+      "docx_sha256": "f24f0fbec14efcd43dc6885dd09f90a8e0fcfdc8f8ed0ce5f2f0bcbe26be7697"
     },
     {
       "doc_id": "doc-0116",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0116.docx",
-      "hash": "ace9d85191819482"
+      "hash": "ace9d85191819482",
+      "docx_sha256": "4a64e8416599db7fd85a9a96416e59b52a7afb69fac43a1eb9061e4171ea84fc"
     },
     {
       "doc_id": "doc-0117",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0117.docx",
-      "hash": "1cd00755febfe7b5"
+      "hash": "1cd00755febfe7b5",
+      "docx_sha256": "da505649ef230037ea0e7f2ca91fd9ab2ad2d0d74d69d24b2a73b6b7714ac28b"
     },
     {
       "doc_id": "doc-0118",
       "doc_type": "modify_custody_visitation",
       "condition": "clean",
       "file": "documents/doc-0118.docx",
-      "hash": "946fd32984eaa0dd"
+      "hash": "946fd32984eaa0dd",
+      "docx_sha256": "752cf4f908966472a9fda701f024b410995d77a39704c560cf120289aca6cf8e"
     },
     {
       "doc_id": "doc-0119",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0119.docx",
-      "hash": "0d3598ec4930c78b"
+      "hash": "0d3598ec4930c78b",
+      "docx_sha256": "3d9412f55a5176a91ad2fd0a387163c5e58ac3713c2d4abb920753a4d9df742d"
     },
     {
       "doc_id": "doc-0120",
       "doc_type": "modify_custody_visitation",
       "condition": "corrupt",
       "file": "documents/doc-0120.docx",
-      "hash": "60b21890cd4bf8ef"
+      "hash": "60b21890cd4bf8ef",
+      "docx_sha256": "1760e7da27ba214b777cf3fb7ea173c1d80a5120c6066a88d991bc2778aab048"
     },
     {
       "doc_id": "doc-0121",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0121.docx",
-      "hash": "f79ba35101dba22e"
+      "hash": "f79ba35101dba22e",
+      "docx_sha256": "06b01d3f2e743c8327e24e74e3b4bc93368f07a969ffd7f46d090d03344379bb"
     },
     {
       "doc_id": "doc-0122",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0122.docx",
-      "hash": "b16bc4ef69e9d02f"
+      "hash": "b16bc4ef69e9d02f",
+      "docx_sha256": "efde20aa8df9f107cefd8e44ee8d70404c485fe0ebc46db1b560b8c3b022b605"
     },
     {
       "doc_id": "doc-0123",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0123.docx",
-      "hash": "ee81a27ed3b0ab0a"
+      "hash": "ee81a27ed3b0ab0a",
+      "docx_sha256": "bbd4a9254cee35bf24e57bcdc0578525f60b368bd51bd0e340c83409dfe2fe41"
     },
     {
       "doc_id": "doc-0124",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0124.docx",
-      "hash": "a45c395452af2672"
+      "hash": "a45c395452af2672",
+      "docx_sha256": "9dfa5680f82f4d6facda5a867213137cc38e442ddb21215a703942f73122d043"
     },
     {
       "doc_id": "doc-0125",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0125.docx",
-      "hash": "5d612d4b8ea8f4e0"
+      "hash": "5d612d4b8ea8f4e0",
+      "docx_sha256": "bb981823a26f73cbaabe90ab6f1f27812759f78258c24b82452ab31557876a34"
     },
     {
       "doc_id": "doc-0126",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0126.docx",
-      "hash": "0b300c22e7ed549b"
+      "hash": "0b300c22e7ed549b",
+      "docx_sha256": "948b3a255a65fc409763b7e433d549875f859cade35b1571f0ae9526d595b907"
     },
     {
       "doc_id": "doc-0127",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0127.docx",
-      "hash": "e9c1811783550cbd"
+      "hash": "e9c1811783550cbd",
+      "docx_sha256": "1c57801a2c5f6cf5ab0bed9615bc0ef21e47ce92050d3c70a6de4f556daf073e"
     },
     {
       "doc_id": "doc-0128",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0128.docx",
-      "hash": "2d20b896df552140"
+      "hash": "2d20b896df552140",
+      "docx_sha256": "452551b2ad4aea38b8196f2d37efe2e8f3631c74f1ce161566610d630e59879d"
     },
     {
       "doc_id": "doc-0129",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0129.docx",
-      "hash": "3f439e2dbb990a70"
+      "hash": "3f439e2dbb990a70",
+      "docx_sha256": "7bbee7cc99838324f6834974197a5205950c01dc5b56410b9c1dd237c0ddf858"
     },
     {
       "doc_id": "doc-0130",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0130.docx",
-      "hash": "ce153ad979208ca6"
+      "hash": "ce153ad979208ca6",
+      "docx_sha256": "b9356f8c06c843895a3e63bc7f2e066077acca6a7692294a810fda5afc70bda8"
     },
     {
       "doc_id": "doc-0131",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0131.docx",
-      "hash": "dac0229427a883dd"
+      "hash": "dac0229427a883dd",
+      "docx_sha256": "90f9eda0c46e3fee2e9f5ad8cd7d1cb96ca48487011e7a5d86eb6ba12f458d47"
     },
     {
       "doc_id": "doc-0132",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0132.docx",
-      "hash": "c86a61ba91a0798d"
+      "hash": "c86a61ba91a0798d",
+      "docx_sha256": "a2c3d76994df24a99a3b618e0ed6d339f44f98270f273b1b415c7d2b36c63ade"
     },
     {
       "doc_id": "doc-0133",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0133.docx",
-      "hash": "5af2eaa776f1dfbe"
+      "hash": "5af2eaa776f1dfbe",
+      "docx_sha256": "3e2c50f14c0beb56076f380dfc800df95f901d761c5ede359bcf5dd177b19fd4"
     },
     {
       "doc_id": "doc-0134",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0134.docx",
-      "hash": "f6171195ec0d1b52"
+      "hash": "f6171195ec0d1b52",
+      "docx_sha256": "c8da0139dc656fed210c56349fcf05b5c14b96092b78f8dbd5feea13dae98e93"
     },
     {
       "doc_id": "doc-0135",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0135.docx",
-      "hash": "675d801295e3674d"
+      "hash": "675d801295e3674d",
+      "docx_sha256": "873455c8e910c5879a8fc7d087d74df95ac5f7343854f021bb093a42d6843f0d"
     },
     {
       "doc_id": "doc-0136",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0136.docx",
-      "hash": "29068e2b2cc2c460"
+      "hash": "29068e2b2cc2c460",
+      "docx_sha256": "e21fc81d1f6c9ab64b45215ffe558e7f884844c2ed9d4d2eb23b216e22b0732d"
     },
     {
       "doc_id": "doc-0137",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0137.docx",
-      "hash": "14c7c3964899250a"
+      "hash": "14c7c3964899250a",
+      "docx_sha256": "905691ddadabcb1d318c2603900b1e498cdefa38fc58d2a1c208730f59fd928f"
     },
     {
       "doc_id": "doc-0138",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0138.docx",
-      "hash": "ddf54a02aaeef9fe"
+      "hash": "ddf54a02aaeef9fe",
+      "docx_sha256": "4dca1ca94c304160a6b90e4c3a2435e98f7636f10905739dce8419c704df966d"
     },
     {
       "doc_id": "doc-0139",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0139.docx",
-      "hash": "d87d97d236f0d750"
+      "hash": "d87d97d236f0d750",
+      "docx_sha256": "b3b4e5e984c6baa1b37fed37a0e1261494af515b784fe26ad3b8f65cee76cc79"
     },
     {
       "doc_id": "doc-0140",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0140.docx",
-      "hash": "fc9955504b0ef0ed"
+      "hash": "fc9955504b0ef0ed",
+      "docx_sha256": "c1f340670969016b994864e03d844d93ae8d58d5635b4be35321e12ae19c60b0"
     },
     {
       "doc_id": "doc-0141",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0141.docx",
-      "hash": "01ed580ea6a3fc69"
+      "hash": "01ed580ea6a3fc69",
+      "docx_sha256": "54f0d49b399d3764b3ccb4bd0d69b01ad054a89b077097953523b65d7374c680"
     },
     {
       "doc_id": "doc-0142",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0142.docx",
-      "hash": "b7568d894985ba4b"
+      "hash": "b7568d894985ba4b",
+      "docx_sha256": "6ad59aa676bbb497b79a8a1aeda2c4cb5f08dda6ade25383705ea3fa4651eb69"
     },
     {
       "doc_id": "doc-0143",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0143.docx",
-      "hash": "38db3588bceaf240"
+      "hash": "38db3588bceaf240",
+      "docx_sha256": "795df63cd25de9ebece91cd290ebf2ba01464e154123b284a2c3d7ae2f106b82"
     },
     {
       "doc_id": "doc-0144",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0144.docx",
-      "hash": "9de56f3d6af13570"
+      "hash": "9de56f3d6af13570",
+      "docx_sha256": "ec794198e2a6b619a155d3ade59e23742204841caa8a5e41633631d3c13e618c"
     },
     {
       "doc_id": "doc-0145",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0145.docx",
-      "hash": "c5ba8fe424af5804"
+      "hash": "c5ba8fe424af5804",
+      "docx_sha256": "133e245f0697769933bfdddbae06f3ee555cb59ed29856d33f3368c1c9142992"
     },
     {
       "doc_id": "doc-0146",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0146.docx",
-      "hash": "b851adc8e00656cc"
+      "hash": "b851adc8e00656cc",
+      "docx_sha256": "c27ff1898da4d18e275541e427ed167a84ed570642ed3e8b826a4443c2e5b82c"
     },
     {
       "doc_id": "doc-0147",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0147.docx",
-      "hash": "456dcabfcf960916"
+      "hash": "456dcabfcf960916",
+      "docx_sha256": "97d0c718cf9c91b540bbd31b8122f77c0c746655931fdda37c7e359710902ae9"
     },
     {
       "doc_id": "doc-0148",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0148.docx",
-      "hash": "5c63af6ed5e679ce"
+      "hash": "5c63af6ed5e679ce",
+      "docx_sha256": "216b0c18da86e0ac0816399363f7eb299f01be6128b7b46fc056f3c4a62988b1"
     },
     {
       "doc_id": "doc-0149",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0149.docx",
-      "hash": "10d286dcb0551107"
+      "hash": "10d286dcb0551107",
+      "docx_sha256": "57563cdd6308fb1ef4b784895a341b9cf8bbb1547ec61c18001388a749a7b2a6"
     },
     {
       "doc_id": "doc-0150",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0150.docx",
-      "hash": "b49b07742f8f1e97"
+      "hash": "b49b07742f8f1e97",
+      "docx_sha256": "7971f2303d911ddd0bbe6c4e034ee2f98c3f43a23ddb18ad1421de15b612a306"
     },
     {
       "doc_id": "doc-0151",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0151.docx",
-      "hash": "c6225d2dd31227ff"
+      "hash": "c6225d2dd31227ff",
+      "docx_sha256": "4b2ad8135fd726a3db6165f626dadea1b22cfdd0f5fcb0052c9759d872f9201b"
     },
     {
       "doc_id": "doc-0152",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0152.docx",
-      "hash": "3bca48d9e13839ba"
+      "hash": "3bca48d9e13839ba",
+      "docx_sha256": "0fcf7797702085e99ab3826b20c9be54e4f0079314961ca70216e371e778adad"
     },
     {
       "doc_id": "doc-0153",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0153.docx",
-      "hash": "afc87531aa95e57b"
+      "hash": "afc87531aa95e57b",
+      "docx_sha256": "6bd0b0db015db9620ffb09f02d4b7deab9846f35b32ac0ee1dd8ec8d72a5e9f2"
     },
     {
       "doc_id": "doc-0154",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0154.docx",
-      "hash": "678c76f2d0184df3"
+      "hash": "678c76f2d0184df3",
+      "docx_sha256": "55d66ff42626e93ed6312bcd6ba2037c168c49e2aa3fd18ed1cbe3c33d59fca6"
     },
     {
       "doc_id": "doc-0155",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0155.docx",
-      "hash": "6b0cb091b7f3b5cc"
+      "hash": "6b0cb091b7f3b5cc",
+      "docx_sha256": "a9d4a39f8fbffbb175de67622bbfded2e7420af6510179c472afa3cc40d3805b"
     },
     {
       "doc_id": "doc-0156",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0156.docx",
-      "hash": "98b43c8d5da623bd"
+      "hash": "98b43c8d5da623bd",
+      "docx_sha256": "ddfc9997454af085e5abb94281c8079b6c0dfde80331dcab4e4cffc392957916"
     },
     {
       "doc_id": "doc-0157",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0157.docx",
-      "hash": "52adab5985c32b41"
+      "hash": "52adab5985c32b41",
+      "docx_sha256": "6c1f2014f0f92941155061365842fe1742a6c4b3465f66ec4e146c531c2b712c"
     },
     {
       "doc_id": "doc-0158",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0158.docx",
-      "hash": "14875fcf43a9748f"
+      "hash": "14875fcf43a9748f",
+      "docx_sha256": "a5c06254f4bb9bc8fd1b66a3ef3b71ad8d74d3afb462ef26274efa201007edfd"
     },
     {
       "doc_id": "doc-0159",
       "doc_type": "domestic_violence",
       "condition": "clean",
       "file": "documents/doc-0159.docx",
-      "hash": "97663832118e8005"
+      "hash": "97663832118e8005",
+      "docx_sha256": "41f737bb5beccca724dac2a8b2e83398b788f84b3f49b4c5a858f1c63afe9ce9"
     },
     {
       "doc_id": "doc-0160",
       "doc_type": "domestic_violence",
       "condition": "corrupt",
       "file": "documents/doc-0160.docx",
-      "hash": "7317c0c55cf0a53e"
+      "hash": "7317c0c55cf0a53e",
+      "docx_sha256": "48ab8e96fcd56073fb01955af821fb87b4dfac77f74ffe8418ef951642bfead9"
     },
     {
       "doc_id": "doc-0161",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0161.docx",
-      "hash": "e1097ae8b8b5d36e"
+      "hash": "e1097ae8b8b5d36e",
+      "docx_sha256": "f3ae865b07bda456d4012228dfb67f3c94a6dd55506ad647acb808d2579b9377"
     },
     {
       "doc_id": "doc-0162",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0162.docx",
-      "hash": "211230b4db293758"
+      "hash": "211230b4db293758",
+      "docx_sha256": "e32e66bc727eeb7c98941537827840d45dd3fd2605326fb55f008e6369772fbc"
     },
     {
       "doc_id": "doc-0163",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0163.docx",
-      "hash": "532e409ec1a40c7e"
+      "hash": "532e409ec1a40c7e",
+      "docx_sha256": "e47bdf410c046011374a9a6931f33c6d9759d5f8a23acea54aac46e0ef3dd382"
     },
     {
       "doc_id": "doc-0164",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0164.docx",
-      "hash": "629034a6688e3058"
+      "hash": "629034a6688e3058",
+      "docx_sha256": "9c3111e7d73cc83c2c203628f2df396bb2d8a5c01341777320ae5db0d2523ed2"
     },
     {
       "doc_id": "doc-0165",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0165.docx",
-      "hash": "c8dadeb0016f86f4"
+      "hash": "c8dadeb0016f86f4",
+      "docx_sha256": "a7f09430c467ff0328785c4aaead0e337e626211498834a918e1b5b9c0b38706"
     },
     {
       "doc_id": "doc-0166",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0166.docx",
-      "hash": "e290924aeea40e34"
+      "hash": "e290924aeea40e34",
+      "docx_sha256": "83a5819b53994e289b7b764c997dabab4219afea44c895126c780aee14bc0f4b"
     },
     {
       "doc_id": "doc-0167",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0167.docx",
-      "hash": "7a92cc690c9e595e"
+      "hash": "7a92cc690c9e595e",
+      "docx_sha256": "4422af974e01d1498835abeab4003a562d01a6a39b5dedbd99ce947804a1ed1d"
     },
     {
       "doc_id": "doc-0168",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0168.docx",
-      "hash": "a9be1acba52f6c78"
+      "hash": "a9be1acba52f6c78",
+      "docx_sha256": "edac45b24435064164463585a389dc65848b1b0ca63df9b402baf2a071ad54de"
     },
     {
       "doc_id": "doc-0169",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0169.docx",
-      "hash": "b769860b96681b80"
+      "hash": "b769860b96681b80",
+      "docx_sha256": "96f256961c35bbbd76f518b37b4d07c0405481b4660945d892096c9a5e781890"
     },
     {
       "doc_id": "doc-0170",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0170.docx",
-      "hash": "618e286ecb670c78"
+      "hash": "618e286ecb670c78",
+      "docx_sha256": "8aa7fad4740517025bee7ce306fd2375137627c8ea145722ad1a269119f71dbc"
     },
     {
       "doc_id": "doc-0171",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0171.docx",
-      "hash": "2974b52143827eba"
+      "hash": "2974b52143827eba",
+      "docx_sha256": "3983cace248b960f966332a1002f04a595f41bce7e9791404af348698c2c4aaa"
     },
     {
       "doc_id": "doc-0172",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0172.docx",
-      "hash": "7418bb26748a69e3"
+      "hash": "7418bb26748a69e3",
+      "docx_sha256": "4dae6b2d771eaf5289cc766eb00fa9ddaf908f2df906cd485f7b590433f51ac8"
     },
     {
       "doc_id": "doc-0173",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0173.docx",
-      "hash": "7e652f497f065de7"
+      "hash": "7e652f497f065de7",
+      "docx_sha256": "9aab269bb1be71793de003bf74397be13a042b12d75c503f7bb45e966c45cfb5"
     },
     {
       "doc_id": "doc-0174",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0174.docx",
-      "hash": "d1a0bf01c0392fb0"
+      "hash": "d1a0bf01c0392fb0",
+      "docx_sha256": "7fd1bb9515dd213e21c864b67b59d2dc781c3aa2b4f5c0f7a2990596466b146c"
     },
     {
       "doc_id": "doc-0175",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0175.docx",
-      "hash": "76c5c4b539179afc"
+      "hash": "76c5c4b539179afc",
+      "docx_sha256": "1736c5562e1aed3b22b548486d4af2f71c84f60739f79fb9e0f66fd17c61020c"
     },
     {
       "doc_id": "doc-0176",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0176.docx",
-      "hash": "fdca4273903e8c2c"
+      "hash": "fdca4273903e8c2c",
+      "docx_sha256": "ea80738f060f6cdeb41c3f69e86ff0349cd40f99d81c55b6c545dcf90a98689a"
     },
     {
       "doc_id": "doc-0177",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0177.docx",
-      "hash": "7f327cb0e2d4f80c"
+      "hash": "7f327cb0e2d4f80c",
+      "docx_sha256": "fb3c4fa88742a9e89a5449809251fb6ace439e1803e2644c0153b613242b6866"
     },
     {
       "doc_id": "doc-0178",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0178.docx",
-      "hash": "a44480c3c75e24db"
+      "hash": "a44480c3c75e24db",
+      "docx_sha256": "8483712485aa7f9af8c8bed902ad7e761b153554b7a254f7db9f0a4e0176ef61"
     },
     {
       "doc_id": "doc-0179",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0179.docx",
-      "hash": "00e76f77c3a45aaa"
+      "hash": "00e76f77c3a45aaa",
+      "docx_sha256": "0c242c7aa433e10082f125afe02544c0cddc03466c64f060299ccb46ec47887f"
     },
     {
       "doc_id": "doc-0180",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0180.docx",
-      "hash": "a4b69db37094eb30"
+      "hash": "a4b69db37094eb30",
+      "docx_sha256": "6446feabd8b4ab1007720a96d49efe54d97975e5181328bcd4929d9223dbd908"
     },
     {
       "doc_id": "doc-0181",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0181.docx",
-      "hash": "72ef2e82b0ef18b6"
+      "hash": "72ef2e82b0ef18b6",
+      "docx_sha256": "db238a95712879d37bf274e2c1903c131dbfc6dbded95f19afee4e9dd118b80f"
     },
     {
       "doc_id": "doc-0182",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0182.docx",
-      "hash": "db469e95b26d3466"
+      "hash": "db469e95b26d3466",
+      "docx_sha256": "3fc82dacba3da90060ab3b88149bb1b3560cc72c3c9fb79d0284c8357629918e"
     },
     {
       "doc_id": "doc-0183",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0183.docx",
-      "hash": "8429f2ef928a5dbf"
+      "hash": "8429f2ef928a5dbf",
+      "docx_sha256": "356f05ccac14320e18363436c67522028e1178d5ffa3a7ebfbbc7d5067220fa0"
     },
     {
       "doc_id": "doc-0184",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0184.docx",
-      "hash": "0be7271d9ea4a2a5"
+      "hash": "0be7271d9ea4a2a5",
+      "docx_sha256": "c1e24714040eeb30061f4b54e632c9160eef705071fcf1828321d36e93542d59"
     },
     {
       "doc_id": "doc-0185",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0185.docx",
-      "hash": "b9ef093c06462a94"
+      "hash": "b9ef093c06462a94",
+      "docx_sha256": "8eaf389fa5aa643ff3c3334dc67f02b7801d1a554e005aaaa72958ee908c1056"
     },
     {
       "doc_id": "doc-0186",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0186.docx",
-      "hash": "ce55dfa73a56cc4c"
+      "hash": "ce55dfa73a56cc4c",
+      "docx_sha256": "fa448243cce4c0830c9421b07a9a333d200aa0afc789167f2c2b853fefa9cdcd"
     },
     {
       "doc_id": "doc-0187",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0187.docx",
-      "hash": "8b2a2d59d89383f5"
+      "hash": "8b2a2d59d89383f5",
+      "docx_sha256": "2e8463d22eef7c930e7b15dcefdbd3b7efe15d5ba580fd58370c3a6271edc815"
     },
     {
       "doc_id": "doc-0188",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0188.docx",
-      "hash": "2996a9aceab8f036"
+      "hash": "2996a9aceab8f036",
+      "docx_sha256": "49f03a49da3c19273552884e3a63e443fe5c26f4dbe7ff2adc515710839107fa"
     },
     {
       "doc_id": "doc-0189",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0189.docx",
-      "hash": "f3792ece153005be"
+      "hash": "f3792ece153005be",
+      "docx_sha256": "62f479aa247cba1f25a9da23447efd888c3e1389f2af18a71d087bd788cee829"
     },
     {
       "doc_id": "doc-0190",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0190.docx",
-      "hash": "deebe4b2b6b2daea"
+      "hash": "deebe4b2b6b2daea",
+      "docx_sha256": "2df247a01e8ca3fd6e5abdfecf921367685aebe86d20cc1a7f98bee2d46dc8d7"
     },
     {
       "doc_id": "doc-0191",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0191.docx",
-      "hash": "93b223170da5bbbd"
+      "hash": "93b223170da5bbbd",
+      "docx_sha256": "0f10b8bafcd5ea678c334ef5afbee804f6f364989676018170f45d2ab626e462"
     },
     {
       "doc_id": "doc-0192",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0192.docx",
-      "hash": "b6b711599e47164f"
+      "hash": "b6b711599e47164f",
+      "docx_sha256": "53a864898c9ccc02cba08ef28cf2c5e55629577bf3df83aee80c068a02fd77eb"
     },
     {
       "doc_id": "doc-0193",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0193.docx",
-      "hash": "5787ad770b321cf4"
+      "hash": "5787ad770b321cf4",
+      "docx_sha256": "aabc5bd144e45df974c23ea21ada73070f4923ad62bcbb0020c524c019a7262a"
     },
     {
       "doc_id": "doc-0194",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0194.docx",
-      "hash": "5e0487371c86931d"
+      "hash": "5e0487371c86931d",
+      "docx_sha256": "618abc21607a64bd05ce3fe5e4692c4413f0ba6df245048aca02f08270a4f722"
     },
     {
       "doc_id": "doc-0195",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0195.docx",
-      "hash": "c8056671cb198599"
+      "hash": "c8056671cb198599",
+      "docx_sha256": "09687b95db7d116dfe817f0832b75fa656790ef55dc259f11ce9a2a669790fb3"
     },
     {
       "doc_id": "doc-0196",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0196.docx",
-      "hash": "41b0563a33add806"
+      "hash": "41b0563a33add806",
+      "docx_sha256": "7fc29ec9617ff84ce3b38f7c6246bb57a5b363a24b2c64cef3926bbdbb26d606"
     },
     {
       "doc_id": "doc-0197",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0197.docx",
-      "hash": "73dfd70aec3e9581"
+      "hash": "73dfd70aec3e9581",
+      "docx_sha256": "a47b32031208978466ec53e8ad1633b144bfe2f2d4ebc63f9904a7dc779c8a52"
     },
     {
       "doc_id": "doc-0198",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0198.docx",
-      "hash": "96842540191f22f5"
+      "hash": "96842540191f22f5",
+      "docx_sha256": "5227b05936fce72e012901968f04b8d81777f01aebd8f43faef9cbbac425cd5d"
     },
     {
       "doc_id": "doc-0199",
       "doc_type": "child_support",
       "condition": "clean",
       "file": "documents/doc-0199.docx",
-      "hash": "001e29823080087b"
+      "hash": "001e29823080087b",
+      "docx_sha256": "49c320c4ee9b2bdf2c13b73699ae3d29f6380fd0582db02508b7ad884bc2b1ab"
     },
     {
       "doc_id": "doc-0200",
       "doc_type": "child_support",
       "condition": "corrupt",
       "file": "documents/doc-0200.docx",
-      "hash": "84bd089b38d3149a"
+      "hash": "84bd089b38d3149a",
+      "docx_sha256": "d70bc621afa01e8b5ea2ba09a55bbcbad4b2fe3bb1a93d13265d2b84ac4fac8c"
     }
   ]
 }
