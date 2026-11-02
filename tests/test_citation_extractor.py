@@ -44,6 +44,39 @@ class TestStatutes:
         cites = extract_citations_from_text(text)
         assert [c for c in cites if c.type == "statute"] == []
 
+    @pytest.mark.parametrize(
+        "text,expected",
+        [
+            (
+                "AS 18.66.100 through 18.66.180 applies",
+                ["AS 18.66.100", "AS 18.66.180"],
+            ),
+            (
+                "under AS 11.56.807 or 11.56.810",
+                ["AS 11.56.807", "AS 11.56.810"],
+            ),
+            (
+                "AS 25.20.060 to 25.20.130 governs",
+                ["AS 25.20.060", "AS 25.20.130"],
+            ),
+            ("AS 25.24.310-320 sets", ["AS 25.24.310", "AS 25.24.320"]),
+            (
+                "AS 25.24.220(a) and 25.24.160(b)",
+                ["AS 25.24.220", "AS 25.24.160"],
+            ),
+        ],
+    )
+    def test_range_and_list_endpoints(self, text, expected):
+        cites = extract_citations_from_text(text)
+        assert [c.normalized for c in cites if c.type == "statute"] == expected
+
+    def test_prose_number_after_citation_is_not_an_endpoint(self):
+        text = "AS 25.24.220 and 500 dollars were at issue"
+        cites = extract_citations_from_text(text)
+        assert [c.normalized for c in cites if c.type == "statute"] == [
+            "AS 25.24.220"
+        ]
+
     def test_statute_text_is_preserved(self):
         cites = extract_citations_from_text("per AS 25.24.946, the court")
         assert cites[0].text == "AS 25.24.946"
