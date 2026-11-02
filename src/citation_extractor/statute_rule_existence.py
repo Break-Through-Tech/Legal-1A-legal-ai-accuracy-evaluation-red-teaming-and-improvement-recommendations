@@ -28,6 +28,17 @@ from .labels import FABRICATED, OUT_OF_SCOPE, REAL
 _STATUTE_NUM_RE = re.compile(r"AS\s+(\d+\.\d+\.\d+)", re.IGNORECASE)
 _RULE_NUM_RE = re.compile(r"(\d+(?:\.\d+)?)\s*$")
 
+# ADDED (2026-10-20): corpus scope (DATA_DICTIONARY §3.2): all of Title 25 plus
+#   Title 18 ch. 65-66. Covers the whole title, so a missing section in any Title 25
+#   chapter is FABRICATED, not OUT_OF_SCOPE.
+IN_SCOPE_TITLES = {"25"}               # all of Title 25
+IN_SCOPE_CHAPTERS = {"18.65", "18.66"} # Title 18, DV/protective orders only
+
+# ADDED (2026-10-20): checks whether a section number falls within the corpus scope, by its title or chapter
+def _in_scope(section: str) -> bool:
+    title, chapter, _ = section.split(".")
+    return title in IN_SCOPE_TITLES or f"{title}.{chapter}" in IN_SCOPE_CHAPTERS
+
 
 def _rule_number(citation: str) -> str | None:
     """Last number in a normalized rule citation, ignoring any subrule suffix.
@@ -82,10 +93,17 @@ def load_evidence_rule_index(path: str | Path) -> set[str]:
 
 
 def check_statute_existence(citation: str, statute_index: set[str]) -> str:
-    """Return REAL or FABRICATED for one statute citation."""
+    """Return REAL, FABRICATED, or OUT_OF_SCOPE for one statute citation."""
+    # CHANGED (2026-10-20): a statute missing from the corpus is OUT_OF_SCOPE when its
+    #   title/chapter is outside the corpus (e.g. AS 11.56.807), else FABRICATED.
     match = _STATUTE_NUM_RE.search(normalize_citation(citation))
     key = f"as {match.group(1)}" if match else normalize_citation(citation).strip().casefold()
-    return REAL if key in statute_index else FABRICATED
+    if key in statute_index:
+        return REAL
+    elif match and not _in_scope(match.group(1)):
+        return OUT_OF_SCOPE
+    else:
+        return FABRICATED
 
 
 def check_rule_existence(

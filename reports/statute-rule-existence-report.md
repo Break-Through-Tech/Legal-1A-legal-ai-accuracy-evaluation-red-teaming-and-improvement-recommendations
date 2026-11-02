@@ -2,7 +2,7 @@
 
 Predictions come from the frozen corpus only; scores are against the answer key's `exists` field (DATA_DICTIONARY §9). Cases are scored separately in `scripts/evaluate.py`.
 
-Excluded per §9: 1 (`AS 11.56.807`, doc-0136). Out-of-scope (non civil/evidence rules): 0.
+Out of scope (not scored): 1: `AS 11.56.807` (doc-0136).
 
 | metric | value |
 |---|---|
