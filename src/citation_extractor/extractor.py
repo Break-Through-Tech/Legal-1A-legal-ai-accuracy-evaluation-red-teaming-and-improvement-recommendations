@@ -38,8 +38,21 @@ MALFORMED_STATUTE_RE = re.compile(
     re.IGNORECASE,
 )
 
+# A second statute in a range or list: "AS 18.66.100 through 18.66.180",
+# "AS 11.56.807 or 11.56.810", "AS 25.20.060 - 25.20.130", "AS 25.24.310-320".
+# A bare section (".320") inherits the first citation's title and chapter; a full
+# citation may repeat or omit the "AS" prefix. Prose numbers like "and 500" do
+# not match because a bare endpoint must carry the leading dot.
 _STATUTE_TAIL_RE = re.compile(
-    r"\s*(?:-|–|to|and|,)\s*(?:and\s+)?\.(?P<section>\d{3})(?!\d)(?:\([0-9A-Za-z]+\))*",
+    r"\s*(?:"
+    r"(?P<hsep>-|–|—)\s*(?P<section3>\d{3})(?!\d)"
+    r"|"
+    r"(?P<sep>-|–|—|\bthrough\b|\bthru\b|\bto\b|,|\band\b|\bor\b)"
+    r"\s*(?:(?:and|or)\s+)?(?:AS\s+)?"
+    r"(?:(?P<title>\d{1,2})\.(?P<chapter>\d{2})\.(?P<section>\d{3})|\.(?P<section2>\d{3}))"
+    r"(?!\d)"
+    r")"
+    r"(?:\([0-9A-Za-z]+\))*",
     re.IGNORECASE,
 )
 
@@ -162,7 +175,14 @@ def extract_citations_from_text(
             tail = _STATUTE_TAIL_RE.match(text, pos)
             if not tail:
                 break
-            norm = f"AS {m.group('title')}.{m.group('chapter')}.{tail.group('section')}"
+            title = tail.group("title") or m.group("title")
+            chapter = tail.group("chapter") or m.group("chapter")
+            section = (
+                tail.group("section")
+                or tail.group("section2")
+                or tail.group("section3")
+            )
+            norm = f"AS {title}.{chapter}.{section}"
             _record(m.start(), tail.end(), "statute", norm)
             pos = tail.end()
 
