@@ -125,8 +125,12 @@ def score_all_documents(answer_key):
             "doc_id": doc_id,
             "condition": document["condition"],
             "planted": planted_errors(document),
+            # CHANGED (2026-11-08): count planted alterations only (DATA_DICTIONARY §9).
+            #   Was: any altered row, which since the 2026-11-01 key also includes the
+            #   40 natural misquotes (planted: false), so 70 documents instead of 40.
             "altered_quote_planted": any(
-                q["quote_status"] == "altered" for q in document.get("quotes", [])
+                q["quote_status"] == "altered" and q.get("planted")
+                for q in document.get("quotes", [])
             ),
             "score": result["score"],
             "existence_score": score_document(existence),
