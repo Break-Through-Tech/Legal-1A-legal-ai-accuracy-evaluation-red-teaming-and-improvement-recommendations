@@ -12,7 +12,9 @@ from .labels import FABRICATED, REAL, WRONG_REPORTER
 
 def normalize_key(text):
     """Casefold, collapse whitespace and trim edge punctuation for lookups."""
-    return _normalize_whitespace(text).strip(" ,.;:")
+    # CHANGED (2026-10-20): "&" and "and" compare equal, so "Health and Social Services"
+    #   in a document matches "Health & Social Services" in the corpus (doc-0042).
+    return _normalize_whitespace(text).replace(" & ", " and ").strip(" ,.;:")
 
 
 def load_corpus_name_index(path):
@@ -58,6 +60,11 @@ def check_case_existence(case_name, reporter, reporter_index, name_index):
     falls back to the case name to tell a swapped reporter from an invented case.
     """
     name = normalize_key(case_name)
+
+    # ADDED (2026-10-20): a reporter-only short cite ("987 P.2d 183") has no case name
+    #   to compare, so it is REAL when the reporter is in the corpus.
+    if not name:
+        return REAL if normalize_key(reporter) in reporter_index else FABRICATED
 
     for case in reporter_index.get(normalize_key(reporter), []):
         if names_compatible(name, normalize_key(case.get("case_name"))):

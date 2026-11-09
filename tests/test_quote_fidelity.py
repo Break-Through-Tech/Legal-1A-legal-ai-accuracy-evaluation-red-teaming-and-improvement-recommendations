@@ -53,6 +53,20 @@ def test_dropped_list_marker_is_faithful():
     assert result["tier"] == "normalized"
 
 
+def test_spelled_out_section_range_is_faithful():
+    # Corpus writes ranges with an em dash; doc-0144 spells it "through".
+    source = "(2) for protection under AS 18.66.100 — 18.66.180; (3) directing one spouse"
+    result = check_quote("for protection under AS 18.66.100 through 18.66.180.", source)
+    assert result["tier"] == "normalized"
+    assert result["faithful"] is True
+
+
+def test_through_between_words_is_kept():
+    # Only "through" between two numbers is a range; ordinary prose keeps it.
+    result = check_quote("the court shall consider through the physical", SOURCE)
+    assert result["faithful"] is not True
+
+
 # ---------- altered ----------
 
 def test_appended_phrase_is_altered():
