@@ -77,6 +77,16 @@ class TestStatuteExistence:
         # it as a "fabricated" replacement; the checker reports the corpus truth.
         assert check_statute_existence("AS 25.24.900", indexes[0]) == REAL
 
+    # ADDED (2026-10-20): statutes outside the corpus scope (Title 11, and Title 18
+    #   outside ch. 65-66) return OUT_OF_SCOPE.
+    def test_out_of_scope_statutes(self, indexes):
+        assert check_statute_existence("AS 11.56.807", indexes[0]) == OUT_OF_SCOPE
+        assert check_statute_existence("AS 18.20.010", indexes[0]) == OUT_OF_SCOPE
+
+    # ADDED (2026-10-20): a section missing from a covered chapter returns FABRICATED.
+    def test_missing_statute_in_covered_chapter(self, indexes):
+        assert check_statute_existence("AS 18.66.999", indexes[0]) == FABRICATED
+
 
 class TestRuleExistence:
     def test_civil_rule_short_form(self, indexes):
@@ -115,6 +125,8 @@ def test_real_corpus_loads():
 
     assert check_statute_existence("AS 25.24.150", statutes) == REAL
     assert check_statute_existence("AS 25.24.946", statutes) == FABRICATED
+    # ADDED (2026-10-20): AS 11.56.807 is out of scope against the real corpus
+    assert check_statute_existence("AS 11.56.807", statutes) == OUT_OF_SCOPE
     assert check_rule_existence("Civil Rule 90.3(b)", civil, evidence) == REAL
     assert check_rule_existence("Civil Rule 913", civil, evidence) == FABRICATED
     assert check_rule_existence("Alaska R. Evid. 505", civil, evidence) == REAL
