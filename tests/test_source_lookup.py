@@ -82,3 +82,31 @@ def test_evidence_rule(corpus):
 @pytest.mark.integration
 def test_evidence_rule_excludes_commentary(corpus):
     assert "has been substantially revised" not in get_source_text("Alaska R. Evid. 505", corpus)
+
+
+# ADDED (2026-11-17): locate_sources on verbatim, altered and unrelated text.
+# ---------- locate_sources: find a passage's real section by content ----------
+
+from citation_extractor.source_lookup import locate_sources
+
+LOCATE_CORPUS = {
+    "AS 25.24.150": ("In making an order for custody the court shall consider the physical, "
+                     "emotional, mental, religious, and social needs of the child and the "
+                     "capability and desire of each parent to meet these needs."),
+    "AS 25.20.060": ("Neither parent, regardless of the question of the child's legitimacy, is "
+                     "entitled to preference in the awarding of custody."),
+}
+
+
+def test_locates_section_a_passage_was_copied_from():
+    text = "the physical, emotional, mental, religious, and social needs of the child"
+    assert locate_sources(text, LOCATE_CORPUS) == ["AS 25.24.150"]
+
+
+def test_locates_an_altered_passage():
+    text = "is entitled to preference in the awarding of custody under all circumstances"
+    assert locate_sources(text, LOCATE_CORPUS) == ["AS 25.20.060"]
+
+
+def test_locates_nothing_for_unrelated_text():
+    assert locate_sources("the weather was fine and the river was high today", LOCATE_CORPUS) == []

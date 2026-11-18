@@ -69,6 +69,56 @@ def load_corpus(corpus_dir: str | Path = DEFAULT_CORPUS_DIR) -> dict[str, str]:
     return {cite: clean_whitespace(" ".join(pieces)) for cite, pieces in texts.items()}
 
 
+# ADDED (2026-11-17): find a passage's section by shared 5-word shingles when its cite doesn't resolve.
+# Locating a source by content, for passages whose citation does not resolve (a fabricated or mistyped citation): 
+# the quoted or copied text is still real law, so find the section it was copied from and judge it against that.
+
+SHINGLE_WORDS = 5     # words per shingle; a verbatim run of 8 words shares 4
+MIN_SHARED_SHINGLES = 4
+MAX_LOCATED = 3       # sections kept when several tie for the best match
+
+_LIST_MARKER = re.compile(r"\((?:\d+|[a-z]|[ivx]+)\)", re.IGNORECASE)
+_WORD = re.compile(r"[^\W_]+")
+_shingle_indexes: dict[int, dict[str, set[str]]] = {}
+
+
+def _shingles(text: str) -> set[str]:
+    words = _WORD.findall(_LIST_MARKER.sub(" ", text).lower())
+    return {" ".join(words[i:i + SHINGLE_WORDS]) for i in range(len(words) - SHINGLE_WORDS + 1)}
+
+
+def _shingle_index(corpus: dict[str, str]) -> dict[str, set[str]]:
+    """{shingle: {citation, ...}} for every section, built once per corpus."""
+    key = id(corpus)
+    if key not in _shingle_indexes:
+        index: dict[str, set[str]] = {}
+        for cite, text in corpus.items():
+            for shingle in _shingles(text):
+                index.setdefault(shingle, set()).add(cite)
+        _shingle_indexes[key] = index
+    return _shingle_indexes[key]
+
+
+def locate_sources(text: str, corpus: dict[str, str]) -> list[str]:
+    """Citations of the corpus sections that `text` was most likely copied from.
+
+    Counts the 5-word shingles `text` shares with each section and returns the
+    best-matching sections (ties kept, up to MAX_LOCATED), or [] when even the
+    best shares fewer than MIN_SHARED_SHINGLES (about an 8-word verbatim run).
+    """
+    index = _shingle_index(corpus)
+    hits: dict[str, int] = {}
+    for shingle in _shingles(text):
+        for cite in index.get(shingle, ()):
+            hits[cite] = hits.get(cite, 0) + 1
+    if not hits:
+        return []
+    best = max(hits.values())
+    if best < MIN_SHARED_SHINGLES:
+        return []
+    return sorted(c for c, n in hits.items() if n == best)[:MAX_LOCATED]
+
+
 def get_source_text(cite: str, corpus: dict[str, str]) -> str | None:
     """Return the source text for a document citation, or None if not in corpus.
 

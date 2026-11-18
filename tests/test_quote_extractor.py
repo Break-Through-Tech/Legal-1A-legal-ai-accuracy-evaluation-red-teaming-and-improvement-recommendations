@@ -104,3 +104,21 @@ def test_extract_quotes_doc_0014():
     assert "Civil Rule 90.3(a)" in cites
     assert any(q["text"].startswith("the desirability of awarding the family home") for q in quotes)
     assert all(q["doc_id"] == "doc-0014" for q in quotes)
+
+
+# ADDED (2026-11-17): a cite right after the quote is attached; one inside the sentence is not.
+# ---------- a citation straight after the quote ----------
+
+TRAILING_PARA = ('Importantly, "neither parent is entitled to preference in the awarding '
+                 'of custody under all circumstances." AS 25.20.060(b). The court may also act.')
+
+
+def test_attaches_citation_that_directly_follows_the_quote():
+    q = find_quotes(TRAILING_PARA)[0]
+    assert attach_citation(TRAILING_PARA, q["start"], q["end"]) == "AS 25.20.060(b)"
+
+
+def test_trailing_citation_needs_only_punctuation_between():
+    # "under AS 25.24.160(a)(4)" follows the first quote but is attached to words, not the quote.
+    q = find_quotes(TWO_CITE_PARA)[0]
+    assert attach_citation(TWO_CITE_PARA, q["start"], q["end"]) is None
