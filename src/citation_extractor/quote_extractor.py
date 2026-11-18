@@ -64,19 +64,38 @@ def is_legal_quote(quote: dict, paragraph_text: str) -> bool:
     return not LABEL_RE.search(before)
 
 
-def attach_citation(paragraph_text: str, quote_start: int) -> str | None:
+# CHANGED (2026-11-17): `quote_end` added; no cite before the quote -> use one right after (doc-0058).
+def attach_citation(paragraph_text: str, quote_start: int, quote_end: int | None = None) -> str | None:
     """Return the statute/rule citation the quote belongs to, or None.
 
-    Rule of thumb: the closest citation that appears BEFORE the quote in the
-    same paragraph. Return the citation exactly as written in the text
-    (e.g. "AS 25.24.160(a)(4)(F)"), not normalized.
+    Rule of thumb: the closest citation that appears BEFORE the quote in the same paragraph.
+    If none does and `quote_end` is given, a citation that comes straight after the quote (only punctuation between) is used. 
+    Return the citation exactly as written in the text (e.g. "AS 25.24.160(a)(4)(F)"), not normalized.
     """
     best = None
     for pattern in CITATION_PATTERNS:
         for m in pattern.finditer(paragraph_text):
             if m.end() <= quote_start and (best is None or m.end() > best.end()):
                 best = m
-    return best.group(0) if best else None
+    if best:
+        return best.group(0)
+    # ADDED (2026-11-17): fall back to a citation right after the quote.
+    return _trailing_citation(paragraph_text, quote_end) if quote_end is not None else None
+
+
+# ADDED (2026-11-17): only punctuation may sit between quote and cite ("under AS ..." is not taken).
+# Only closing quote marks, sentence punctuation and spaces between a quote and
+# the citation that follows it: `...circumstances." AS 25.20.060(b).`
+TRAILING_GAP_RE = re.compile(r'^["”’)\].,;:\s]*$')
+
+
+def _trailing_citation(paragraph_text: str, quote_end: int) -> str | None:
+    """A citation that directly follows the quote, with nothing but punctuation between."""
+    for pattern in CITATION_PATTERNS:
+        m = pattern.search(paragraph_text, quote_end)
+        if m and TRAILING_GAP_RE.match(paragraph_text[quote_end:m.start()]):
+            return m.group(0)
+    return None
 
 
 def extract_quotes(docx_path: str, doc_id: str | None = None) -> list[dict]:
@@ -105,6 +124,7 @@ def extract_quotes(docx_path: str, doc_id: str | None = None) -> list[dict]:
                 "text": quote["text"],
                 "start": quote["start"],
                 "end": quote["end"],
-                "citation": attach_citation(text, quote["start"]),
+                # CHANGED (2026-11-17): passes quote["end"] so a trailing citation is found.
+                "citation": attach_citation(text, quote["start"], quote["end"]),
             })
     return results
